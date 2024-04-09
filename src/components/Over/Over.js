@@ -1,22 +1,24 @@
-import { StyledOverContainer, StyledReadMoreButton, StyledTitle, StyledParagraph } from "./Over.styles";
+import { StyledOverContainer, StyledReadMoreButton, StyledTitle, StyledImage, StyledContent, StyledList, StyledImageWrapper } from "./Over.styles";
 import { Link } from 'react-router-dom'; // Import Link for routing
+import overImage from '../../images/learn-dutch-with-tim-online-lessons.jpg'
 
 const Over = () => {
     return (
-
         <StyledOverContainer>
-            <StyledTitle>About</StyledTitle>
-            <StyledParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-            </StyledParagraph>
-            <StyledParagraph>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            </StyledParagraph>
-            <StyledReadMoreButton>
-                <Link to="/about"> {/* Link to your about.js page */}
-                    <button>Read More</button>
-                </Link>
-            </StyledReadMoreButton>
+            <StyledImage />
+            <StyledContent>
+                <StyledTitle>About</StyledTitle>
+                <StyledList>
+                    <li>🌐 Online via videoconference or presential in Barcelona</li>
+                    <li>🎓 Interactive and with free access to online learning material</li>
+                    <li>👨‍🏫 Experienced and patient native Dutch/Flemish teacher</li>
+                </StyledList>
+                <StyledReadMoreButton>
+                    <Link to="/about">
+                        <button>Get to know more</button>
+                    </Link>
+                </StyledReadMoreButton>
+            </StyledContent>
         </StyledOverContainer>
     );
 };
