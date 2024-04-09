@@ -1,11 +1,12 @@
 import React from 'react';
+import Navigation from '../components/Navigation/Navigation';
 
 function About() {
 
     return (
-        <p>
-            This is the about page
-        </p>
+        <div>
+            < Navigation />
+        </div>
     );
 }
 

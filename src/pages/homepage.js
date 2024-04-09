@@ -1,11 +1,16 @@
 import React from 'react';
+import Navigation from '../components/Navigation/Navigation';
+import Header from '../components/Header/Header';
+import Over from '../components/Over/Over';
 
 function Homepage() {
 
     return (
-        <p>
-            This is the homepage
-        </p>
+        <div>
+            < Navigation />
+            < Header />
+            < Over />
+        </div>
     );
 }
 
