@@ -4,6 +4,15 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import { StyledQuestion } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
+import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
+import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
+import ImageCollage from '../components/ImageCollage/ImageCollage';
+import hetDorp from "../images/het-dorp.jpg";
+import deStad from "../images/de-stad.jpg";
+import deStraat from "../images/de-straat.jpg";
+import deKat from "../images/de-kat.jpg";
+import deHond from "../images/de-hond.jpg";
+import hetHuis from "../images/het-huis.jpg";
 
 function Lesson1() {
     const lessonId = 1;
@@ -38,20 +47,29 @@ function Lesson1() {
         { dutch: 'De week', english: 'The week' },
         { dutch: 'De dag', english: 'The day' },
         { dutch: 'De muziek', english: 'The music' }
-
+    ];
+    const images = [
+        { src: hetDorp, caption: 'Het dorp' },
+        { src: deStad, caption: 'De stad' },
+        { src: deKat, caption: 'De kat' },
+        { src: deHond, caption: 'De hond' },
+        { src: hetHuis, caption: 'Het huis' },
+        { src: deStraat, caption: 'De straat' },
     ];
     return (
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <ImageCollage images={images.slice(0, 3)} />
             <StyledQuestion data-translation=" Hello. Good morning!">Hallo. Goedemorgen!</StyledQuestion>
             <StyledQuestion data-translation=" Who are you?">Wie ben jij?</StyledQuestion>
             <StyledQuestion data-translation=" What is your name?">Hoe heet jij? Wat is jouw naam?</StyledQuestion>
             <StyledQuestion data-translation=" Where do you live?">Waar woon je?</StyledQuestion>
             <StyledQuestion data-translation=" How old are you?">Hoe oud ben jij?</StyledQuestion>
+            <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
-            <p>5 minutes vocabulary</p>
-            <p>10 minutes vocabulary exercise</p>
+            <VocabularySimple words={words} />
+            <VocabularyQuiz words={words} />
             <p>5 minutes grammar</p>
             <p>10 minutes grammar exercise</p>
             <p>5 minutes listening</p>
