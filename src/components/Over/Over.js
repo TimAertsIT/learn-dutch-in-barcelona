@@ -12,6 +12,7 @@ const Over = () => {
                     <li>🌐 Online via videoconference or presential in Barcelona</li>
                     <li>🎓 Interactive and with free access to online learning material</li>
                     <li>👨‍🏫 Experienced and patient native Dutch/Flemish teacher</li>
+                    <li>👤 Personalized, 1-to-1 classes</li>
                 </StyledList>
                 <StyledReadMoreButton>
                     <Link to="/about">
