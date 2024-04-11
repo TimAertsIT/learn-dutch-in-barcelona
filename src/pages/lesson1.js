@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
-import { StyledQuestion } from '../pages/lesson1.styles';
+import { StyledQuestion, LessonContainer, Separator, TitleText } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
@@ -13,6 +13,14 @@ import deStraat from "../images/de-straat.jpg";
 import deKat from "../images/de-kat.jpg";
 import deHond from "../images/de-hond.jpg";
 import hetHuis from "../images/het-huis.jpg";
+import GoedBezig from '../components/GoedBezig/GoedBezig';
+import Verbs from '../components/Verbs/Verbs';
+import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
+import Translate from '../components/Exercises/Grammar/Translate';
+
+// Import the gif and image
+import goedBezigGif from '../images/goedbezig.mp4';
+import goedBezigImage from '../images/goedbezig.jpg';
 
 function Lesson1() {
     const lessonId = 1;
@@ -70,7 +78,47 @@ function Lesson1() {
             <Vocabulary words={words} />
             <VocabularySimple words={words} />
             <VocabularyQuiz words={words} />
-            <p>5 minutes grammar</p>
+            <GoedBezig
+                gif={goedBezigGif}
+                text={{ dutch: 'Luipaard', english: '"Lazy horse"' }}
+                image={goedBezigImage}
+            />
+            <Separator></Separator>
+            <TitleText>Grammatica / Grammar</TitleText>
+            <LessonContainer>
+                <Verbs
+                    verb="werken"
+                    translation="to work"
+                    conjugations={["werk", "werkt", "werkt", "werken", "werken", "werken"]}
+                />
+                <Verbs
+                    verb="zijn"
+                    translation="to be"
+                    conjugations={["ben", "bent", "is", "zijn", "zijn", "zijn"]}
+                />
+                <Verbs
+                    verb="hebben"
+                    translation="to have"
+                    conjugations={["heb", "hebt", "heeft", "hebben", "hebben", "hebben"]}
+                />
+            </LessonContainer>
+            <VerbExercise verbs={[
+                { verb: "werken", conjugations: ["werk", "werkt", "werkt", "werken", "werken", "werken"] },
+                { verb: "zijn", conjugations: ["ben", "bent", "is", "zijn", "zijn", "zijn"] },
+                { verb: "hebben", conjugations: ["heb", "hebt", "heeft", "hebben", "hebben", "hebben"] }
+            ]} />
+            <Translate sentences={[
+                { english: "I am Stromae", translation: "Ik ben Stromae" },
+                { english: "I have a dog", translation: "Ik heb een hond" },
+                { english: "He works hard", translation: "Hij werkt hard" },
+                { english: "She has a hobby", translation: "Zij heeft een hobby" },
+                { english: "You are a woman", translation: "Jij bent een vrouw" },
+                { english: "Mark Rutte is a man", translation: "Mark Rutte is een man" },
+                { english: "The city has a street", translation: "De stad heeft een straat" },
+                { english: "The school is in the town", translation: "De school is in het dorp" },
+                { english: "The students don't work", translation: "De studenten werken niet" },
+                { english: "I have a profession", translation: "Ik heb een beroep" }
+            ]} />
             <p>10 minutes grammar exercise</p>
             <p>5 minutes listening</p>
             <p>10 minutes listening exercise</p>

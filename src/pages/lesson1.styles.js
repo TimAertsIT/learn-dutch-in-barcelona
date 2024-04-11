@@ -28,3 +28,27 @@ export const StyledQuestion = styled.p`
   }
 `;
 
+export const LessonContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; // Adjust the justify-content here
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const TitleText = styled.h2`
+  text-align: center;
+  color: #852500;
+  margin: 40px 0;
+`;
+
+export const Separator = styled.hr`
+  border: none;
+  height: 1px;
+  background-color: #852500;
+  margin: 40px auto;
+  width: 70%;
+`;
