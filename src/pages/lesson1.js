@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
-import { StyledQuestion, LessonContainer, Separator, TitleText } from '../pages/lesson1.styles';
+import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
@@ -119,7 +119,16 @@ function Lesson1() {
                 { english: "The students don't work", translation: "De studenten werken niet" },
                 { english: "I have a profession", translation: "Ik heb een beroep" }
             ]} />
-            <p>10 minutes grammar exercise</p>
+            <GrammarBox>
+                <GrammarTitle>📚 When to use "de" or "het"? 📚</GrammarTitle>
+                <GrammarParagraph>Masculine and feminine words all get "de". Gender neutral words "het". So "de man", "de vrouw", "het onzijdige woord". Unfortunately, there are almost no rules as to when it is "de" or "het", so you will need to rely on learning them one by one. However<Highlight> a few rules </Highlight> do exist!</GrammarParagraph>
+                <GrammarListItem>Diminutives are always with "het" - het huisje, het tuintje, het stadje, ...; </GrammarListItem>
+                <GrammarListItem>Sports use always "het" - het voetbal, het basket, het ijshockey, ...; </GrammarListItem>
+                <GrammarListItem>Words with 2 syllables that start with be-, ge-, ver- and ont-; - het belang, het geweer, het verstand, ...; </GrammarListItem>
+                <GrammarListItem>In plural all words use "de".</GrammarListItem>
+                <GrammarParagraph>For more information, check out <a href="https://www.vlaanderen.be/team-taaladvies/taaladviezen/lidwoord-taalkundige-term">this link</a></GrammarParagraph>
+            </GrammarBox>
+
             <p>5 minutes listening</p>
             <p>10 minutes listening exercise</p>
             <p>5 minutes reading and writing exercises</p>

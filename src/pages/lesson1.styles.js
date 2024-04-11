@@ -52,3 +52,50 @@ export const Separator = styled.hr`
   margin: 40px auto;
   width: 70%;
 `;
+
+export const GrammarBox = styled.div`
+  width: 85%;
+  background-color: #65b7c3;
+  padding: 20px;
+  margin: auto; 
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+`;
+
+export const GrammarTitle = styled.h2`
+  font-size: 2em;
+  color: #852500;
+  margin-bottom: 10px;
+  text-align: center;
+`;
+
+export const GrammarParagraph = styled.p`
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding: 0 30px;
+`;
+
+export const Highlight = styled.span`
+  color: #1d7a85;
+  font-weight: bold;
+`;
+export const GrammarListItem = styled.li`
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+  list-style: none; 
+
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff8c3f;
+  }
+`;
+
