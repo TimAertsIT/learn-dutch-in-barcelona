@@ -99,3 +99,29 @@ export const GrammarListItem = styled.li`
   }
 `;
 
+export const StyledLink = styled.a`
+  display: inline-block;
+  background-color: #ff8c3f;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1d7a85;
+  }
+`;
+
+export const CenteredContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+

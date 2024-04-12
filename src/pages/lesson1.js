@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
-import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem } from '../pages/lesson1.styles';
+import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem, StyledLink, CenteredContainer } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
@@ -71,9 +71,11 @@ function Lesson1() {
             <ImageCollage images={images.slice(0, 3)} />
             <StyledQuestion data-translation=" Hello. Good morning!">Hallo. Goedemorgen!</StyledQuestion>
             <StyledQuestion data-translation=" Who are you?">Wie ben jij?</StyledQuestion>
+            <StyledQuestion data-translation=" How are you doing?">Hoe gaat het met jou?</StyledQuestion>
             <StyledQuestion data-translation=" What is your name?">Hoe heet jij? Wat is jouw naam?</StyledQuestion>
             <StyledQuestion data-translation=" Where do you live?">Waar woon je?</StyledQuestion>
             <StyledQuestion data-translation=" How old are you?">Hoe oud ben jij?</StyledQuestion>
+            <StyledQuestion data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <VocabularySimple words={words} />
@@ -128,11 +130,23 @@ function Lesson1() {
                 <GrammarListItem>In plural all words use "de".</GrammarListItem>
                 <GrammarParagraph>For more information, check out <a href="https://www.vlaanderen.be/team-taaladvies/taaladviezen/lidwoord-taalkundige-term">this link</a></GrammarParagraph>
             </GrammarBox>
+            <Separator></Separator>
+            <TitleText>Luisteren / Listening</TitleText>
+            <CenteredContainer>
+                <StyledLink href="https://www.nedbox.be/teaser/cacao-wordt-duurder#">
+                    "Cacao is becoming more expensive." Check the video in the link and let's answer the related questions.
+                </StyledLink>
+            </CenteredContainer>
 
-            <p>5 minutes listening</p>
-            <p>10 minutes listening exercise</p>
-            <p>5 minutes reading and writing exercises</p>
-            <p>5 minutes summary</p>
+            <Separator></Separator>
+            <TitleText>Huiswerk / Homework</TitleText>
+            <GrammarBox>
+                <GrammarParagraph>
+                    Kevin De Bruyne and Frenkie de Jong meet eachother.</GrammarParagraph>
+                <GrammarParagraph> Write a dialogue of <Highlight>10 sentences</Highlight> where they introduce themselves to eachother.</GrammarParagraph>
+                <GrammarParagraph> Aim not to use chatGPT or Google Translate, feel free to invent words if you don't know them.
+                </GrammarParagraph>
+            </GrammarBox>
             <Footer />
         </div>
     );
