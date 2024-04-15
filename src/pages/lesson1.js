@@ -17,7 +17,8 @@ import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
 import Translate from '../components/Exercises/Grammar/Translate';
-
+import allowedEmails from '../pages/allowedEmails';
+import { useState, useEffect } from 'react';
 // Import the gif and image
 import goedBezigGif from '../images/goedbezig.mp4';
 import goedBezigImage from '../images/goedbezig.jpg';
@@ -64,6 +65,22 @@ function Lesson1() {
         { src: hetHuis, caption: 'Het huis' },
         { src: deStraat, caption: 'De straat' },
     ];
+    const [email, setEmail] = useState(null);
+    useEffect(() => {
+        if (!email) {
+            const userEmail = prompt("Please enter your email to access this lesson:");
+            if (allowedEmails.includes(userEmail)) {
+                setEmail(userEmail);
+            } else {
+                alert("Access denied. Please enter a valid email.");
+            }
+        }
+    }, [email]);
+
+    // If the email is not set, don't render anything
+    if (!email) {
+        return null;
+    }
     return (
         <div>
             <Navigation />
