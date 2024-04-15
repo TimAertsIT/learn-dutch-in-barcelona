@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { QuizContainer, Word, Option, Message, NextButton } from '../../Exercises/Vocabulary/VocabularyQuiz.styles';
+import { QuizContainer, Word, Option, Message, NextButton, WordTitle, WordSubTitle } from '../../Exercises/Vocabulary/VocabularyQuiz.styles';
 
 const VocabularyQuiz = ({ words }) => {
     const [index, setIndex] = useState(Math.floor(Math.random() * words.length));
@@ -31,8 +31,8 @@ const VocabularyQuiz = ({ words }) => {
 
     return (
         <QuizContainer>
-            <h1>Quiz Time!</h1>
-            <p>Guess the Dutch translation of the following English word:</p>
+            <WordTitle>Quiz Time!</WordTitle>
+            <WordSubTitle>Guess the Dutch translation of the following English word:</WordSubTitle>
             <Word>{words[index].english}</Word>
             {options.map((option, i) => (
                 <Option key={i} onClick={() => checkAnswer(option)}>

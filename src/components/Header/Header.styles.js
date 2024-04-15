@@ -45,6 +45,8 @@ export const StyledHeader = styled.header`
         font-family: 'Arial', sans-serif; 
         text-align: center;
         padding: 0 10px;
+        margin-left: 8px;
+        margin-right: 8px; 
 
         @media (max-width: 600px) {
             font-size: 2em;
@@ -60,6 +62,9 @@ export const StyledContent = styled.div`
         color: #1d7a85; // Your chosen color
         font-size: 1.5em; // Adjust as needed
         margin-bottom: 10px; // Add some spacing
+        margin-top: 20px; 
+        margin-left: 10px;
+        margin-right: 10px; 
     }
 
   p {

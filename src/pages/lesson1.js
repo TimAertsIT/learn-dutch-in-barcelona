@@ -141,11 +141,14 @@ function Lesson1() {
             <GrammarBox>
                 <GrammarTitle>📚 When to use "de" or "het"? 📚</GrammarTitle>
                 <GrammarParagraph>Masculine and feminine words all get "de". Gender neutral words "het". So "de man", "de vrouw", "het onzijdige woord". Unfortunately, there are almost no rules as to when it is "de" or "het", so you will need to rely on learning them one by one. However<Highlight> a few rules </Highlight> do exist!</GrammarParagraph>
+                <br />
                 <GrammarListItem>Diminutives are always with "het" - het huisje, het tuintje, het stadje, ...; </GrammarListItem>
                 <GrammarListItem>Sports use always "het" - het voetbal, het basket, het ijshockey, ...; </GrammarListItem>
                 <GrammarListItem>Words with 2 syllables that start with be-, ge-, ver- and ont-; - het belang, het geweer, het verstand, ...; </GrammarListItem>
                 <GrammarListItem>In plural all words use "de".</GrammarListItem>
-                <GrammarParagraph>For more information, check out <a href="https://www.vlaanderen.be/team-taaladvies/taaladviezen/lidwoord-taalkundige-term">this link</a></GrammarParagraph>
+                <br />
+                <GrammarParagraph>
+                    For more information, check out <a href="https://www.vlaanderen.be/team-taaladvies/taaladviezen/lidwoord-taalkundige-term">this link</a></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Luisteren / Listening</TitleText>

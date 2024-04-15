@@ -5,11 +5,10 @@ export const ExerciseContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   background-color: #1d7a85;
   color: #fff;
-  margin-left: 130px; 
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   width: 80%; // Adjust the width here

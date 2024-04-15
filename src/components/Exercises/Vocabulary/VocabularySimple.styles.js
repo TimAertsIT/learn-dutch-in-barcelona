@@ -4,11 +4,15 @@ export const ExerciseContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 10px;
   padding: 20px;
   border-radius: 10px;
   background-color: #F3F7F9;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+   @media (min-width: 768px) {
+        margin-right: 50px; 
+        margin-left: 50px; 
+    }
 `;
 
 export const Word = styled.h2`

@@ -53,7 +53,7 @@ export const CardInner = styled.div`
 export const CardFace = styled.div`
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 90%;
   backface-visibility: hidden;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);

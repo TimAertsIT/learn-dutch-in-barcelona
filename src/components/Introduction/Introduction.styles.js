@@ -48,5 +48,7 @@ export const StyledImage = styled.img`
     &:hover {
         transform: scale(1.1);
     }
+    @media (max-width: 768px) {
+        width: 70%; }
 `;
 

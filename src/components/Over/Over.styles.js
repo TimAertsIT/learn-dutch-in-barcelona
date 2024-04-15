@@ -32,11 +32,19 @@ export const StyledImage = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    margin-bottom: 20px; 
 
     @media (min-width: 768px) {
         width: 45%;
         margin-right: 5%;
+        margin-bottom: 0px; 
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 300px; 
+    }
+
 `;
 
 export const StyledImageWrapper = styled.div`
@@ -60,9 +68,11 @@ export const StyledContent = styled.div`
     border: 5px solid #1d7a85; 
     border-radius: 10px; 
     background-color: #E5EDEE;
+    font-size: 0.9em;
 
     @media (min-width: 768px) {
         width: 50%;
+        font-size: 1em;
     }
 `;
 
@@ -70,6 +80,7 @@ export const StyledTitle = styled.h2`
     color: #191919;
     font-size: 1.5em;
     margin-bottom: 20px;
+    padding-top: 20px; 
 `;
 
 export const StyledList = styled.ul`
@@ -78,6 +89,8 @@ export const StyledList = styled.ul`
     line-height: 1.6;
     margin-bottom: 20px;
     list-style: none;
+    padding-left: 20px; 
+    padding-right: 20px; 
 `;
 
 export const StyledReadMoreButton = styled.div`
@@ -87,7 +100,7 @@ export const StyledReadMoreButton = styled.div`
         background-color: #1d7a85;
         color: white;
         border: none;
-        font-size: 15px; 
+        font-size: 17px; 
         padding: 10px 20px;
         border-radius: 5px;
         margin-bottom: 20px; 
@@ -97,5 +110,9 @@ export const StyledReadMoreButton = styled.div`
         &:hover {
             background-color: #0f4e58;
         }
+         @media (max-width: 768px) {
+        margin-right: 5px; 
+        margin-left: 5px; 
+    }
     }
 `;

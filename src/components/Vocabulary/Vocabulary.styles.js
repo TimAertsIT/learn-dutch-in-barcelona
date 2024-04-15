@@ -43,7 +43,7 @@ export const VocabularyItem = styled.li`
 export const Title = styled.h2`
   text-align: center;
   color: #852500;
-  margin: 40px 0;
+  margin: 40px 10px;
 `;
 
 export const Separator = styled.hr`

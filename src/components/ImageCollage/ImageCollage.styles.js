@@ -31,11 +31,11 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: auto;
-  max-height: 35vh; // Limit the height to 50% of the viewport height
+  height: 100%; // Change this
   object-fit: cover; // Resize the image to fit the container without distorting the aspect ratio
   transition: transform 0.5s ease;
 `;
+
 
 export const Caption = styled.div`
   position: absolute;

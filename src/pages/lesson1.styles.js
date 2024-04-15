@@ -12,7 +12,7 @@ export const StyledQuestion = styled.p`
   animation: 2s ${fadeIn} ease-out;
   border-left: 6px solid #1d7a85;
   background-color: #f9f9f9;
-  margin: 1em 0;
+  margin: 1em 10px;
   padding: 1em;
   position: relative;
   &:before {
@@ -31,7 +31,7 @@ export const StyledQuestion = styled.p`
 export const LessonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; // Adjust the justify-content here
+  justify-content: space-around; 
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -54,9 +54,9 @@ export const Separator = styled.hr`
 `;
 
 export const GrammarBox = styled.div`
-  width: 85%;
+  width: 80%;
   background-color: #65b7c3;
-  padding: 20px;
+  padding: 40px;
   margin: auto; 
   box-sizing: border-box;
   color: #fff;
@@ -74,7 +74,7 @@ export const GrammarTitle = styled.h2`
 
 export const GrammarParagraph = styled.p`
   font-size: 1.2em;
-  line-height: 1.5;
+  line-height: 1.0;
   margin-bottom: 10px;
   padding: 0 30px;
 `;
@@ -86,7 +86,7 @@ export const Highlight = styled.span`
 export const GrammarListItem = styled.li`
   font-size: 1.2em;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-left: 30px;
   position: relative;
   list-style: none; 
@@ -115,6 +115,9 @@ export const StyledLink = styled.a`
   &:hover {
     background-color: #1d7a85;
   }
+   @media (max-width: 768px) {
+        width: 85%;
+    }
 `;
 
 export const CenteredContainer = styled.div`
