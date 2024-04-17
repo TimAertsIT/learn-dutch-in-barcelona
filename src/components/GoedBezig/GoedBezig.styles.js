@@ -2,37 +2,21 @@ import styled from 'styled-components';
 
 export const GoedBezigContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
 
   @media (max-width: 600px) {
-    display: none;
+    flex-direction: column;
   }
 `;
 
-export const GifContainer = styled.div`
-  flex: 1;
-  margin: 10px;
-  height: 400px;
-  padding-bottom: 10px;
-  position: relative;
-`;
-
-export const Gif = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px; 
-  width: 100%;
-  height: 80%;
-`;
-
 export const Card = styled.div`
-  flex: 1;
-  margin: 10px;
+  margin: 0;
   perspective: 1000px;
-  height: 400px;
-  padding-bottom: 10px;
+  height: 60vh;
+  width: 60vw;
   position: relative;
 `;
 
@@ -41,7 +25,7 @@ export const CardInner = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 88%;
+  height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 
@@ -53,7 +37,7 @@ export const CardInner = styled.div`
 export const CardFace = styled.div`
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -81,11 +65,12 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.p`
-  font-size: ${props => props.primary ? '32px' : '24px'};
+  font-size: ${props => props.primary ? '2vw' : '1.5vw'};
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
 `;
+
 
 
 

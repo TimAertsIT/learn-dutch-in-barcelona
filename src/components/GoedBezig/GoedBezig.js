@@ -1,11 +1,8 @@
 import React from 'react';
-import { GoedBezigContainer, GifContainer, Gif, Card, CardInner, CardFront, CardBack, Image, Text } from './GoedBezig.styles';
+import { GoedBezigContainer, Card, CardInner, CardFront, CardBack, Image, Text } from './GoedBezig.styles';
 
-const GoedBezig = ({ gif, text, image }) => (
+const GoedBezig = ({ text, image }) => (
     <GoedBezigContainer>
-        <GifContainer>
-            <Gif src={gif} alt="Goed Bezig Gif" />
-        </GifContainer>
         <Card>
             <CardInner>
                 <CardFront>
@@ -21,6 +18,7 @@ const GoedBezig = ({ gif, text, image }) => (
 );
 
 export default GoedBezig;
+
 
 
 

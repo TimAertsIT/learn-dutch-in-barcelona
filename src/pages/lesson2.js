@@ -15,9 +15,7 @@ import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-// Import the gif and image
-import goedBezigGif from '../images/goedbezig.mp4';
-import goedBezigImage from '../images/goedbezig.jpg';
+import handschoen from '../images/handschoen.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -175,63 +173,103 @@ function Lesson2() {
             <VocabularyQuiz words={words} />
             <VocabularyTime wordArray={wordArray} />
             <GoedBezig
-                gif={goedBezigGif}
-                text={{ dutch: 'Luipaard', english: '"Lazy horse"' }}
-                image={goedBezigImage}
+                text={{ dutch: 'Handschoen', english: '"Hand shoe"' }}
+                image={handschoen}
             />
             <Separator></Separator>
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="werken"
-                    translation="to work"
-                    conjugations={["werk", "werkt", "werkt", "werken", "werken", "werken"]}
+                    verb="gaan"
+                    translation="to go"
+                    conjugations={["ga", "gaat", "gaat", "gaan", "gaan", "gaan"]}
                 />
                 <Verbs
-                    verb="zijn"
-                    translation="to be"
-                    conjugations={["ben", "bent", "is", "zijn", "zijn", "zijn"]}
+                    verb="komen"
+                    translation="to come"
+                    conjugations={["kom", "komt", "komt", "komen", "komen", "komen"]}
                 />
                 <Verbs
-                    verb="hebben"
-                    translation="to have"
-                    conjugations={["heb", "hebt", "heeft", "hebben", "hebben", "hebben"]}
+                    verb="willen"
+                    translation="to want"
+                    conjugations={["wil", "wilt", "wilt", "willen", "willen", "willen"]}
+                />
+                <Verbs
+                    verb="zitten"
+                    translation="to sit"
+                    conjugations={["zit", "zit", "zit", "zitten", "zitten", "zitten"]}
+                />
+                <Verbs
+                    verb="nemen"
+                    translation="to take"
+                    conjugations={["neem", "neemt", "neemt", "nemen", "nemen", "nemen"]}
+                />
+                <Verbs
+                    verb="zullen"
+                    translation="will"
+                    conjugations={["zal", "zult", "zal", "zullen", "zullen", "zullen"]}
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "werken", conjugations: ["werk", "werkt", "werkt", "werken", "werken", "werken"] },
-                { verb: "zijn", conjugations: ["ben", "bent", "is", "zijn", "zijn", "zijn"] },
-                { verb: "hebben", conjugations: ["heb", "hebt", "heeft", "hebben", "hebben", "hebben"] }
+                { verb: "gaan", conjugations: ["ga", "gaat", "gaat", "gaan", "gaan", "gaan"] },
+                { verb: "komen", conjugations: ["kom", "komt", "komt", "komen", "komen", "komen"] },
+                { verb: "willen", conjugations: ["wil", "wilt", "wilt", "willen", "willen", "willen"] },
+                { verb: "zitten", conjugations: ["zit", "zit", "zit", "zitten", "zitten", "zitten"] },
+                { verb: "nemen", conjugations: ["neem", "neemt", "neemt", "nemen", "nemen", "nemen"] },
+                { verb: "zullen", conjugations: ["zal", "zult", "zal", "zullen", "zullen", "zullen"] }
             ]} />
             <Translate sentences={[
-                { english: "I am Stromae", translation: "Ik ben Stromae" },
-                { english: "I have a dog", translation: "Ik heb een hond" },
-                { english: "He works hard", translation: "Hij werkt hard" },
-                { english: "She has a hobby", translation: "Zij heeft een hobby" },
-                { english: "You are a woman", translation: "Jij bent een vrouw" },
-                { english: "Mark Rutte is a man", translation: "Mark Rutte is een man" },
-                { english: "The city has a street", translation: "De stad heeft een straat" },
-                { english: "The school is in the town", translation: "De school is in het dorp" },
-                { english: "The students don't work", translation: "De studenten werken niet" },
-                { english: "I have a profession", translation: "Ik heb een beroep" }
+                { english: "I am the boss", translation: "Ik ben de baas" },
+                { english: "We will study", translation: "Wij zullen studeren" },
+                { english: "She takes cheese", translation: "Zij neemt kaas" },
+                { english: "He comes to school", translation: "Hij komt naar school" },
+                { english: "I want to learn Dutch", translation: "Ik wil Nederlands leren" },
+                { english: "He will graduate", translation: "Hij zal afstuderen" },
+                { english: "I go to the restaurant", translation: "Ik ga naar het restaurant" },
+                { english: "He wants to work", translation: "Hij wil werken" },
+                { english: "The economy goes well", translation: "De economie gaat goed" },
+                { english: "I study history, mathematics and Dutch", translation: "Ik studeer geschiedenis, wiskunde en Nederlands" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 When to use "de" or "het"? 📚</GrammarTitle>
-                <GrammarParagraph>Masculine and feminine words all get "de". Gender neutral words "het". So "de man", "de vrouw", "het onzijdige woord". Unfortunately, there are almost no rules as to when it is "de" or "het", so you will need to rely on learning them one by one. However<Highlight> a few rules </Highlight> do exist!</GrammarParagraph>
-                <br />
-                <GrammarListItem>Diminutives are always with "het" - het huisje, het tuintje, het stadje, ...; </GrammarListItem>
-                <GrammarListItem>Sports use always "het" - het voetbal, het basket, het ijshockey, ...; </GrammarListItem>
-                <GrammarListItem>Words with 2 syllables that start with be-, ge-, ver- and ont-; - het belang, het geweer, het verstand, ...; </GrammarListItem>
-                <GrammarListItem>In plural all words use "de".</GrammarListItem>
+                <GrammarTitle>📚 The future tense (onvoltooid tegenwoordige toekomende tijd) 📚</GrammarTitle>
+                <GrammarParagraph>In Dutch we use a "helping verb" to talk about the future. This "helping verb" (hulpwerkwoord) is "zullen". To that we add the infinite of the verb we will "do" in the future. </GrammarParagraph>
                 <br />
                 <GrammarParagraph>
-                    For more information, check out <a href="https://www.vlaanderen.be/team-taaladvies/taaladviezen/lidwoord-taalkundige-term">this link</a></GrammarParagraph>
+                    For <Highlight>"to work"</Highlight> that would be: </GrammarParagraph>
+                <br />
+                <GrammarListItem>Ik zal werken. </GrammarListItem>
+                <GrammarListItem>Jij zult werken. * </GrammarListItem>
+                <GrammarListItem>Hij/zij zal werken. </GrammarListItem>
+                <GrammarListItem>Wij zullen werken.</GrammarListItem>
+                <GrammarListItem>Jullie zullen werken.</GrammarListItem>
+                <GrammarListItem>Zij zullen werken.</GrammarListItem>
+                <br />
+                <GrammarParagraph>* "Zult" and "zal" are both valid here, but "zal" is more informal.</GrammarParagraph>
+            </GrammarBox>
+            <GrammarBox>
+                <GrammarTitle>📚 When to pronounce an open or closed vowel? 📚</GrammarTitle>
+                <GrammarParagraph>It can be tricky to know when to pronounce an open/clear vowel and when to use a closed one. Bakken or baken are pronounced very different (and have different meanings). The same for kakken or kaken, mannen or manen, etc. To learn it, dividing the words into syllables can help a lot. Let's look at some examples <a href="http://www.valley-trail.com/Syllables.htm#:~:text=Always%3A%20When%20the%20last%20letter,meaning%3A%20water)%20is%20wa">here</a></GrammarParagraph>
+            </GrammarBox>
+            <GrammarBox>
+                <GrammarTitle>📚 When to to add an e to an adjective? 📚</GrammarTitle>
+                <GrammarParagraph>Pronouncing or writing the extra "e" in an adjective when it should, makes a big difference in how people perceive your Dutch level. There are quite clear rules on when there should or shouldn't be an extra "e". There are 2 cases in which no extra "e" is added to an adjective.</GrammarParagraph>
+                <br />
+                <GrammarParagraph>1. When there is no noun after the adjective. (e.g. Het huis is mooi. De straat is lang. De stad is druk. De hond is ziek.)</GrammarParagraph>
+                <GrammarParagraph>2. When you use the indefinite (een) version of a het-word. (e.g. Een mooi huis. Een leuk beroep. Een klein dorp. Een saai werk.)</GrammarParagraph>
+                <br />
+                <GrammarParagraph>In all other cases we add an "e" to the adjective. (e.g. De mooie man. Het mooie meisje. Een lelijke straat. Een grote stad.)</GrammarParagraph>
+                <br />
+                <br />
+                <GrammarParagraph>Let's try <a href="https://thedutchonlineacademy.com/en/grammar/adjectives-with-or-without-e">this exercise</a></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
-            <TitleText>Luisteren / Listening</TitleText>
+            <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/cacao-wordt-duurder#">
-                    "Cacao is becoming more expensive." Check the video in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/koffie-maken">
+                    "Making coffee." Check the article in the link and let's answer the related questions.
+                </StyledLink>
+                <StyledLink href="https://www.nedbox.be/teaser/de-stille-kapper">
+                    "The quiet hairdresser." Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
@@ -239,9 +277,7 @@ function Lesson2() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Kevin De Bruyne and Frenkie de Jong meet eachother.</GrammarParagraph>
-                <GrammarParagraph> Write a dialogue of <Highlight>10 sentences</Highlight> where they introduce themselves to eachother.</GrammarParagraph>
-                <GrammarParagraph> Aim not to use chatGPT or Google Translate, feel free to invent words if you don't know them.
+                    Fill in the 15 sentences in the Google Drive with the correct adjective.
                 </GrammarParagraph>
             </GrammarBox>
             <Footer />
