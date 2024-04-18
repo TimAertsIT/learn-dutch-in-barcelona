@@ -3,12 +3,12 @@ import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
-import work1 from "../images/work1.JPG";
-import work2 from "../images/work2.jpg";
-import work3 from "../images/work3.jpeg";
-import work4 from "../images/work4.jpg";
-import work5 from "../images/work5.jpg";
-import work6 from "../images/work6.jpg";
+import museum from "../images/museum.jpg.webp";
+import dokter from "../images/dokter.jpg";
+import muzikant from "../images/muzikant.jpg";
+import dierenziekenhuis from "../images/dierenziekenhuis.jpg";
+import theater from "../images/theater.jpg";
+import dans from "../images/dans.jpg";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
@@ -16,7 +16,7 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import handschoen from '../images/handschoen.jpg';
+import beatrix from '../images/beatrix.avif';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -58,12 +58,12 @@ function Lesson2() {
         { dutch: 'Het talent', english: 'The talent' }
     ];
     const images = [
-        { src: work1, caption: 'De kaaswinkel' },
-        { src: work2, caption: 'De universiteit' },
-        { src: work3, caption: 'De bakkerij' },
-        { src: work4, caption: 'Het schoolbord' },
-        { src: work5, caption: 'Het restaurant' },
-        { src: work6, caption: 'Het diploma' },
+        { src: dierenziekenhuis, caption: 'Het dierenziekenhuis' },
+        { src: dokter, caption: 'De dokter' },
+        { src: muzikant, caption: 'De muzikant' },
+        { src: museum, caption: 'Het museum' },
+        { src: dans, caption: 'De dans' },
+        { src: theater, caption: 'Het theater' },
     ];
     const [email, setEmail] = useState(null);
     useEffect(() => {
@@ -114,8 +114,8 @@ function Lesson2() {
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'Handschoen', english: '"Hand shoe"' }}
-                image={handschoen}
+                text={{ dutch: 'Het Beatrixkapsel', english: '"The Beatrix haircut"' }}
+                image={beatrix}
             />
             <Separator></Separator>
             <TitleText>Grammatica / Grammar</TitleText>
