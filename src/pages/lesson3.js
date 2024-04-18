@@ -12,6 +12,7 @@ import work6 from "../images/work6.jpg";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
+import FillInTheBlankExercise from '../components/Exercises/Vocabulary/FillintheBlankExercise';
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
@@ -56,75 +57,6 @@ function Lesson2() {
         { dutch: 'De religie', english: 'The religion' },
         { dutch: 'Het talent', english: 'The talent' }
     ];
-    const wordArray = [
-        { dutch: 'Het loon', english: 'The wage' },
-        { dutch: 'De verpleger', english: 'The nurse' },
-        { dutch: 'De journalist', english: 'The journalist' },
-        { dutch: 'De politicus', english: 'The politician' },
-        { dutch: 'De vertegenwoordiger', english: 'The representative' },
-        { dutch: 'De bakker', english: 'The baker' },
-        { dutch: 'De ingenieur', english: 'The engineer' },
-        { dutch: 'Het werk', english: 'The work' },
-        { dutch: 'De werknemer', english: 'The employee' },
-        { dutch: 'De werkgever', english: 'The employer' },
-        { dutch: 'De baas', english: 'The boss' },
-        { dutch: 'De ober', english: 'The waiter' },
-        { dutch: 'De ambtenaar', english: 'The civil servant' },
-        { dutch: 'De winkel', english: 'The shop' },
-        { dutch: 'De winkelier', english: 'The shopkeeper' },
-        { dutch: 'De aardrijkskunde', english: 'The geography' },
-        { dutch: 'Afstuderen', english: 'To graduate' },
-        { dutch: 'Leren', english: 'To learn' },
-        { dutch: 'Studeren', english: 'To study' },
-        { dutch: 'De les', english: 'The lesson' },
-        { dutch: 'De wiskunde', english: 'Mathematics' },
-        { dutch: 'De taal', english: 'The language' },
-        { dutch: 'Het Nederlands', english: 'Dutch' },
-        { dutch: 'Het Engels', english: 'English' },
-        { dutch: 'De geschiedenis', english: 'The history' },
-        { dutch: 'De biologie', english: 'The biology' },
-        { dutch: 'De universiteit', english: 'The university' },
-        { dutch: 'De leerkracht', english: 'The teacher' },
-        { dutch: 'De economie', english: 'The economics' },
-        { dutch: 'Het klaslokaal', english: 'The classroom' },
-        { dutch: 'De kaaswinkel', english: 'The cheese shop' },
-        { dutch: 'De universiteit', english: 'The university' },
-        { dutch: 'De bakkerij', english: 'The bakery' },
-        { dutch: 'Het schoolbord', english: 'The blackboard' },
-        { dutch: 'Het restaurant', english: 'The restaurant' },
-        { dutch: 'Het diploma', english: 'The diploma' },
-        { dutch: 'De dokter', english: 'The doctor' },
-        { dutch: 'Het ziekenhuis', english: 'The hospital' },
-        { dutch: 'Ziek', english: 'Ill' },
-        { dutch: 'De pijn', english: 'The pain' },
-        { dutch: 'De koorts', english: 'The fever' },
-        { dutch: 'De spier', english: 'The muscle' },
-        { dutch: 'Het hoofd', english: 'The head' },
-        { dutch: 'De arm', english: 'The arm' },
-        { dutch: 'De buik', english: 'The belly' },
-        { dutch: 'Het been', english: 'The leg' },
-        { dutch: 'De voet', english: 'The foot' },
-        { dutch: 'Het medicijn', english: 'The medicine' },
-        { dutch: 'De apotheek', english: 'The pharmacy' },
-        { dutch: 'Het voorschrift', english: 'The prescription' },
-        { dutch: 'De gezondheid', english: 'The health' },
-        { dutch: 'De hoest', english: 'The cough' },
-        { dutch: 'Het oor', english: 'The ear' },
-        { dutch: 'To', english: 'Towards' },
-        { dutch: 'Tegen', english: 'Against' },
-        { dutch: 'Met', english: 'With' },
-        { dutch: 'De muzikant', english: 'The musician' },
-        { dutch: 'Het theater', english: 'The theatre' },
-        { dutch: 'Het museum', english: 'The museum' },
-        { dutch: 'De dans', english: 'The dance' },
-        { dutch: 'Het atelier', english: 'The workshop' },
-        { dutch: 'De film', english: 'The movie' },
-        { dutch: 'De bioscoop', english: 'The cinema' },
-        { dutch: 'Het feest', english: 'The party' },
-        { dutch: 'De religie', english: 'The religion' },
-        { dutch: 'Het talent', english: 'The talent' }
-    ];
-
     const images = [
         { src: work1, caption: 'De kaaswinkel' },
         { src: work2, caption: 'De universiteit' },
@@ -149,6 +81,21 @@ function Lesson2() {
     if (!email) {
         return null;
     }
+
+    const sentences = [
+        'Ik ga naar de dokter want ik voel me _.',
+        'Auwch, ik heb zoveel hoofd_.',
+        'De dokter gaf me een _ voor medicijnen.',
+        'Kuch kuch, ik heb al de hele dag een _',
+        'Mijn _ zijn om goed te kunnen luisteren',
+        'Dit weekend voetbalt Club Brugge _ Anderlecht',
+        'Ik ben onderweg, ik ga _ het theater',
+        'Wij gaan naar de bioscoop, er speelt een mooie _',
+        'Met mijn _ kan ik heel goed kijken',
+        'De verpleger werkt in het _'
+    ];
+
+    const blanks = ['voorschrift', 'tegen', 'ogen', 'ziekenhuis', 'oren', 'film', 'pijn', 'naar', 'ziek', 'hoest'];
     return (
         <div>
             <Navigation />
@@ -163,9 +110,9 @@ function Lesson2() {
             <StyledQuestion data-translation=" Where is the hospital?">Waar is het ziekenhuis?</StyledQuestion>
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
-            <VocabularySimple words={words} />
             <VocabularyQuiz words={words} />
-            <VocabularyTime wordArray={wordArray} />
+            <VocabularySimple words={words} />
+            <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
                 text={{ dutch: 'Handschoen', english: '"Hand shoe"' }}
                 image={handschoen}
