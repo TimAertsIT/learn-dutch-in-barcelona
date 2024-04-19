@@ -110,6 +110,7 @@ export const StyledLink = styled.a`
   text-align: center;
   margin: 20px auto;
   font-size: 1.2em;
+  width: 90%;
   transition: background-color 0.3s ease;
 
   &:hover {

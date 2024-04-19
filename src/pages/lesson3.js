@@ -117,6 +117,14 @@ function Lesson2() {
                 text={{ dutch: 'Het Beatrixkapsel', english: '"The Beatrix haircut"' }}
                 image={beatrix}
             />
+            <CenteredContainer>
+                <StyledLink href="https://www.abconcerts.be/nl/">
+                    Check the website of the AB. 1. What is a "solidair ticket"? 2. What are some of the charities that the AB supports? 3. How does the AB support sustainability?
+                </StyledLink>
+                <StyledLink href="https://kinepolis.be/nl/bioscopen/kinepolis-antwerpen/info/">
+                    Check the website of Kinepolis Antwerpen. 1. When did the complex start its business? 2. How much do you pay for a discount ticket? 3. Name 3 movie genres that are currently playing at Kinepolis Antwerpen. 4. Which movie would you prefer to watch and why?
+                </StyledLink>
+            </CenteredContainer>
             <Separator></Separator>
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
@@ -152,44 +160,70 @@ function Lesson2() {
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "gaan", conjugations: ["ga", "gaat", "gaat", "gaan", "gaan", "gaan"] },
-                { verb: "komen", conjugations: ["kom", "komt", "komt", "komen", "komen", "komen"] },
-                { verb: "willen", conjugations: ["wil", "wilt", "wilt", "willen", "willen", "willen"] },
-                { verb: "zitten", conjugations: ["zit", "zit", "zit", "zitten", "zitten", "zitten"] },
-                { verb: "nemen", conjugations: ["neem", "neemt", "neemt", "nemen", "nemen", "nemen"] },
-                { verb: "zullen", conjugations: ["zal", "zult", "zal", "zullen", "zullen", "zullen"] }
+                { verb: "kijken", conjugations: ["kijk", "kijkt", "kijkt", "kijken", "kijken", "kijken"] },
+                { verb: "luisteren", conjugations: ["luister", "luistert", "luistert", "luisteren", "luisteren", "luisteren"] },
+                { verb: "voelen", conjugations: ["voel", "voelt", "voelt", "voelen", "voelen", "voelen"] },
+                { verb: "spelen", conjugations: ["speel", "speelt", "speelt", "spelen", "spelen", "spelen"] },
+                { verb: "dansen", conjugations: ["dans", "danst", "danst", "dansen", "dansen", "dansen"] },
+                { verb: "wandelen", conjugations: ["wandel", "wandelt", "wandelt", "wandelen", "wandelen", "wandelen"] }
             ]} />
             <Translate sentences={[
-                { english: "I am the boss", translation: "Ik ben de baas" },
-                { english: "We will study", translation: "Wij zullen studeren" },
-                { english: "She takes cheese", translation: "Zij neemt kaas" },
-                { english: "He comes to school", translation: "Hij komt naar school" },
-                { english: "I want to learn Dutch", translation: "Ik wil Nederlands leren" },
-                { english: "He will graduate", translation: "Hij zal afstuderen" },
-                { english: "I go to the restaurant", translation: "Ik ga naar het restaurant" },
-                { english: "He wants to work", translation: "Hij wil werken" },
-                { english: "The economy goes well", translation: "De economie gaat goed" },
-                { english: "I study history, mathematics and Dutch", translation: "Ik studeer geschiedenis, wiskunde en Nederlands" }
+                { english: "We go to the cinema", translation: "Wij gaan naar de bioscoop" },
+                { english: "I listen to music", translation: "Ik luister naar muziek" },
+                { english: "I play football with my friend", translation: "Ik speel voetbal met mijn vriend" },
+                { english: "He walks in the city", translation: "Hij wandelt in de stad" },
+                { english: "I feel ill", translation: "Ik voel me ziek" },
+                { english: "They dance", translation: "Zij dansen" },
+                { english: "A medicine against headache", translation: "Een medicijn tegen hoofdpijn" },
+                { english: "He walks to the hospital", translation: "Hij wandelt naar het ziekenhuis" },
+                { english: "I watch a movie", translation: "Ik kijk een film" },
+                { english: "The musician plays music", translation: "De muzikant speelt muziek" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 The future tense (onvoltooid tegenwoordige toekomende tijd) 📚</GrammarTitle>
-                <GrammarParagraph>In Dutch we use a "helping verb" to talk about the future. This "helping verb" (hulpwerkwoord) is "zullen". To that we add the infinite of the verb we will "do" in the future. </GrammarParagraph>
+                <GrammarTitle>📚 Numbers (getallen) 📚</GrammarTitle>
+                <GrammarParagraph> 1: één</GrammarParagraph>
+                <GrammarParagraph> 2: twee</GrammarParagraph>
+                <GrammarParagraph> 3: drie</GrammarParagraph>
+                <GrammarParagraph> 4: vier</GrammarParagraph>
+                <GrammarParagraph> 5: vijf</GrammarParagraph>
+                <GrammarParagraph> 6: zes</GrammarParagraph>
+                <GrammarParagraph> 7: zeven</GrammarParagraph>
+                <GrammarParagraph> 8: acht</GrammarParagraph>
+                <GrammarParagraph> 9: negen</GrammarParagraph>
+                <GrammarParagraph> 10: tien</GrammarParagraph>
+                <GrammarParagraph> 11: elf</GrammarParagraph>
+                <GrammarParagraph> 12: twaalf</GrammarParagraph>
+                <GrammarParagraph> 13: dertien</GrammarParagraph>
+                <GrammarParagraph> 14: veertien</GrammarParagraph>
+                <GrammarParagraph> 15: vijftien</GrammarParagraph>
+                <GrammarParagraph> 16: zestien</GrammarParagraph>
+                <GrammarParagraph> ...</GrammarParagraph>
+                <GrammarParagraph> 20: twintig</GrammarParagraph>
+                <GrammarParagraph> 21: eenentwintig</GrammarParagraph>
+                <GrammarParagraph> 22: tweeëntwintig</GrammarParagraph>
+                <GrammarParagraph> ...</GrammarParagraph>
+                <GrammarParagraph> 30: dertig</GrammarParagraph>
+                <GrammarParagraph> 40: veertig</GrammarParagraph>
+                <GrammarParagraph> 50: vijftig</GrammarParagraph>
+                <GrammarParagraph> 60: zestig</GrammarParagraph>
+                <GrammarParagraph> 70: zeventig</GrammarParagraph>
+                <GrammarParagraph> 80: tachtig</GrammarParagraph>
+                <GrammarParagraph> 90: negentig</GrammarParagraph>
+                <GrammarParagraph> 100: honderd</GrammarParagraph>
+                <GrammarParagraph> 101: honderdeneen </GrammarParagraph>
+                <GrammarParagraph> ...</GrammarParagraph>
+                <GrammarParagraph> 200: tweehonderd </GrammarParagraph>
+                <GrammarParagraph> ...</GrammarParagraph>
+                <GrammarParagraph> 1000: duizend</GrammarParagraph>
+                <GrammarParagraph> 1000000: een miljoen </GrammarParagraph>
                 <br />
-                <GrammarParagraph>
-                    For <Highlight>"to work"</Highlight> that would be: </GrammarParagraph>
                 <br />
-                <GrammarListItem>Ik zal werken. </GrammarListItem>
-                <GrammarListItem>Jij zult werken. * </GrammarListItem>
-                <GrammarListItem>Hij/zij zal werken. </GrammarListItem>
-                <GrammarListItem>Wij zullen werken.</GrammarListItem>
-                <GrammarListItem>Jullie zullen werken.</GrammarListItem>
-                <GrammarListItem>Zij zullen werken.</GrammarListItem>
-                <br />
-                <GrammarParagraph>* "Zult" and "zal" are both valid here, but "zal" is more informal.</GrammarParagraph>
+                <GrammarParagraph> <Highlight>Exercise: pronounce 7, 19, 33, 47, 52, 88, 14, 102, 394, 586 </Highlight> </GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 When to pronounce an open or closed vowel? 📚</GrammarTitle>
-                <GrammarParagraph>It can be tricky to know when to pronounce an open/clear vowel and when to use a closed one. Bakken or baken are pronounced very different (and have different meanings). The same for kakken or kaken, mannen or manen, etc. To learn it, dividing the words into syllables can help a lot. Let's look at some examples <a href="http://www.valley-trail.com/Syllables.htm#:~:text=Always%3A%20When%20the%20last%20letter,meaning%3A%20water)%20is%20wa">here</a></GrammarParagraph>
+                <GrammarTitle>📚 Wederkerend voornaamwoord 📚</GrammarTitle>
+                <GrammarParagraph>In some of the sentences you might have noticed words like "me" or "zich". They are reflexive pronouns, referring back to the subject. I feel (ik voel) or I feel myself (ik voel me) have very different meanings. Let's check this link with an explanation and two exercises <a href="https://www.jufmelis.nl/woordsoorten/wederkerend-voornaamwoord-(reflexief-pronomen)">here</a></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight> </GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
                 <GrammarTitle>📚 When to to add an e to an adjective? 📚</GrammarTitle>
@@ -206,11 +240,11 @@ function Lesson2() {
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/koffie-maken">
-                    "Making coffee." Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/praat-met-elkaar">
+                    "Talk to eachother." Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/de-stille-kapper">
-                    "The quiet hairdresser." Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/breakdance">
+                    "Breakdance." Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
@@ -218,7 +252,7 @@ function Lesson2() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Fill in the 15 sentences in the Google Drive with the correct adjective.
+                    Wat is jouw favoriete culture activiteit? Write 5-10 sentences (try to use the verbs that we learned so far) about your favorite culture activity, what it is, why you like it, which genre you prefer, where you usually do/watch it, etc.
                 </GrammarParagraph>
             </GrammarBox>
             <Footer />
