@@ -226,16 +226,12 @@ function Lesson2() {
                 <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight> </GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 When to to add an e to an adjective? 📚</GrammarTitle>
-                <GrammarParagraph>Pronouncing or writing the extra "e" in an adjective when it should, makes a big difference in how people perceive your Dutch level. There are quite clear rules on when there should or shouldn't be an extra "e". There are 2 cases in which no extra "e" is added to an adjective.</GrammarParagraph>
+                <GrammarTitle>📚 Second singular verbs in questions? 📚</GrammarTitle>
+                <GrammarParagraph>We say "jij werkt". But when asking if you work we say "Werk jij" without the T? How is that?</GrammarParagraph>
                 <br />
-                <GrammarParagraph>1. When there is no noun after the adjective. (e.g. Het huis is mooi. De straat is lang. De stad is druk. De hond is ziek.)</GrammarParagraph>
-                <GrammarParagraph>2. When you use the indefinite (een) version of a het-word. (e.g. Een mooi huis. Een leuk beroep. Een klein dorp. Een saai werk.)</GrammarParagraph>
+                <GrammarParagraph>Let's check <a href="https://www.vlaanderen.be/team-taaladvies/spellingregels/werkwoorden-vervoegen/werkwoorden-vervoegen-1-spelling-van-de-stam-en-de-tegenwoordige-tijd-ott">this explanation</a></GrammarParagraph>
                 <br />
-                <GrammarParagraph>In all other cases we add an "e" to the adjective. (e.g. De mooie man. Het mooie meisje. Een lelijke straat. Een grote stad.)</GrammarParagraph>
-                <br />
-                <br />
-                <GrammarParagraph>Let's try <a href="https://thedutchonlineacademy.com/en/grammar/adjectives-with-or-without-e">this exercise</a></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight> </GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
