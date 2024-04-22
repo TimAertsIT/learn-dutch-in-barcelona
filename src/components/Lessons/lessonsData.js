@@ -2,6 +2,7 @@
 import introduction from '../../images/introduce-yourself-in-dutch.jpg'
 import professions from '../../images/dutch-professions-lessons.jpg'
 import culture from '../../images/dutch-culture-lessons.jpg'
+import utrecht from '../../images/utrecht.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -22,9 +23,16 @@ export const lessonsData = {
         {
             "id": 3,
             "title": "Chapter 3: health and culture",
-            "description": "A basic lesson so you can visit a doctor in Dutch, including listening and speaking exercises and much more",
+            "description": "A basic lesson so you can visit a doctor in Dutch, including listening and speaking exercises and more",
             "image": culture,
             "path": "/lesson3-culture-and-health-subjects-in-flemish"
-        }
+        },
+        {
+            "id": 4,
+            "title": "Chapter 4: life in the city",
+            "description": "Learn to describe landmarks in Dutch and to provide directions in and around the city",
+            "image": utrecht,
+            "path": "/lesson4-city-vocabulary-dutch"
+        },
     ]
 };

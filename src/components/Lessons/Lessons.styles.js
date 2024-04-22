@@ -2,18 +2,16 @@
 import styled from 'styled-components';
 
 export const StyledCardContainer = styled.div`
-    display: flex;
-    flex-direction: column;
+   display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    justify-items: center;
     align-items: center;
-
-    @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-`;
+    margin-left: 15px;
+    margin-right: 15px;`
 
 export const StyledCard = styled.div`
-    width: 80%;
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -42,14 +40,7 @@ export const StyledCard = styled.div`
         font-size: 1.1em;
         line-height: 1.6;
         margin-bottom: 20px;
-    }
-
-    @media (min-width: 768px) {
-        width: calc(100% / 3 - 20px);
-        margin-right: 30px;
-        margin-left: 30px; 
-    }
-`;
+    }`;
 
 export const StyledReadMoreButton = styled.div`
     margin-top: 20px;

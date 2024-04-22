@@ -23,7 +23,7 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 
-function Lesson2() {
+function Lesson3() {
     const lessonId = 3;
     const words = [
         { dutch: 'De dokter', english: 'The doctor' },
@@ -256,4 +256,4 @@ function Lesson2() {
     );
 }
 
-export default Lesson2;
+export default Lesson3;
