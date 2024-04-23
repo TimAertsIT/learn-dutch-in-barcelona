@@ -29,7 +29,7 @@ export const lessonsData = {
         },
         {
             "id": 4,
-            "title": "Chapter 4: life in the city",
+            "title": "Chapter 4: discovering the city",
             "description": "Learn to describe landmarks in Dutch and to provide directions in and around the city",
             "image": utrecht,
             "path": "/lesson4-city-vocabulary-dutch"

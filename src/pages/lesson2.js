@@ -12,6 +12,7 @@ import work6 from "../images/work6.jpg";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
+import MultipleChoice from '../components/Exercises/Grammar/MultipleChoice';
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
@@ -139,6 +140,28 @@ function Lesson2() {
         { src: work5, caption: 'Het restaurant' },
         { src: work6, caption: 'Het diploma' },
     ];
+
+    const questions = [
+        { question: 'Dit is een …. meisje.', options: ['mooi', 'mooie'] },
+        { question: 'Dit is een …. jongen.', options: ['mooi', 'mooie'] },
+        { question: 'De …. straat.', options: ['lelijk', 'lelijke'] },
+        { question: 'Het …. dorp.', options: ['klein', 'kleine'] },
+        { question: 'Deze mevrouw is …', options: ['leuk', 'leuke'] },
+        { question: 'Deze meneer is ….', options: ['dun', 'dunne'] },
+        { question: 'Een … politicus', options: ['slim', 'slimme'] },
+        { question: 'Een …. leerkracht', options: ['tof', 'toffe'] },
+        { question: 'Een …. schoolbord', options: ['vuil', 'vuile'] },
+        { question: 'De bakker is …', options: ['blij', 'blije'] },
+        { question: 'Het restaurant is …', options: ['mooi', 'mooie'] },
+        { question: 'Het …. restaurant', options: ['mooi', 'mooie'] },
+        { question: 'Ik ga naar een … restaurant', options: ['mooi', 'mooie'] },
+        { question: 'Hij gaat naar een … universiteit', options: ['groot', 'grote'] },
+        { question: 'Dat is een … winkel', options: ['klein', 'kleine'] }
+    ];
+
+
+    const correctAnswers = ['mooi', 'mooie', 'lelijke', 'kleine', 'leuk', 'dun', 'slimme', 'toffe', 'vuil', 'blij', 'mooi', 'mooie', 'mooi', 'grote', 'kleine'];
+
     const [email, setEmail] = useState(null);
     useEffect(() => {
         if (!email) {
@@ -262,6 +285,7 @@ function Lesson2() {
                 <br />
                 <GrammarParagraph>Let's try <a href="https://thedutchonlineacademy.com/en/grammar/adjectives-with-or-without-e">this exercise</a></GrammarParagraph>
             </GrammarBox>
+            <MultipleChoice questions={questions} correctAnswers={correctAnswers} />
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
@@ -277,7 +301,10 @@ function Lesson2() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Fill in the 15 sentences in the Google Drive with the correct adjective.
+                    - Fill in the 15 sentences in the Google Drive with the correct adjective.
+                </GrammarParagraph>
+                <GrammarParagraph>
+                    - Find a song in Dutch that you like and explain us in the next lesson what it is about and why you like it.
                 </GrammarParagraph>
             </GrammarBox>
             <Footer />
