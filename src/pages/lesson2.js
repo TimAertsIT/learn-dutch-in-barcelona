@@ -186,7 +186,7 @@ function Lesson2() {
             <StyledQuestion data-translation=" What do you study?">Wat studeer jij?</StyledQuestion>
             <StyledQuestion data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
             <StyledQuestion data-translation=" Do you work full-time?">Werk jij fulltime?</StyledQuestion>
-            <StyledQuestion data-translation=" Which school do you go to?">Naar wellke school ga jij?</StyledQuestion>
+            <StyledQuestion data-translation=" Which school do you go to?">Naar welke school ga jij?</StyledQuestion>
             <StyledQuestion data-translation=" Do you like to study?">Hou je van studeren?</StyledQuestion>
             <StyledQuestion data-translation=" Do you have to work hard?">Moet je hard werken?</StyledQuestion>
             <StyledQuestion data-translation=" When are you allowed to retire?">Wanneer mag je op pensioen gaan?</StyledQuestion>

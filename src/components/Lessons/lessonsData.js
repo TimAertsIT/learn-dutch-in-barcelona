@@ -3,6 +3,7 @@ import introduction from '../../images/introduce-yourself-in-dutch.jpg'
 import professions from '../../images/dutch-professions-lessons.jpg'
 import culture from '../../images/dutch-culture-lessons.jpg'
 import utrecht from '../../images/utrecht.jpg'
+import station from '../../images/station.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -34,5 +35,12 @@ export const lessonsData = {
             "image": utrecht,
             "path": "/lesson4-city-vocabulary-dutch"
         },
+        {
+            "id": 5,
+            "title": "Chapter 5: transport and mobility",
+            "description": "Get around, buy a public transport ticket in Dutch or read the timetable for trains and buses",
+            "image": station,
+            "path": "/lesson5-transport-mobility-dutch"
+        }
     ]
 };
