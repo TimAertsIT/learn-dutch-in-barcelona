@@ -142,21 +142,21 @@ function Lesson2() {
     ];
 
     const questions = [
-        { question: 'Dit is een …. meisje.', options: ['mooi', 'mooie'] },
-        { question: 'Dit is een …. jongen.', options: ['mooi', 'mooie'] },
-        { question: 'De …. straat.', options: ['lelijk', 'lelijke'] },
-        { question: 'Het …. dorp.', options: ['klein', 'kleine'] },
-        { question: 'Deze mevrouw is …', options: ['leuk', 'leuke'] },
-        { question: 'Deze meneer is ….', options: ['dun', 'dunne'] },
-        { question: 'Een … politicus', options: ['slim', 'slimme'] },
-        { question: 'Een …. leerkracht', options: ['tof', 'toffe'] },
-        { question: 'Een …. schoolbord', options: ['vuil', 'vuile'] },
-        { question: 'De bakker is …', options: ['blij', 'blije'] },
-        { question: 'Het restaurant is …', options: ['mooi', 'mooie'] },
-        { question: 'Het …. restaurant', options: ['mooi', 'mooie'] },
-        { question: 'Ik ga naar een … restaurant', options: ['mooi', 'mooie'] },
-        { question: 'Hij gaat naar een … universiteit', options: ['groot', 'grote'] },
-        { question: 'Dat is een … winkel', options: ['klein', 'kleine'] }
+        { question: 'Dit is een _ meisje.', options: ['mooi', 'mooie'] },
+        { question: 'Dit is een _ jongen.', options: ['mooi', 'mooie'] },
+        { question: 'De _ straat.', options: ['lelijk', 'lelijke'] },
+        { question: 'Het _ dorp.', options: ['klein', 'kleine'] },
+        { question: 'Deze mevrouw is _.', options: ['leuk', 'leuke'] },
+        { question: 'Deze meneer is _.', options: ['dun', 'dunne'] },
+        { question: 'Een _ politicus.', options: ['slim', 'slimme'] },
+        { question: 'Een _ leerkracht.', options: ['tof', 'toffe'] },
+        { question: 'Een _ schoolbord.', options: ['vuil', 'vuile'] },
+        { question: 'De bakker is _.', options: ['blij', 'blije'] },
+        { question: 'Het restaurant is _.', options: ['mooi', 'mooie'] },
+        { question: 'Het _ restaurant.', options: ['mooi', 'mooie'] },
+        { question: 'Ik ga naar een _ restaurant.', options: ['mooi', 'mooie'] },
+        { question: 'Hij gaat naar een _ universiteit.', options: ['groot', 'grote'] },
+        { question: 'Dat is een _ winkel.', options: ['klein', 'kleine'] }
     ];
 
 
