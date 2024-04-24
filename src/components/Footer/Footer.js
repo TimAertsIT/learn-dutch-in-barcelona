@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <StyledFooter>
             <p>© Learn Dutch with Tim, 2024</p>
-            <p>Contact: timaertsbcn@gmail.com</p>
+            <p>Contact: learndutchwithtim@gmail.com</p>
         </StyledFooter>
     );
 };
