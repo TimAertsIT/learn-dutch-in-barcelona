@@ -206,11 +206,11 @@ function Lesson5() {
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/ken-je-leuven-al">
-                    "Do you already know Leuven?" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/met-de-bus">
+                    "Riding the bus?" Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/mechelen">
-                    "The city of Mechelen." Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/elektrische-auto">
+                    "The electric car." Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
