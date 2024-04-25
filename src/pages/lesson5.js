@@ -1,14 +1,14 @@
-import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem, StyledLink, CenteredContainer } from '../pages/lesson1.styles';
+import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem, StyledLink, CenteredContainer, StyledStory } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
-import park from "../images/park.jpg";
-import plein from "../images/plein.jpg";
-import stadhuis from "../images/stadhuis.jpg";
-import fietspad from "../images/fietspad.jpg";
-import bezienswaardigheid from "../images/bezienswaardigheid.jpg";
-import bibliotheek from "../images/bibliotheek.jpg";
+import boot from "../images/5boot.jpg";
+import fietsen from "../images/5fietsen.jpeg";
+import luchthaven from "../images/5luchthaven.jpg";
+import perron from "../images/5perron.jpeg";
+import wandelen from "../images/5wandelen.jpg";
+import zeilen from "../images/5zeilen.jpg";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
@@ -16,12 +16,13 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import mieren from '../images/mieren.jpeg';
+import lieveheersbeestje from '../images/lieveheersbeestje.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
+import { StyledAbout } from './about.styles';
 
 function Lesson5() {
     const lessonId = 5;
@@ -29,7 +30,7 @@ function Lesson5() {
         { dutch: 'De trein', english: 'The train' },
         { dutch: 'De bus', english: 'The bus' },
         { dutch: 'De auto', english: 'The car' },
-        { dutch: 'De bus', english: 'The bus' },
+        { dutch: 'Te voet', english: 'By foot' },
         { dutch: 'De fiets', english: 'De fiets' },
         { dutch: 'De elektrische step', english: 'The e-step' },
         { dutch: 'De boot', english: 'The boat' },
@@ -58,12 +59,12 @@ function Lesson5() {
         { dutch: 'Het tarief', english: 'The fare' }
     ];
     const images = [
-        { src: plein, caption: 'Het plein' },
-        { src: stadhuis, caption: 'Het stadhuis' },
-        { src: park, caption: 'Het park' },
-        { src: fietspad, caption: 'Het fietspad' },
-        { src: bibliotheek, caption: 'De bibliotheek' },
-        { src: bezienswaardigheid, caption: 'De bezienswaardigheid' },
+        { src: boot, caption: 'De boot' },
+        { src: fietsen, caption: 'Fietsen' },
+        { src: perron, caption: 'Het perron' },
+        { src: wandelen, caption: 'Wandelen' },
+        { src: zeilen, caption: 'Zeilen' },
+        { src: luchthaven, caption: 'De luchthaven' },
     ];
     const [email, setEmail] = useState(null);
     useEffect(() => {
@@ -83,101 +84,111 @@ function Lesson5() {
     }
 
     const sentences = [
-        'Met de fiets moet je rijden op het _.',
-        'Op een _ vind je normaal bankjes, bomen en soms ook een fontein.',
-        'Ik wil graag boeken lezen. Waar is de _?',
-        'Om te winkelen moet je in de winkel_ zijn.',
-        'Dit is een _ van een oude koning. Het staat hier al 100 jaar.',
-        'Meestal is een _ nog groter dan een kerk.',
-        'Het is niet _, het is daar',
-        'Aan het _ moet je stoppen bij de rode lichten.',
-        'Val niet in de _ want dan ben je nat.',
-        'De burgemeester werkt in het _'
+        'Eerst moet je de trein naar Brugge nemen en dan moet je _ op de trein naar Gent.',
+        'Ik ben net aangekomen in de _ van Zaventem.',
+        'Ik wil een _ kopen, heen en terug naar Amsterdam.',
+        'Om hoe _ vertrekt de boot naar Oostende?',
+        'De fiets vind ik veel te _, ik ga wel met de auto.',
+        'Op welk _ komt de trein naar Luik aan?',
+        'Ben je zeker dat je met de _ wil gaan? Je kan zeeziek worden.',
+        'Sorry dat ik te laat ben. Er was een _ op de snelweg.',
+        '120km/u is de _ hier.',
+        'Het _ is beter voor het milieu dan de auto.'
     ];
 
-    const blanks = ['bibliotheek', 'straat', 'fietspad', 'plein', 'rivier', 'stadhuis', 'standbeeld', 'kathedraal', 'hier', 'kruispunt'];
+    const blanks = ['kaartje', 'overstappen', 'perron', 'boot', 'openbaar vervoer', 'luchthaven', 'file', 'laat', 'maximumsnelheid', 'traag'];
     return (
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" Where is the train station?">Waar is het treinstation?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you like walking in the shopping street?">Wandel jij graag in de winkelstraat?</StyledQuestion>
-            <StyledQuestion data-translation=" What are Bruges' places of interest?">Wat zijn de bezienswaardigheden van Brugge?</StyledQuestion>
-            <StyledQuestion data-translation=" How do I go from the library to the museum?">Hoe ga ik van de bibliotheek naar het museum?</StyledQuestion>
-            <StyledQuestion data-translation=" What is happening in Brussels today?">Wat is er vandaag te doen in Brussel?</StyledQuestion>
-            <StyledQuestion data-translation=" Can you show me the way to the city hall?">Kan je mij de weg wijzen naar het stadhuis?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your favorite spot in the city?">Wat is jouw favoriete plek in de stad?</StyledQuestion>
+            <StyledQuestion data-translation=" How much does a ticket to Groningen cost?">Hoeveel kost een kaartje naar Groningen?</StyledQuestion>
+            <StyledQuestion data-translation=" On which platform does the train arrive?">Op welk spoor komt de trein aan?</StyledQuestion>
+            <StyledQuestion data-translation=" At what time does the plane to Barcelona leave?">Om hoe laat vertrekt het vliegtuig naar Barcelona?</StyledQuestion>
+            <StyledQuestion data-translation=" Do you want to walk or go by car?">Wil je te voet gaan of met de auto?</StyledQuestion>
+            <StyledQuestion data-translation=" What is the maximum speed on the highway?">Wat is de maximumsnelheid op de snelweg?</StyledQuestion>
+            <StyledQuestion data-translation=" What is the destination of your travels?">Wat is de bestemming van jouw reis?</StyledQuestion>
+            <StyledQuestion data-translation=" What time is it?">Hoe laat is het?</StyledQuestion>
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
+            <StyledAbout>
+                <h1>De treinreis van Meneer Jansen</h1>
+                <p>Meneer Jansen was een rustige man die elke dag met de trein naar zijn werk ging. Hij stapte op in het station in zijn woonplaats en reisde naar de stad. Op een dag besloot hij om iets anders te proberen en nam de bus naar zijn werk. De auto liet hij thuis, want hij wilde eens een andere manier van reizen ervaren.</p>
+                <p>Hij stapte uit de bus en ging te voet verder. Het was een mooie dag, dus hij genoot van het wandelen. Onderweg kwam hij een vriend tegen die op zijn fiets naar het werk ging. Ze begroetten elkaar en Meneer Jansen dacht: “Misschien moet ik ook eens een fiets kopen.”</p>
+                <p>Op het werk hoorde hij collega’s praten over hun avonturen met de elektrische step. Ze zoeften door de stad en hadden de grootste lol. Meneer Jansen was nieuwsgierig en besloot er ook een te huren. Hij voelde zich net een kind dat voor het eerst op een step stond.</p>
+                <p>In het weekend ging hij met zijn gezin een dagje uit. Ze huurden een boot en voeren over de rivier. Meneer Jansen vond het heerlijk om op het water te zijn. Zijn vrouw zei: “Laten we volgende keer een schip huren en een langere tocht maken.”</p>
+                <p>Op vakantie ging hij met het vliegtuig naar een exotische bestemming. Hij had een ticket geboekt en keek uit naar de aankomst op het paradijselijke eiland. Helaas was er een vertraging en moest hij uren wachten op de luchthaven. Gelukkig had hij een goed boek bij zich.</p>
+                <p>Terug in Nederland nam hij de trein naar huis. Hij zat in de coupé en keek uit het raam. Het spoor leidde hem door groene weilanden en langs kleine dorpjes. Hij dacht aan al zijn reizen en besefte dat elke manier van reizen zijn charme had.</p>
+                <p>En zo eindigt het verhaal van Meneer Jansen, de man die van rijden, wandelen, varen, zeilen, vliegen en alles daartussenin hield. Hij had geen favoriete manier van reizen, want elke reis bracht hem iets bijzonders. Misschien was dat wel het mooiste abonnement dat hij ooit had gehad: het abonnement op avontuur.</p>
+            </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'De mierenneuker', english: '"The ants fucker"' }}
-                image={mieren}
+                text={{ dutch: 'Het lieveheersbeestje', english: '"The dear Lord`s small beast"' }}
+                image={lieveheersbeestje}
             />
             <CenteredContainer>
-                <StyledLink href="https://www.visitbruges.be/nl/wat-te-doen/bezienswaardigheden">
-                    Choose your favorite city in the Benelux. Point out 5 places of interest and why one should visit them. For instance. "Brugge: 1. Het Belfort is heel interessant, het is een toren die je kan bezoeken."
+                <StyledLink href="https://www.belgiantrain.be/nl">
+                    Hoeveel kost een senior ticket voor een treinreis van Mol naar Brugge, heen en terug?
                 </StyledLink>
-                <StyledLink href="https://www.google.nl/maps/@41.3794304,2.0905984,14z?hl=nl&entry=ttu">
-                    Let's go to Google Maps and give directions from one place to another.
+                <StyledLink href="https://www.belgiantrain.be/nl">
+                    Arno wants to buy a train ticket for the train from Hasselt to Oostende. Write a dialogue between him and the sales desk.
                 </StyledLink>
             </CenteredContainer>
             <Separator></Separator>
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="bezoeken"
-                    translation="to visit"
-                    conjugations={["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"]}
+                    verb="rijden"
+                    translation="to drive"
+                    conjugations={["rijd", "rijdt", "rijdt", "rijden", "rijden", "rijden"]}
                 />
                 <Verbs
-                    verb="kunnen"
-                    translation="to be able to"
-                    conjugations={["kan", "kunt", "kan", "kunnen", "kunnen", "kunnen"]}
+                    verb="wandelen"
+                    translation="to walk"
+                    conjugations={["wandel", "wandelt", "wandelt", "wandelen", "wandelen", "wandelen"]}
                 />
                 <Verbs
-                    verb="volgen"
-                    translation="to follow"
-                    conjugations={["volg", "volgt", "volgt", "volgen", "volgen", "volgen"]}
+                    verb="lopen"
+                    translation="to run"
+                    conjugations={["loop", "loopt", "loopt", "lopen", "lopen", "lopen"]}
                 />
                 <Verbs
-                    verb="afslaan"
-                    translation="to turn"
-                    conjugations={["sla af", "slaat af", "slaat af", "slaan af", "slaan af", "slaan af"]}
+                    verb="varen"
+                    translation="to sail"
+                    conjugations={["vaar", "vaart", "vaart", "varen", "varen", "varen"]}
                 />
                 <Verbs
-                    verb="moeten"
-                    translation="must"
-                    conjugations={["moet", "moet", "moet", "moeten", "moeten", "moeten"]}
+                    verb="zeilen"
+                    translation="to sail"
+                    conjugations={["zeil", "zeilt", "zeilt", "zeilen", "zeilen", "zeilen"]}
                 />
                 <Verbs
-                    verb="drinken"
-                    translation="to drink"
-                    conjugations={["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"]}
+                    verb="vliegen"
+                    translation="to fly"
+                    conjugations={["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"]}
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "bezoeken", conjugations: ["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"] },
-                { verb: "kunnen", conjugations: ["kan", "kunt", "kan", "kunnen", "kunnen", "kunnen"] },
-                { verb: "volgen", conjugations: ["volg", "volgt", "volgt", "volgen", "volgen", "volgen"] },
-                { verb: "afslaan", conjugations: ["sla af", "slaat af", "slaat af", "slaan af", "slaan af", "slaan af"] },
-                { verb: "moeten", conjugations: ["moet", "moet", "moet", "moeten", "moeten", "moeten"] },
-                { verb: "drinken", conjugations: ["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"] }
+                { verb: "wandelen", conjugations: ["wandel", "wandelt", "wandelt", "wandelen", "wandelen", "wandelen"] },
+                { verb: "lopen", conjugations: ["loop", "loopt", "loopt", "lopen", "lopen", "lopen"] },
+                { verb: "varen", conjugations: ["vaar", "vaart", "vaart", "varen", "varen", "varen"] },
+                { verb: "zeilen", conjugations: ["zeil", "zeilt", "zeilt", "zeilen", "zeilen", "zeilen"] },
+                { verb: "vliegen", conjugations: ["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"] },
+                { verb: "rijden", conjugations: ["rijd", "rijdt", "rijdt", "rijden", "rijden", "rijden"] }
             ]} />
             <Translate sentences={[
-                { english: "I visit the library", translation: "Ik bezoek de bibliotheek" },
-                { english: "You can drink here", translation: "Jij kunt hier drinken" },
-                { english: "They must follow", translation: "Zij moeten volgen" },
-                { english: "He turns to the right", translation: "Hij slaat af naar rechts" },
-                { english: "We visit the city", translation: "Wij bezoeken de stad" },
-                { english: "They can visit the monument", translation: "Zij kunnen het monument bezoeken" },
-                { english: "They can drink water", translation: "Zij kunnen water drinken" },
-                { english: "You must turn", translation: "Jij moet afslaan" },
-                { english: "You must turn left", translation: "Jij moet links afslaan" },
-                { english: "I never drink tea", translation: "Ik drink nooit thee" }
+                { english: "He drives the car", translation: "Hij rijdt met de auto" },
+                { english: "I walk in the forest", translation: "Ik wandel in het bos" },
+                { english: "We fly to Rome", translation: "Wij vliegen naar Rome" },
+                { english: "I buy a ticket", translation: "Ik koop een kaartje" },
+                { english: "Quick, you have to run", translation: "Snel, jij moet lopen" },
+                { english: "120km/h is the maximum speed here", translation: "120km/u is de maximumsnelheid hier" },
+                { english: "The train arrives on platform 2", translation: "De trein komt aan op perron 2" },
+                { english: "The plane flies to New York", translation: "Het vliegtuig vliegt naar New York" },
+                { english: "The boat sails to Zeeland", translation: "De boot vaart naar Zeeland" },
+                { english: "We ride the train", translation: "Wij rijden met de trein" }
             ]} />
             <GrammarBox>
                 <GrammarTitle>📚 Vraagwoorden 📚</GrammarTitle>
