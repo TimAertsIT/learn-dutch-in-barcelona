@@ -2,6 +2,7 @@ import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, Gram
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
+import MultipleChoice from '../components/Exercises/Grammar/MultipleChoice';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
 import boot from "../images/5boot.jpg";
 import fietsen from "../images/5fietsen.jpeg";
@@ -66,6 +67,28 @@ function Lesson5() {
         { src: zeilen, caption: 'Zeilen' },
         { src: luchthaven, caption: 'De luchthaven' },
     ];
+
+    const questions = [
+        { question: 'Ik wil _ naar school gaan.', options: ['niet', 'geen'] },
+        { question: 'Ik vind dat _ mooie broek.', options: ['niet', 'geen'] },
+        { question: 'Hij heeft _ geld.', options: ['niet', 'geen'] },
+        { question: 'Je doet dat beter _.', options: ['niet', 'geen'] },
+        { question: 'Deze mevrouw is _ leuk.', options: ['niet', 'geen'] },
+        { question: 'Deze meneer is _ gentleman.', options: ['niet', 'geen'] },
+        { question: 'Een politicus zwijgt _ graag.', options: ['niet', 'geen'] },
+        { question: 'Een leerkracht werkt _ in het weekend.', options: ['niet', 'geen'] },
+        { question: 'Ik weet het _.', options: ['niet', 'geen'] },
+        { question: 'De bakker is _ open vandaag.', options: ['niet', 'geen'] },
+        { question: 'Het restaurant is _ speeltuin.', options: ['niet', 'geen'] },
+        { question: 'De blauwe muren in het restaurant vind ik _ mooi.', options: ['niet', 'geen'] },
+        { question: 'Ik ga _ naar het feest.', options: ['niet', 'geen'] },
+        { question: 'Hij is _ dom.', options: ['niet', 'geen'] },
+        { question: 'Ik heb _ geld.', options: ['niet', 'geen'] }
+    ];
+
+
+    const correctAnswers = ['niet', 'geen', 'geen', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'geen'];
+
     const [email, setEmail] = useState(null);
     useEffect(() => {
         if (!email) {
@@ -191,17 +214,35 @@ function Lesson5() {
                 { english: "We ride the train", translation: "Wij rijden met de trein" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Vraagwoorden 📚</GrammarTitle>
+                <GrammarTitle>📚 Niet of geen 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Wie (who), wat (what), waar (where), wanneer (when), waarom (why), hoe (how), welk(e) (which), hoeveel (how many) are some of the most used question words.</GrammarParagraph>
+                    Niet wordt gebruikt om het gezegde van een zin of een hele zin te ontkennen.
+                    <br />
+                    <br />
+                    <GrammarListItem>Ze draagt niet graag oorbellen. (niet ontkent graag oorbellen dragen)</GrammarListItem>
+                    <GrammarListItem>Aarzel niet een zinvolle bijdrage te leveren. (niet ontkent aarzelen een zinvolle bijdrage te leveren)</GrammarListItem>
+                    <GrammarListItem>Ik ben niet dom. (niet ontkent dom zijn)</GrammarListItem>
+                    <br />
+                    Geen wordt gebruikt om een onbepaald zelfstandig naamwoord te ontkennen.
+                    <br />
+                    <br />
+                    <GrammarListItem>Ik wil geen hond. (geen ontkent een hond)</GrammarListItem>
+                    <GrammarListItem>Ik heb geen geld. (geen ontkent geld)</GrammarListItem>
+                    <GrammarListItem>Ze draagt geen oorbellen. (geen ontkent oorbellen)</GrammarListItem>
+                    <br />
+                    In een aantal gevallen is zowel geen als niet mogelijk, omdat de ontkenning zowel op het zelfstandig naamwoord als op het gezegde of de hele zin kan slaan.
+                    <br />
+                    <br />
+                    <GrammarListItem>Waarom zou je geen tweedehandsauto kopen? (geen hoort bij tweedehandsauto)</GrammarListItem>
+                    <GrammarListItem>Waarom zou je niet een tweedehandsauto kopen? (niet hoort bij een tweedehandsauto kopen)</GrammarListItem></GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight> </GrammarParagraph>
             </GrammarBox>
+            <MultipleChoice questions={questions} correctAnswers={correctAnswers} />
+            <Separator></Separator>
             <GrammarBox>
-                <GrammarTitle>📚 Modale hulpwerkwoorden (modal helping verbs) 📚</GrammarTitle>
-                <GrammarParagraph>Modal verbs such as "kunnen" and "moeten" come together with another verb. They add a probability, an obligation, a wish, a possibility, etc. to the other verb. The modal verb normally comes right after the subject. Whereas the matching infinite verb comes at the end of the sentence. Let's check some more information <a href="https://uilentaal.wordpress.com/2015/03/04/modale-werkwoorden/">here</a></GrammarParagraph>
-                <br />
-                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight></GrammarParagraph>
+                <GrammarTitle>📚 De klok lezen (reading the clock) 📚</GrammarTitle>
+                <GrammarParagraph>Let's check the theory <a href="https://zichtbaarnederlands.nl/nl/woorden/tijd">here</a>
+                    <br /> And let's do some exercises <a href="https://nt2taalmenu.nl/nt2-a1-woordinbeeld-test4klokkijken2/">here</a></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
@@ -218,12 +259,7 @@ function Lesson5() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    - Wat is jouw favoriete plaats in de stad? Maak zinnen (vb. Ik hou van het stadspark, want daar is het rustig. Je kan er wandelen, fietsen en ijsjes eten. Het stadspark ligt in het midden van de stad Antwerpen.)</GrammarParagraph>
-                <br />
-                <GrammarParagraph>
-
-                    - Wat is er te doen in Gent deze week (in zinnen). <a href="https://www.wattedoen.be/gent">https://www.wattedoen.be/gent </a>
-                    (vb. In Gent is er een markt op donderdag. Er is deze week ook een concert van de muziekgroep Absynthe Minded. Woensdag is er een theatervoorstelling voor kinderen.).
+                    - Make exercise 1-3 here, practising with "niet" and "geen". <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-menuontkennen/">hhttps://nt2taalmenu.nl/nt2-a1-grammatica-menuontkennen/ </a>
 
                 </GrammarParagraph>
             </GrammarBox>
