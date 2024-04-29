@@ -4,6 +4,7 @@ import professions from '../../images/dutch-professions-lessons.jpg'
 import culture from '../../images/dutch-culture-lessons.jpg'
 import utrecht from '../../images/utrecht.jpg'
 import station from '../../images/station.jpg'
+import holidays from '../../images/holidays.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -41,6 +42,13 @@ export const lessonsData = {
             "description": "Get around, buy a public transport ticket in Dutch or read the timetable for trains and buses",
             "image": station,
             "path": "/lesson5-transport-mobility-dutch"
+        },
+        {
+            "id": 6,
+            "title": "Chapter 6: holidays and traveling",
+            "description": "Understand hotel information in Dutch, read destination information and practice with exercises",
+            "image": holidays,
+            "path": "/lesson6-holidays-travels-dutch"
         }
     ]
 };
