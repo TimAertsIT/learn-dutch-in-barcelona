@@ -43,7 +43,7 @@ function Lesson3() {
         { dutch: 'De gezondheid', english: 'The health' },
         { dutch: 'De hoest', english: 'The cough' },
         { dutch: 'Het oor', english: 'The ear' },
-        { dutch: 'To', english: 'Towards' },
+        { dutch: 'Naar', english: 'To(wards)' },
         { dutch: 'Tegen', english: 'Against' },
         { dutch: 'Met', english: 'With' },
         { dutch: 'De muzikant', english: 'The musician' },

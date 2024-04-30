@@ -17,7 +17,7 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import lieveheersbeestje from '../images/lieveheersbeestje.jpg';
+import zeehond from '../images/zeehond.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -107,19 +107,19 @@ function Lesson6() {
     }
 
     const sentences = [
-        'Eerst moet je de trein naar Brugge nemen en dan moet je _ op de trein naar Gent.',
-        'Ik ben net aangekomen in de _ van Zaventem.',
-        'Ik wil een _ kopen, heen en terug naar Amsterdam.',
-        'Om hoe _ vertrekt de boot naar Oostende?',
-        'De fiets vind ik veel te _, ik ga wel met de auto.',
-        'Op welk _ komt de trein naar Luik aan?',
-        'Ben je zeker dat je met de _ wil gaan? Je kan zeeziek worden.',
-        'Sorry dat ik te laat ben. Er was een _ op de snelweg.',
-        '120km/u is de _ hier.',
-        'Het _ is beter voor het milieu dan de auto.'
+        'Morgen is er een _ en zullen we vanalle bezienswaardigheden bezoeken.',
+        'Heb jij een _ van de stad? Ik weet niet waar ik ben.',
+        'We moeten het museum vandaag bezoeken, want morgen is het _.',
+        'Ik verken een plek het liefst met een _, omdat ik dan veel leer.',
+        'Laat de kinderen maar een kasteel bouwen op het _.',
+        'Ik wil graag koffie bij het _.',
+        'Dit jaar ga ik op _ naar Texel.',
+        'Wij willen heel lang slapen, dus gelieve niet te _ voor 11uur.',
+        'Dag receptioniste, wij hebben een kamer geboekt met zee_.',
+        'Ga je op vakantie aan de Belgische kust of ga je toch naar het _?'
     ];
 
-    const blanks = ['kaartje', 'overstappen', 'perron', 'boot', 'openbaar vervoer', 'luchthaven', 'file', 'laat', 'maximumsnelheid', 'traag'];
+    const blanks = ['buitenland', 'excursie', 'zicht', 'kaart', 'ontbijt', 'reis', 'gesloten', 'gids', 'strand', 'storen'];
     return (
         <div>
             <Navigation />
@@ -135,83 +135,84 @@ function Lesson6() {
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
-                <h1>De treinreis van Meneer Jansen</h1>
-                <p>Meneer Jansen was een rustige man die elke dag met de trein naar zijn werk ging. Hij stapte op in het station in zijn woonplaats en reisde naar de stad. Op een dag besloot hij om iets anders te proberen en nam de bus naar zijn werk. De auto liet hij thuis, want hij wilde eens een andere manier van reizen ervaren.</p>
-                <p>Hij stapte uit de bus en ging te voet verder. Het was een mooie dag, dus hij genoot van het wandelen. Onderweg kwam hij een vriend tegen die op zijn fiets naar het werk ging. Ze begroetten elkaar en Meneer Jansen dacht: “Misschien moet ik ook eens een fiets kopen.”</p>
-                <p>Op het werk hoorde hij collega’s praten over hun avonturen met de elektrische step. Ze zoeften door de stad en hadden de grootste lol. Meneer Jansen was nieuwsgierig en besloot er ook een te huren. Hij voelde zich net een kind dat voor het eerst op een step stond.</p>
-                <p>In het weekend ging hij met zijn gezin een dagje uit. Ze huurden een boot en voeren over de rivier. Meneer Jansen vond het heerlijk om op het water te zijn. Zijn vrouw zei: “Laten we volgende keer een schip huren en een langere tocht maken.”</p>
-                <p>Op vakantie ging hij met het vliegtuig naar een exotische bestemming. Hij had een ticket geboekt en keek uit naar de aankomst op het paradijselijke eiland. Helaas was er een vertraging en moest hij uren wachten op de luchthaven. Gelukkig had hij een goed boek bij zich.</p>
-                <p>Terug in Nederland nam hij de trein naar huis. Hij zat in de coupé en keek uit het raam. Het spoor leidde hem door groene weilanden en langs kleine dorpjes. Hij dacht aan al zijn reizen en besefte dat elke manier van reizen zijn charme had.</p>
-                <p>En zo eindigt het verhaal van Meneer Jansen, de man die van rijden, wandelen, varen, zeilen, vliegen en alles daartussenin hield. Hij had geen favoriete manier van reizen, want elke reis bracht hem iets bijzonders. Misschien was dat wel het mooiste abonnement dat hij ooit had gehad: het abonnement op avontuur.</p>
+                <h1>De speciale kamer</h1>
+                <p>De toerist, die net was aangekomen in het bruisende centrum van Amsterdam, sleepte zijn bagage naar Het hotel. "Ik zou graag willen inchecken," zei hij tegen de receptioniste. "En ik heb een speciaal verzoek. Ik wil graag een kamer waar ik zicht heb op het strand."</p>
+
+                <p>De receptioniste knikte begrijpend en gaf hem de sleutel van kamer 404. "Maar meneer," waarschuwde ze, "in kamer 404 zult u misschien meer vinden dan u had verwacht."</p>
+
+                <p>Verward maar nieuwsgierig ging de toerist naar zijn kamer. Toen hij de deur opende, zag hij tot zijn verbazing dat de kamer geen muren had, alleen een gigantisch schilderij van een strand. "Welkom bij onze nieuwste attractie," riep een stem van achter het schilderij. "Het is een kamer met een 360-graden zicht, waar u kunt reizen zonder te reizen!"</p>
+
+                <p>De toerist lachte. "Dit is fantastisch! Maar hoe zit het met mijn privacy?"
+                    "Wees niet bang," zei de stem. "Als u privacy wilt, zeg dan gewoon 'Gesloten' en het schilderij wordt een muur. En als u wilt uitchecken, roep dan 'Vrij' en een glijbaan brengt u rechtstreeks naar de receptie!"</p>
+
+                <p>De toerist besloot dat dit de beste reiservaring was die hij ooit had gehad, zelfs beter dan de excursie die hij had gepland. Hij besloot de rest van de dag te besteden aan het verkennen van zijn kamer, die elke keer dat hij 'Verkennen' zei, veranderde in een nieuwe bestemming.</p>
+
             </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'Het lieveheersbeestje', english: '"The dear Lord`s small beast"' }}
-                image={lieveheersbeestje}
+                text={{ dutch: 'De zeehond', english: '"The sea dog"' }}
+                image={zeehond}
             />
             <CenteredContainer>
-                <StyledLink href="https://www.belgiantrain.be/nl">
-                    Hoeveel kost een senior ticket voor een treinreis van Mol naar Brugge, heen en terug?
-                </StyledLink>
-                <StyledLink href="https://www.belgiantrain.be/nl">
-                    Arno wants to buy a train ticket for the train from Hasselt to Oostende. Write a dialogue between him and the sales desk.
+                <StyledLink href="https://www.roccofortehotels.com/nl/hotels-and-resorts/hotel-amigo/">
+                    Er is een nieuwe wet die reserveringsplatformen verbiedt. Maar je wilt dit hotel in Brussel reserveren! Schrijf een e-mail naar het hotel en vraag hen naar de kamers, faciliteiten en geef je persoonlijke voorkeuren aan.
                 </StyledLink>
             </CenteredContainer>
             <Separator></Separator>
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="rijden"
-                    translation="to drive"
-                    conjugations={["rijd", "rijdt", "rijdt", "rijden", "rijden", "rijden"]}
+                    verb="bezoeken"
+                    translation="to visit"
+                    conjugations={["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"]}
                 />
                 <Verbs
-                    verb="wandelen"
-                    translation="to walk"
-                    conjugations={["wandel", "wandelt", "wandelt", "wandelen", "wandelen", "wandelen"]}
+                    verb="zien"
+                    translation="to see"
+                    conjugations={["zie", "ziet", "ziet", "zien", "zien", "zien"]}
                 />
                 <Verbs
-                    verb="lopen"
-                    translation="to run"
-                    conjugations={["loop", "loopt", "loopt", "lopen", "lopen", "lopen"]}
+                    verb="inchecken"
+                    translation="to check-in"
+                    conjugations={["check in", "checkt in", "checkt in", "checken in", "checken in", "checken in"]}
                 />
                 <Verbs
-                    verb="varen"
-                    translation="to sail"
-                    conjugations={["vaar", "vaart", "vaart", "varen", "varen", "varen"]}
+                    verb="storen"
+                    translation="to disturb"
+                    conjugations={["stoor", "stoort", "stoort", "storen", "storen", "storen"]}
                 />
                 <Verbs
-                    verb="zeilen"
-                    translation="to sail"
-                    conjugations={["zeil", "zeilt", "zeilt", "zeilen", "zeilen", "zeilen"]}
+                    verb="verkennen"
+                    translation="to explore"
+                    conjugations={["verken", "verkent", "verkent", "verkennen", "verkennen", "verkennen"]}
                 />
                 <Verbs
-                    verb="vliegen"
-                    translation="to fly"
-                    conjugations={["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"]}
+                    verb="reserveren"
+                    translation="to book"
+                    conjugations={["reserveer", "reserveert", "reserveert", "reserveren", "reserveren", "reserveren"]}
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "wandelen", conjugations: ["wandel", "wandelt", "wandelt", "wandelen", "wandelen", "wandelen"] },
-                { verb: "lopen", conjugations: ["loop", "loopt", "loopt", "lopen", "lopen", "lopen"] },
-                { verb: "varen", conjugations: ["vaar", "vaart", "vaart", "varen", "varen", "varen"] },
-                { verb: "zeilen", conjugations: ["zeil", "zeilt", "zeilt", "zeilen", "zeilen", "zeilen"] },
-                { verb: "vliegen", conjugations: ["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"] },
-                { verb: "rijden", conjugations: ["rijd", "rijdt", "rijdt", "rijden", "rijden", "rijden"] }
+                { verb: "bezoeken", conjugations: ["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"] },
+                { verb: "zien", conjugations: ["zie", "ziet", "ziet", "zien", "zien", "zien"] },
+                { verb: "inchecken", conjugations: ["check in", "checkt in", "checkt in", "checken in", "checken in", "checken in"] },
+                { verb: "storen", conjugations: ["stoor", "stoort", "stoort", "storen", "storen", "storen"] },
+                { verb: "verkennen", conjugations: ["verken", "verkent", "verkent", "verkennen", "verkennen", "verkennen"] },
+                { verb: "reserveren", conjugations: ["reserveer", "reserveert", "reserveert", "reserveren", "reserveren", "reserveren"] }
             ]} />
             <Translate sentences={[
-                { english: "He drives the car", translation: "Hij rijdt met de auto" },
-                { english: "I walk in the forest", translation: "Ik wandel in het bos" },
-                { english: "We fly to Rome", translation: "Wij vliegen naar Rome" },
-                { english: "I buy a ticket", translation: "Ik koop een kaartje" },
-                { english: "Quick, you have to run", translation: "Snel, jij moet lopen" },
-                { english: "120km/h is the maximum speed here", translation: "120km/u is de maximumsnelheid hier" },
-                { english: "The train arrives on platform 2", translation: "De trein komt aan op perron 2" },
-                { english: "The plane flies to New York", translation: "Het vliegtuig vliegt naar New York" },
-                { english: "The boat sails to Zeeland", translation: "De boot vaart naar Zeeland" },
-                { english: "We ride the train", translation: "Wij rijden met de trein" }
+                { english: "He visits the city", translation: "Hij bezoekt de stad" },
+                { english: "Do not disturb", translation: "Niet storen" },
+                { english: "We explore the small streets", translation: "Wij verkennen de kleine straten" },
+                { english: "I book a hotel room", translation: "Ik reserveer een hotelkamer" },
+                { english: "Shall we visit the center?", translation: "Zullen wij het centrum bezoeken?" },
+                { english: "I go on holiday to Jamaica", translation: "Ik ga op reis naar Jamaica" },
+                { english: "A room for 2 with breakfast", translation: "Een kamer voor 2 met ontbijt" },
+                { english: "Can you book it?", translation: "Kan jij het reserveren?" },
+                { english: "The door is closed", translation: "De deur is gesloten" },
+                { english: "When will you travel?", translation: "Wanneer ga jij op reis?" }
             ]} />
             <GrammarBox>
                 <GrammarTitle>📚 Niet of geen 📚</GrammarTitle>
@@ -247,11 +248,11 @@ function Lesson6() {
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/met-de-bus">
-                    "Riding the bus?" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/vakantie">
+                    "Holidays!" Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/elektrische-auto">
-                    "The electric car." Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/een-reis-boeken">
+                    "Booking a trip" Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
@@ -259,7 +260,7 @@ function Lesson6() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    - Make exercise 1-3 here, practising with "niet" and "geen". <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-menuontkennen/">hhttps://nt2taalmenu.nl/nt2-a1-grammatica-menuontkennen/ </a>
+                    Je bent op vakantie in Scheveningen. Schrijf een kaartje aan je familie met vakantiegroeten.
 
                 </GrammarParagraph>
             </GrammarBox>
