@@ -249,7 +249,7 @@ function Lesson2() {
                 { english: "I want to learn Dutch", translation: "Ik wil Nederlands leren" },
                 { english: "He will graduate", translation: "Hij zal afstuderen" },
                 { english: "I go to the restaurant", translation: "Ik ga naar het restaurant" },
-                { english: "He wants to work", translation: "Hij wil werken" },
+                { english: "He wants to work", translation: "Hij wilt werken" },
                 { english: "The economy goes well", translation: "De economie gaat goed" },
                 { english: "I study history, mathematics and Dutch", translation: "Ik studeer geschiedenis, wiskunde en Nederlands" }
             ]} />

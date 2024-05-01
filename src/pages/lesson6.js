@@ -69,25 +69,25 @@ function Lesson6() {
     ];
 
     const questions = [
-        { question: 'Ik wil _ naar school gaan.', options: ['niet', 'geen'] },
-        { question: 'Ik vind dat _ mooie broek.', options: ['niet', 'geen'] },
-        { question: 'Hij heeft _ geld.', options: ['niet', 'geen'] },
-        { question: 'Je doet dat beter _.', options: ['niet', 'geen'] },
-        { question: 'Deze mevrouw is _ leuk.', options: ['niet', 'geen'] },
-        { question: 'Deze meneer is _ gentleman.', options: ['niet', 'geen'] },
-        { question: 'Een politicus zwijgt _ graag.', options: ['niet', 'geen'] },
-        { question: 'Een leerkracht werkt _ in het weekend.', options: ['niet', 'geen'] },
-        { question: 'Ik weet het _.', options: ['niet', 'geen'] },
-        { question: 'De bakker is _ open vandaag.', options: ['niet', 'geen'] },
-        { question: 'Het restaurant is _ speeltuin.', options: ['niet', 'geen'] },
-        { question: 'De blauwe muren in het restaurant vind ik _ mooi.', options: ['niet', 'geen'] },
-        { question: 'Ik ga _ naar het feest.', options: ['niet', 'geen'] },
-        { question: 'Hij is _ dom.', options: ['niet', 'geen'] },
-        { question: 'Ik heb _ geld.', options: ['niet', 'geen'] }
+        { question: 'Van wie is die fiets? Dat is de _', options: ['mij', 'mijne'] },
+        { question: 'Is dat _ moeder?', options: ['jou', 'jouw'] },
+        { question: '_ huis staat in de straat.', options: ['ons', 'onze'] },
+        { question: 'Is dat jouw of _ drankje?', options: ['mijn', 'mijne'] },
+        { question: 'Die trui is de _.', options: ['haar', 'hare'] },
+        { question: 'Dat is _ trui.', options: ['haar', 'hare'] },
+        { question: 'Dit is _ broek.', options: ['mijne', 'mijn'] },
+        { question: 'Deze broek is de _.', options: ['mijne', 'mijn'] },
+        { question: 'Dat huis is het _.', options: ['ons', 'onze'] },
+        { question: 'Is dat _ huis?', options: ['jullie', 'hunne'] },
+        { question: 'Nee, dat huis is het _', options: ['hunne', 'uw'] },
+        { question: 'Ik vind _ ogen mooi.', options: ['uw', 'uwe'] },
+        { question: '_ school is niet ver weg.', options: ['mij', 'mijn'] },
+        { question: 'Het is _ huis', options: ['mijne', 'mijn'] },
+        { question: 'Dat is _ boek.', options: ['ons', 'onze'] }
     ];
 
 
-    const correctAnswers = ['niet', 'geen', 'geen', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'geen'];
+    const correctAnswers = ['mijne', 'jouw', 'ons', 'mijn', 'hare', 'haar', 'mijn', 'mijne', 'onze', 'jullie', 'hunne', 'uw', 'mijn', 'mijn', 'ons'];
 
     const [email, setEmail] = useState(null);
     useEffect(() => {
@@ -215,35 +215,28 @@ function Lesson6() {
                 { english: "When will you travel?", translation: "Wanneer ga jij op reis?" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Niet of geen 📚</GrammarTitle>
-                <GrammarParagraph>
-                    Niet wordt gebruikt om het gezegde van een zin of een hele zin te ontkennen.
-                    <br />
-                    <br />
-                    <GrammarListItem>Ze draagt niet graag oorbellen. (niet ontkent graag oorbellen dragen)</GrammarListItem>
-                    <GrammarListItem>Aarzel niet een zinvolle bijdrage te leveren. (niet ontkent aarzelen een zinvolle bijdrage te leveren)</GrammarListItem>
-                    <GrammarListItem>Ik ben niet dom. (niet ontkent dom zijn)</GrammarListItem>
-                    <br />
-                    Geen wordt gebruikt om een onbepaald zelfstandig naamwoord te ontkennen.
-                    <br />
-                    <br />
-                    <GrammarListItem>Ik wil geen hond. (geen ontkent een hond)</GrammarListItem>
-                    <GrammarListItem>Ik heb geen geld. (geen ontkent geld)</GrammarListItem>
-                    <GrammarListItem>Ze draagt geen oorbellen. (geen ontkent oorbellen)</GrammarListItem>
-                    <br />
-                    In een aantal gevallen is zowel geen als niet mogelijk, omdat de ontkenning zowel op het zelfstandig naamwoord als op het gezegde of de hele zin kan slaan.
-                    <br />
-                    <br />
-                    <GrammarListItem>Waarom zou je geen tweedehandsauto kopen? (geen hoort bij tweedehandsauto)</GrammarListItem>
-                    <GrammarListItem>Waarom zou je niet een tweedehandsauto kopen? (niet hoort bij een tweedehandsauto kopen)</GrammarListItem></GrammarParagraph>
+                <GrammarTitle>📚 Het bezittelijk voornaamwoord 📚</GrammarTitle>
+                <GrammarParagraph> Het bezittelijk voornaamwoord geeft de bezittelijke relatie weer met een persoon, dier of organisatie.
+                    <br></br>
+                    <br></br>
+                    Van wie is dat boek? Dat is <Highlight>mijn boek</Highlight>. Dat is <Highlight>het mijne</Highlight>. Als je bijvoorbeeld zegt: “Dat is zijn fiets”, vertelt het woord ‘zijn’ van wie de fiets is.
+                    <br></br>
+                    <br></br>
+                    Let's check the table <a href="https://onzetaal.nl/taalloket/bezittelijk-voornaamwoord">here</a></GrammarParagraph>
                 <br />
             </GrammarBox>
             <MultipleChoice questions={questions} correctAnswers={correctAnswers} />
             <Separator></Separator>
             <GrammarBox>
-                <GrammarTitle>📚 De klok lezen (reading the clock) 📚</GrammarTitle>
-                <GrammarParagraph>Let's check the theory <a href="https://zichtbaarnederlands.nl/nl/woorden/tijd">here</a>
-                    <br /> And let's do some exercises <a href="https://nt2taalmenu.nl/nt2-a1-woordinbeeld-test4klokkijken2/">here</a></GrammarParagraph>
+                <GrammarTitle>📚 Gesloten vragen 📚</GrammarTitle>
+                <GrammarParagraph> Gesloten vragen zijn vragen die we enkel met ja/nee kunnen beantwoorden. In een gewone zin is de normale volgorde het <Highlight>onderwerp </Highlight> (vb. "ik") gevolgd door het <Highlight>werkwoord</Highlight> (vb. "werk") gevolgd door de rest van de zin. Bijvoorbeeld: "Ik werk in een fabriek."
+                    <br />
+                    <br />
+                    Bij gesloten vragen draaien we deze volgorde om. Daarbij komt dan eerst het <Highlight>werkwoord</Highlight> (vb. "werk") gevolgd door het <Highlight>onderwerp</Highlight> (vb. "jij") gevolgd door de rest van de zin. Bijvoorbeeld: "Werk jij in een fabriek?"
+                    <br />
+                    <br></br>
+                    <br></br> Let's check this explanation on word positioning <a href="https://virtueletraining.com/grammatica/zinsbouw/zinnen-maken/">here</a>.
+                    And let's do some exercises <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-geslotenvragen-oefening1/">here</a>.</GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
