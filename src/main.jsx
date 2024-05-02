@@ -9,6 +9,7 @@ import Lesson3 from './pages/lesson3';
 import Lesson4 from './pages/lesson4';
 import Lesson5 from './pages/lesson5';
 import Lesson6 from './pages/lesson6';
+import Lesson7 from './pages/lesson7';
 
 function Main() {
 
@@ -23,6 +24,7 @@ function Main() {
                 <Route path="/lesson4-city-vocabulary-dutch" element={<Lesson4 />} />
                 <Route path="/lesson5-transport-mobility-dutch" element={<Lesson5 />} />
                 <Route path="/lesson6-holidays-travels-dutch" element={<Lesson6 />} />
+                <Route path="/lesson7-restaurant-food-dutch" element={<Lesson7 />} />
             </Routes>
         </BrowserRouter>
     );

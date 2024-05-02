@@ -5,6 +5,7 @@ import culture from '../../images/dutch-culture-lessons.jpg'
 import utrecht from '../../images/utrecht.jpg'
 import station from '../../images/station.jpg'
 import holidays from '../../images/holidays.jpg'
+import restaurant from '../../images/restaurant.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -49,6 +50,13 @@ export const lessonsData = {
             "description": "Understand hotel information in Dutch, read destination information and practice with exercises",
             "image": holidays,
             "path": "/lesson6-holidays-travels-dutch"
+        },
+        {
+            "id": 7,
+            "title": "Chapter 7: food and restaurants",
+            "description": "Get to know ingredients and restaurant menus in Dutch and learn how to ask for food or the bill",
+            "image": restaurant,
+            "path": "/lesson7-restaurant-food-dutch"
         }
     ]
 };

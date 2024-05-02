@@ -4,12 +4,12 @@ import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimpl
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
 import MultipleChoice from '../components/Exercises/Grammar/MultipleChoice';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
-import reisgids from "../images/reisgids.jpg";
-import hotel from "../images/hotel.jpg.webp";
-import hotelkamer from "../images/hotelkamer.jpg";
-import bagage from "../images/bagage.jpg";
-import strand from "../images/strand.jpg";
-import zeezicht from "../images/zeezicht.jpg";
+import bier from "../images/7bier.png";
+import bitterbal from "../images/7bitterbal.jpg";
+import boterham from "../images/7boterham.jpeg";
+import friet from "../images/7friet.jpg";
+import kaas from "../images/7kaas.png";
+import poffertje from "../images/7poffertje.jpg";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
@@ -17,7 +17,7 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import zeehond from '../images/zeehond.jpg';
+import pindakaas from '../images/pindakaas.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -25,47 +25,47 @@ import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import { StyledAbout } from './about.styles';
 
-function Lesson6() {
-    const lessonId = 6;
+function Lesson7() {
+    const lessonId = 7;
     const words = [
-        { dutch: 'Het hotel', english: 'The hotel' },
-        { dutch: 'De toerist', english: 'The tourist' },
-        { dutch: 'De reis', english: 'The travel' },
-        { dutch: 'Reizen', english: 'To travel' },
-        { dutch: 'Bezoeken', english: 'To visit' },
-        { dutch: 'De kamer', english: 'The room' },
-        { dutch: 'Het centrum', english: 'The center' },
-        { dutch: 'Verkennen', english: 'To explore' },
-        { dutch: 'Het ontbijt', english: 'The breakfast' },
-        { dutch: 'Het zicht', english: 'The view' },
-        { dutch: 'Zien', english: 'To see' },
-        { dutch: 'De gids', english: 'The guide' },
-        { dutch: 'De reisgids', english: 'The travel guide' },
-        { dutch: 'Reserveren', english: 'To book' },
-        { dutch: 'De bagage', english: 'The luggage' },
-        { dutch: 'Het strand', english: 'The beach' },
-        { dutch: 'De kaart', english: 'The map' },
-        { dutch: 'De excursie', english: 'The excursion' },
-        { dutch: 'De openingsuren', english: 'The opening hours' },
-        { dutch: 'Open', english: 'Open' },
-        { dutch: 'Gesloten', english: 'Closed' },
-        { dutch: 'De informatie', english: 'The information' },
-        { dutch: 'De receptie', english: 'The reception' },
-        { dutch: 'De badkamer', english: 'The bathroom' },
-        { dutch: 'Inchecken', english: 'To check-in' },
-        { dutch: 'Uitchecken', english: 'To check-out' },
-        { dutch: 'Vrij', english: 'Vacant' },
-        { dutch: 'Storen', english: 'To disturb' },
-        { dutch: 'De kluis', english: 'The safe' },
-        { dutch: 'De trap', english: 'The stairs' }
+        { dutch: 'Het eten', english: 'The food' },
+        { dutch: 'Het menu', english: 'The menu' },
+        { dutch: 'Bestellen', english: 'To order' },
+        { dutch: 'De drank', english: 'The drink' },
+        { dutch: 'Het water', english: 'The water' },
+        { dutch: 'Het bier', english: 'The beer' },
+        { dutch: 'De wijn', english: 'The wine' },
+        { dutch: 'De koffie', english: 'The coffee' },
+        { dutch: 'De thee', english: 'The tea' },
+        { dutch: 'De soep', english: 'The soup' },
+        { dutch: 'De salade', english: 'The salad' },
+        { dutch: 'Het brood', english: 'The bread' },
+        { dutch: 'De kaas', english: 'The cheese' },
+        { dutch: 'Het vlees', english: 'The meat' },
+        { dutch: 'De vis', english: 'The fish' },
+        { dutch: 'De groente', english: 'The vegetable' },
+        { dutch: 'Het dessert', english: 'The dessert' },
+        { dutch: 'De rekening', english: 'The bill' },
+        { dutch: 'De fooi', english: 'The tip' },
+        { dutch: 'De keuken', english: 'The kitchen' },
+        { dutch: 'De tafel', english: 'The table' },
+        { dutch: 'De stoel', english: 'The chair' },
+        { dutch: 'De lepel', english: 'The spoon' },
+        { dutch: 'De vork', english: 'The fork' },
+        { dutch: 'Het mes', english: 'The knife' },
+        { dutch: 'Meenemen', english: 'To take away/to bring along' },
+        { dutch: 'Betalen', english: 'To pay' },
+        { dutch: 'Koken', english: 'To cook' },
+        { dutch: 'Eten', english: 'To eat' },
+        { dutch: 'Drinken', english: 'To drink' }
     ];
     const images = [
-        { src: reisgids, caption: 'De reisgids' },
-        { src: hotel, caption: 'Het hotel' },
-        { src: zeezicht, caption: 'Het zeezicht' },
-        { src: strand, caption: 'Het strand' },
-        { src: bagage, caption: 'De bagage' },
-        { src: hotelkamer, caption: 'De hotelkamer' },
+        { src: bitterbal, caption: 'De bitterbal' },
+        { src: bier, caption: 'Het bier' },
+        { src: boterham, caption: 'De boterham' },
+        { src: friet, caption: 'De friet' },
+        { src: kaas, caption: 'De kaas' },
+        { src: poffertje, caption: 'Het poffertje' },
     ];
 
     const questions = [
@@ -107,57 +107,53 @@ function Lesson6() {
     }
 
     const sentences = [
-        'Morgen is er een _ en zullen we vanalle bezienswaardigheden bezoeken.',
-        'Heb jij een _ van de stad? Ik weet niet waar ik ben.',
-        'We moeten het museum vandaag bezoeken, want morgen is het _.',
-        'Ik verken een plek het liefst met een _, omdat ik dan veel leer.',
-        'Laat de kinderen maar een kasteel bouwen op het _.',
-        'Ik wil graag koffie bij het _.',
-        'Dit jaar ga ik op _ naar Texel.',
-        'Wij willen heel lang slapen, dus gelieve niet te _ voor 11uur.',
-        'Dag receptioniste, wij hebben een kamer geboekt met zee_.',
-        'Ga je op vakantie aan de Belgische kust of ga je toch naar het _?'
+        'Ik wil graag betalen. Mag ik de _?',
+        'Hebben wij nog eten in huis? Want ik heb _.',
+        'Voor mijn geen _ aub, ik ben vegetariër.',
+        'Als je _ hebt moet je drinken.',
+        'In elke salade zitten er wel _.',
+        'Wij hebben een _ gereserveerd voor 4 personen.',
+        'Ork ork ork, soep eet je met een _.',
+        'Ik ben een onthouder. Heb je ook alcoholvrij _?',
+        'Ik drink geen _ na 15uur want dan kan ik niet goed slapen.',
+        'Je bent om op te _.'
     ];
 
-    const blanks = ['buitenland', 'excursie', 'zicht', 'kaart', 'ontbijt', 'reis', 'gesloten', 'gids', 'strand', 'storen'];
+    const blanks = ['vlees', 'groenten', 'rekening', 'koffie', 'honger', 'dorst', 'tafel', 'eten', 'lepel', 'bier'];
     return (
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" What is your favorite travel destination">Wat is jouw favoriete reisbestemming?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you prefer to go to a hotel or to a camping?">Verkies je een hotel of een camping?</StyledQuestion>
-            <StyledQuestion data-translation=" When will you travel?">Wanneer ga je op reis?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you travel in the holiday seasons?">Ga je op reis in de vakantieperiodes?</StyledQuestion>
-            <StyledQuestion data-translation=" What do you consider when booking a hotel?">Waar let je op bij het reserveren van een hotel?</StyledQuestion>
-            <StyledQuestion data-translation=" How do you choose your travel destination?">Hoe kies je jouw reisbestemming?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you prefer holidays at home or abroad?">Verkies je een vakantie in het binnenland of in het buitenland?</StyledQuestion>
+            <StyledQuestion data-translation=" What do you like to eat">Wat eet jij graag?</StyledQuestion>
+            <StyledQuestion data-translation=" What is your favorite food?">Wat is jouw lievelingseten?</StyledQuestion>
+            <StyledQuestion data-translation=" Do you want to order?">Wil je bestellen?</StyledQuestion>
+            <StyledQuestion data-translation=" Do you often go to a restaurant?">Ga je vaak op restaurant?</StyledQuestion>
+            <StyledQuestion data-translation=" What is your favorite type of food?">Wat is je favoriete keuken?</StyledQuestion>
+            <StyledQuestion data-translation=" Can I have the bill please?">Mag ik de rekening alstublieft?</StyledQuestion>
+            <StyledQuestion data-translation=" Did it taste good?">Heeft het gesmaakt?</StyledQuestion>
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
-                <h1>De speciale kamer</h1>
-                <p>De toerist, die net was aangekomen in het bruisende centrum van Amsterdam, sleepte zijn bagage naar Het hotel. "Ik zou graag willen inchecken," zei hij tegen de receptioniste. "En ik heb een speciaal verzoek. Ik wil graag een kamer waar ik zicht heb op het strand."</p>
+                <h1>Het dure restaurant</h1>
+                <p>Er was eens een man die naar een restaurant ging en zei: "Ik wil bestellen". De ober gaf hem de menukaart. De man keek naar het menu en zei: "Ik wil één van alles!" De ober was verbaasd en vroeg: "Zelfs van de drank?" De man knikte en zei: "Ja, zelfs van de drank. Ik wil water, bier, wijn, koffie en thee!"</p>
 
-                <p>De receptioniste knikte begrijpend en gaf hem de sleutel van kamer 404. "Maar meneer," waarschuwde ze, "in kamer 404 zult u misschien meer vinden dan u had verwacht."</p>
+                <p>Toen het eten kwam, was er zoveel dat het niet op de tafel paste. De man keek naar het eten en zei: "Ik denk dat ik mijn ogen groter dan mijn maag heb gemaakt!" Maar hij probeerde toch alles op te eten, van de soep tot het dessert.</p>
 
-                <p>Verward maar nieuwsgierig ging de toerist naar zijn kamer. Toen hij de deur opende, zag hij tot zijn verbazing dat de kamer geen muren had, alleen een gigantisch schilderij van een strand. "Welkom bij onze nieuwste attractie," riep een stem van achter het schilderij. "Het is een kamer met een 360-graden zicht, waar u kunt reizen zonder te reizen!"</p>
+                <p>Aan het einde van de maaltijd, toen hij de rekening kreeg, zei hij: "Ik denk dat ik de volgende keer gewoon een salade zal bestellen!"</p>
 
-                <p>De toerist lachte. "Dit is fantastisch! Maar hoe zit het met mijn privacy?"
-                    "Wees niet bang," zei de stem. "Als u privacy wilt, zeg dan gewoon 'Gesloten' en het schilderij wordt een muur. En als u wilt uitchecken, roep dan 'Vrij' en een glijbaan brengt u rechtstreeks naar de receptie!"</p>
-
-                <p>De toerist besloot dat dit de beste reiservaring was die hij ooit had gehad, zelfs beter dan de excursie die hij had gepland. Hij besloot de rest van de dag te besteden aan het verkennen van zijn kamer, die elke keer dat hij 'Verkennen' zei, veranderde in een nieuwe bestemming.</p>
 
             </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'De zeehond', english: '"The sea dog"' }}
-                image={zeehond}
+                text={{ dutch: 'Helaas pindakaas', english: '"Unfortunately peanut cheese" / "Too bad"' }}
+                image={pindakaas}
             />
             <CenteredContainer>
-                <StyledLink href="https://www.roccofortehotels.com/nl/hotels-and-resorts/hotel-amigo/">
-                    Er is een nieuwe wet die reserveringsplatformen verbiedt. Maar je wilt dit hotel in Brussel reserveren! Schrijf een e-mail naar het hotel en vraag hen naar de kamers, faciliteiten en geef je persoonlijke voorkeuren aan.
+                <StyledLink href="https://www.vrt.be/vrtnws/nl/2023/07/27/amerikaanse-vlogger-eet-twee-reuzeburgers-van-restaurant-in-dilb/">
+                    Lees het artikel en beantwoord de volgende vragen: 1. Hoeveel tijd had Katina nodig om haar burger op te eten? 2. Heeft Stijn ook een record? 3. Hoeveel weegt de burger?
                 </StyledLink>
             </CenteredContainer>
             <Separator></Separator>
@@ -262,4 +258,4 @@ function Lesson6() {
     );
 }
 
-export default Lesson6;
+export default Lesson7;
