@@ -69,25 +69,25 @@ function Lesson7() {
     ];
 
     const questions = [
-        { question: 'Van wie is die fiets? Dat is de _', options: ['mij', 'mijne'] },
-        { question: 'Is dat _ moeder?', options: ['jou', 'jouw'] },
-        { question: '_ huis staat in de straat.', options: ['ons', 'onze'] },
-        { question: 'Is dat jouw of _ drankje?', options: ['mijn', 'mijne'] },
-        { question: 'Die trui is de _.', options: ['haar', 'hare'] },
-        { question: 'Dat is _ trui.', options: ['haar', 'hare'] },
-        { question: 'Dit is _ broek.', options: ['mijne', 'mijn'] },
-        { question: 'Deze broek is de _.', options: ['mijne', 'mijn'] },
-        { question: 'Dat huis is het _.', options: ['ons', 'onze'] },
-        { question: 'Is dat _ huis?', options: ['jullie', 'hunne'] },
-        { question: 'Nee, dat huis is het _', options: ['hunne', 'uw'] },
-        { question: 'Ik vind _ ogen mooi.', options: ['uw', 'uwe'] },
-        { question: '_ school is niet ver weg.', options: ['mij', 'mijn'] },
-        { question: 'Het is _ huis', options: ['mijne', 'mijn'] },
-        { question: 'Dat is _ boek.', options: ['ons', 'onze'] }
+        { question: 'Een boek. Twee _', options: ['boeken', 'boeks'] },
+        { question: 'De straat. _', options: ['de straten', 'het straten'] },
+        { question: 'Het huis. De _', options: ['huisen', 'huizen'] },
+        { question: 'De kamer. Drie _', options: ['kamer', 'kamers'] },
+        { question: 'De tafel. Veel _', options: ['tafelen', 'tafels'] },
+        { question: 'Een friet. De _', options: ['frieten', 'friets'] },
+        { question: 'Een fiets. Twee _', options: ['fietss', 'fietsen'] },
+        { question: 'De lepel. Drie _.', options: ['lepelen', 'lepels'] },
+        { question: 'De vork. Twee _.', options: ['vorken', 'vorks'] },
+        { question: 'De stoel. Vijf _', options: ['stoels', 'stoelen'] },
+        { question: 'De drank. Drie _', options: ['dranks', 'dranken'] },
+        { question: 'De bitterbal. Twee _', options: ['bitterbalen', 'bitterballen'] },
+        { question: 'De rekening. Vijf _', options: ['rekeningen', 'rekenings'] },
+        { question: 'De vis. Vier _', options: ['vissen', 'visen'] },
+        { question: 'Het wijntje. De wijntjes. De wijn. De _ ', options: ['wijns', 'wijnen'] }
     ];
 
 
-    const correctAnswers = ['mijne', 'jouw', 'ons', 'mijn', 'hare', 'haar', 'mijn', 'mijne', 'onze', 'jullie', 'hunne', 'uw', 'mijn', 'mijn', 'ons'];
+    const correctAnswers = ['boeken', 'de straten', 'huizen', 'kamers', 'tafels', 'frieten', 'fietsen', 'lepels', 'vorken', 'stoelen', 'dranken', 'bitterballen', 'rekeningen', 'vissen', 'wijnen'];
 
     const [email, setEmail] = useState(null);
     useEffect(() => {
@@ -160,88 +160,84 @@ function Lesson7() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="bezoeken"
-                    translation="to visit"
-                    conjugations={["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"]}
+                    verb="eten"
+                    translation="to eat"
+                    conjugations={["eet", "eet", "eet", "eten", "eten", "eten"]}
                 />
                 <Verbs
-                    verb="zien"
-                    translation="to see"
-                    conjugations={["zie", "ziet", "ziet", "zien", "zien", "zien"]}
+                    verb="drinken"
+                    translation="to drink"
+                    conjugations={["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"]}
                 />
                 <Verbs
-                    verb="inchecken"
-                    translation="to check-in"
-                    conjugations={["check in", "checkt in", "checkt in", "checken in", "checken in", "checken in"]}
+                    verb="koken"
+                    translation="to cook"
+                    conjugations={["kook", "kookt", "kookt", "koken", "koken", "koken"]}
                 />
                 <Verbs
-                    verb="storen"
-                    translation="to disturb"
-                    conjugations={["stoor", "stoort", "stoort", "storen", "storen", "storen"]}
+                    verb="meenemen"
+                    translation="to take away"
+                    conjugations={["neem mee", "neemt mee", "neemt mee", "nemen mee", "nemen mee", "nemen mee"]}
                 />
                 <Verbs
-                    verb="verkennen"
-                    translation="to explore"
-                    conjugations={["verken", "verkent", "verkent", "verkennen", "verkennen", "verkennen"]}
+                    verb="betalen"
+                    translation="to pay"
+                    conjugations={["betaal", "betaalt", "betaalt", "betalen", "betalen", "betalen"]}
                 />
                 <Verbs
-                    verb="reserveren"
-                    translation="to book"
-                    conjugations={["reserveer", "reserveert", "reserveert", "reserveren", "reserveren", "reserveren"]}
+                    verb="afrekenen"
+                    translation="to check the bill"
+                    conjugations={["reken af", "rekent af", "rekent af", "rekenen af", "rekenen af", "rekenen af"]}
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "bezoeken", conjugations: ["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"] },
-                { verb: "zien", conjugations: ["zie", "ziet", "ziet", "zien", "zien", "zien"] },
-                { verb: "inchecken", conjugations: ["check in", "checkt in", "checkt in", "checken in", "checken in", "checken in"] },
-                { verb: "storen", conjugations: ["stoor", "stoort", "stoort", "storen", "storen", "storen"] },
-                { verb: "verkennen", conjugations: ["verken", "verkent", "verkent", "verkennen", "verkennen", "verkennen"] },
-                { verb: "reserveren", conjugations: ["reserveer", "reserveert", "reserveert", "reserveren", "reserveren", "reserveren"] }
+                { verb: "eten", conjugations: ["eet", "eet", "eet", "eten", "eten", "eten"] },
+                { verb: "drinken", conjugations: ["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"] },
+                { verb: "koken", conjugations: ["kook", "kookt", "kookt", "koken", "koken", "koken"] },
+                { verb: "meenemen", conjugations: ["neem mee", "neemt mee", "neemt mee", "nemen mee", "nemen mee", "nemen mee"] },
+                { verb: "betalen", conjugations: ["betaal", "betaalt", "betaalt", "betalen", "betalen", "betalen"] },
+                { verb: "afrekenen", conjugations: ["reken af", "rekent af", "rekent af", "rekenen af", "rekenen af", "rekenen af"] }
             ]} />
             <Translate sentences={[
-                { english: "He visits the city", translation: "Hij bezoekt de stad" },
-                { english: "Do not disturb", translation: "Niet storen" },
-                { english: "We explore the small streets", translation: "Wij verkennen de kleine straten" },
-                { english: "I book a hotel room", translation: "Ik reserveer een hotelkamer" },
-                { english: "Shall we visit the center?", translation: "Zullen wij het centrum bezoeken?" },
-                { english: "I go on holiday to Jamaica", translation: "Ik ga op reis naar Jamaica" },
-                { english: "A room for 2 with breakfast", translation: "Een kamer voor 2 met ontbijt" },
-                { english: "Can you book it?", translation: "Kan jij het reserveren?" },
-                { english: "The door is closed", translation: "De deur is gesloten" },
-                { english: "When will you travel?", translation: "Wanneer ga jij op reis?" }
+                { english: "I cook soup", translation: "Ik kook soep" },
+                { english: "He pays the bill", translation: "Hij betaalt de rekening" },
+                { english: "Can I have the bill please?", translation: "Mag ik de rekening alstublieft?" },
+                { english: "Did it taste good?", translation: "Heeft het gesmaakt?" },
+                { english: "We will take away the salad", translation: "Wij zullen de salade meenemen" },
+                { english: "He gives a tip", translation: "Hij geeft een fooi" },
+                { english: "We drink beer without alcohol", translation: "Wij drinken bier zonder alcohol" },
+                { english: "I sit on a chair", translation: "Ik zit op een stoel" },
+                { english: "We booked a table", translation: "Wij hebben een tafel gereserveerd" },
+                { english: "I am vegetarian", translation: "Ik ben vegetariër" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Het bezittelijk voornaamwoord 📚</GrammarTitle>
-                <GrammarParagraph> Het bezittelijk voornaamwoord geeft de bezittelijke relatie weer met een persoon, dier of organisatie.
+                <GrammarTitle>📚 Het meervoud 📚</GrammarTitle>
+                <GrammarParagraph> Standaard gaan we in het meervoud +en achter het woord zetten. Een boek worden 2 boek<Highlight>en</Highlight>.
                     <br></br>
                     <br></br>
-                    Van wie is dat boek? Dat is <Highlight>mijn boek</Highlight>. Dat is <Highlight>het mijne</Highlight>. Als je bijvoorbeeld zegt: “Dat is zijn fiets”, vertelt het woord ‘zijn’ van wie de fiets is.
+                    Laten we even de standaardregels bekijken. <a href="https://www.slimleren.nl/onderwerpen/nederlands/12.557/basisregels-meervoud-zelfstandig-naamwoord">hier</a>
                     <br></br>
                     <br></br>
-                    Let's check the table <a href="https://onzetaal.nl/taalloket/bezittelijk-voornaamwoord">here</a></GrammarParagraph>
+                    Er zijn echter ook heel wat uitzonderingen. Vaak gerelateerd aan een bepaalde regel, maar soms moet je ze ook gewoon vanbuiten kennen. Laten we ze <a href="https://grammaticavoornt2docenten.nl/schrijfvaardigheid/het-meervoud-vormen-2/">hier</a> even bekijken.</GrammarParagraph>
                 <br />
             </GrammarBox>
             <MultipleChoice questions={questions} correctAnswers={correctAnswers} />
             <Separator></Separator>
             <GrammarBox>
-                <GrammarTitle>📚 Gesloten vragen 📚</GrammarTitle>
-                <GrammarParagraph> Gesloten vragen zijn vragen die we enkel met ja/nee kunnen beantwoorden. In een gewone zin is de normale volgorde het <Highlight>onderwerp </Highlight> (vb. "ik") gevolgd door het <Highlight>werkwoord</Highlight> (vb. "werk") gevolgd door de rest van de zin. Bijvoorbeeld: "Ik werk in een fabriek."
-                    <br />
-                    <br />
-                    Bij gesloten vragen draaien we deze volgorde om. Daarbij komt dan eerst het <Highlight>werkwoord</Highlight> (vb. "werk") gevolgd door het <Highlight>onderwerp</Highlight> (vb. "jij") gevolgd door de rest van de zin. Bijvoorbeeld: "Werk jij in een fabriek?"
+                <GrammarTitle>📚 Voorzetsels 📚</GrammarTitle>
+                <GrammarParagraph> Voorzetsels worden normaal gebruikt om te verwijzen naar een tijd, plaats of middel. Ik ga naar school <Highlight>om</Highlight> 9uur. Ik zit dan <Highlight>in</Highlight> de klas. Ik ga naar school <Highlight>met</Highlight> de auto.
                     <br />
                     <br></br>
-                    <br></br> Let's check this explanation on word positioning <a href="https://www.braint.nl/taalgids/zinsontleding/woordvolgorde.html#:~:text=De%20gebruikelijke%20woordvolgorde%20in%20een,zin%20je%20nadruk%20wilt%20geven">here</a>.
-                    And let's do some exercises <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-geslotenvragen-oefening1/">here</a>.</GrammarParagraph>
+                    <br></br> Let's check this explanation  <a href="https://www.nt2.nl/documenten/focus_op_taal/focus_op_taal-oefenbladen-hfdst21.pdf">here</a>. </GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/vakantie">
-                    "Holidays!" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/restaurant-ínstroom">
+                    "Restaurant instroom!" Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/een-reis-boeken">
-                    "Booking a trip" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/op-restaurant-japan">
+                    "Going to the restaurant in Japan" Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
@@ -249,7 +245,8 @@ function Lesson7() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Je bent op vakantie in Scheveningen. Schrijf een kaartje aan je familie met vakantiegroeten.
+                    Bekijk <a href="https://www.nt2.nl/documenten/praatplaat_vakantie_nt2.pdf">deze tekening</a>. Beschrijf 10 situaties en maak daarbij gebruik van voorzetsels. Vb. "De kat zit in het gras. Tessa staat naast de fiets."
+
 
                 </GrammarParagraph>
             </GrammarBox>
