@@ -4,6 +4,7 @@ import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimpl
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
 import MultipleChoice from '../components/Exercises/Grammar/MultipleChoice';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
+import Conversation from '../components/Conversation/Conversation';
 import bier from "../images/7bier.png";
 import bitterbal from "../images/7bitterbal.jpg";
 import boterham from "../images/7boterham.jpeg";
@@ -124,7 +125,12 @@ function Lesson7() {
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo! Gaan we op restaurant?", "Ik wil liever Italiaans eten...", "Wil je in het restaurant eten, of het eten afhalen en meenemen?", "En wie gaat de rekening betalen?", "Prima, laten we vertrekken!"]}
+                dutchMessages={["Ja doen we! Ik heb wel trek in Chinees.", "Nou, dan doen we dat.", "Laten we in het restaurant eten, ik zal een tafel reserveren.", "Die delen we door 2."]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
+
             <StyledQuestion data-translation=" What do you like to eat">Wat eet jij graag?</StyledQuestion>
             <StyledQuestion data-translation=" What is your favorite food?">Wat is jouw lievelingseten?</StyledQuestion>
             <StyledQuestion data-translation=" Do you want to order?">Wil je bestellen?</StyledQuestion>
@@ -144,6 +150,7 @@ function Lesson7() {
 
 
             </StyledAbout>
+
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />

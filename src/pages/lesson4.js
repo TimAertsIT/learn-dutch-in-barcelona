@@ -22,6 +22,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
+import Conversation from '../components/Conversation/Conversation';
 
 function Lesson4() {
     const lessonId = 4;
@@ -100,6 +101,10 @@ function Lesson4() {
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo! Mag ik je wat vragen?", "Waar is het treinstation?", "Dus hier naar rechts en dan naar links?", "Oh ok, duidelijk! Zijn er onderweg nog bezienswaardigheden te zien?", "Oh leuk, dan stop ik daar even. Wat is jouw favoriete plek in deze stad?", "Oh ik ook, dat ga ik zeker ook eens bezoeken dan. Bedankt voor je uitleg, een fijne dag nog!"]}
+                dutchMessages={["Ja natuurlijk, wat wil je weten?", "Je moet deze straat volgen en dan kom je er.", "Nee, gewoon deze winkelstraat volgen tot op het einde.", "Ja, er zijn een museum en een kerk aan de rechterkant!", "Dat moet wel het groene plein zijn, ik hou van bomen en groen.", "Doei!"]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
             <StyledQuestion data-translation=" Where is the train station?">Waar is het treinstation?</StyledQuestion>
             <StyledQuestion data-translation=" Do you like walking in the shopping street?">Wandel jij graag in de winkelstraat?</StyledQuestion>
