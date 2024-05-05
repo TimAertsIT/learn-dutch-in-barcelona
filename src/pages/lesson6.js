@@ -24,6 +24,7 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import { StyledAbout } from './about.styles';
+import Conversation from '../components/Conversation/Conversation';
 
 function Lesson6() {
     const lessonId = 6;
@@ -89,22 +90,22 @@ function Lesson6() {
 
     const correctAnswers = ['mijne', 'jouw', 'ons', 'mijn', 'hare', 'haar', 'mijn', 'mijne', 'onze', 'jullie', 'hunne', 'uw', 'mijn', 'mijn', 'ons'];
 
-    const [email, setEmail] = useState(null);
-    useEffect(() => {
-        if (!email) {
-            const userEmail = prompt("Please enter your email to access this lesson:");
-            if (allowedEmails.includes(userEmail)) {
-                setEmail(userEmail);
-            } else {
-                alert("Access denied. Please enter a valid email.");
-            }
-        }
-    }, [email]);
+    // const [email, setEmail] = useState(null);
+    // useEffect(() => {
+    //if (!email) {
+    //const userEmail = prompt("Please enter your email to access this lesson:");
+    //  if (allowedEmails.includes(userEmail)) {
+    // setEmail(userEmail);
+    // } else {
+    //    alert("Access denied. Please enter a valid email.");
+    //   }
+    //   }
+    // }, [email]);
 
-    // If the email is not set, don't render anything
-    if (!email) {
-        return null;
-    }
+
+    // if (!email) {
+    //  return null;
+    //}
 
     const sentences = [
         'Morgen is er een _ en zullen we vanalle bezienswaardigheden bezoeken.',
@@ -124,6 +125,10 @@ function Lesson6() {
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo! Ik wil op vakantie gaan in Nederland.", "Zijn er in jullie hotel nog kamers vrij?", "Ik zoek een tweepersoonskamer voor 3 nachten.", "Vanaf de volgende zaterdag al.", "Met ontbijt. Is het een kamer met zeezicht?", "Prima, hoe kan ik de kamer reserveren?", "Ok, dat zal ik doen. Bedankt voor de informatie!", "Tot ziens!"]}
+                dutchMessages={["Hallo! Van harte welkom!", "Ja, wij hebben nog enkele kamers vrij. Een kamer voor hoeveel personen?", "Dat kan, wanneer willen jullie komen?", "Dat kan zeker, met ontbijt of zonder ontbijt?", "Ja, al onze kamers hebben zeezicht.", "Je kan mij een mail sturen en dan is het in orde.", "Graag gedaan, tot binnenkort!"]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
             <StyledQuestion data-translation=" What is your favorite travel destination">Wat is jouw favoriete reisbestemming?</StyledQuestion>
             <StyledQuestion data-translation=" Do you prefer to go to a hotel or to a camping?">Verkies je een hotel of een camping?</StyledQuestion>
@@ -135,17 +140,24 @@ function Lesson6() {
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
-                <h1>De speciale kamer</h1>
-                <p>De toerist, die net was aangekomen in het bruisende centrum van Amsterdam, sleepte zijn bagage naar Het hotel. "Ik zou graag willen inchecken," zei hij tegen de receptioniste. "En ik heb een speciaal verzoek. Ik wil graag een kamer waar ik zicht heb op het strand."</p>
+                <h1>Het grote hotel</h1>
+                <p>Er was eens een toerist genaamd Kees. Kees hield van reizen en besloot een reis te maken naar Spanje. Hij reserveerde een kamer in een mooi hotel in het centrum van Barcelona.</p>
 
-                <p>De receptioniste knikte begrijpend en gaf hem de sleutel van kamer 404. "Maar meneer," waarschuwde ze, "in kamer 404 zult u misschien meer vinden dan u had verwacht."</p>
+                <p>Op de dag van zijn aankomst ging Kees inchecken bij de receptie van het hotel. De receptioniste gaf hem een plattegrond van het hotel en zei: "Uw kamer is nummer 101, op de eerste verdieping. U kunt de trap nemen."</p>
 
-                <p>Verward maar nieuwsgierig ging de toerist naar zijn kamer. Toen hij de deur opende, zag hij tot zijn verbazing dat de kamer geen muren had, alleen een gigantisch schilderij van een strand. "Welkom bij onze nieuwste attractie," riep een stem van achter het schilderij. "Het is een kamer met een 360-graden zicht, waar u kunt reizen zonder te reizen!"</p>
+                <p>Kees nam zijn bagage en begon de trap op te gaan. Maar elke keer als hij dacht dat hij bij zijn kamer was, was er weer een nieuwe gang! Het hotel was zo groot en verwarrend dat Kees verdwaalde.</p>
 
-                <p>De toerist lachte. "Dit is fantastisch! Maar hoe zit het met mijn privacy?"
-                    "Wees niet bang," zei de stem. "Als u privacy wilt, zeg dan gewoon 'Gesloten' en het schilderij wordt een muur. En als u wilt uitchecken, roep dan 'Vrij' en een glijbaan brengt u rechtstreeks naar de receptie!"</p>
+                <p>Uiteindelijk vond Kees een gids in het hotel. De gids lachte en zei: "Dit hotel is gigantisch! Maar maak je geen zorgen, ik zal je naar je kamer brengen."</p>
 
-                <p>De toerist besloot dat dit de beste reiservaring was die hij ooit had gehad, zelfs beter dan de excursie die hij had gepland. Hij besloot de rest van de dag te besteden aan het verkennen van zijn kamer, die elke keer dat hij 'Verkennen' zei, veranderde in een nieuwe bestemming.</p>
+                <p> Na een lange reis door het hotel, kwam Kees eindelijk in zijn kamer. Hij keek uit het raam en zag een prachtig zicht op het strand. Hij lachte en dacht: "Dit gaat een geweldige vakantie worden!"</p>
+
+                <p>De volgende ochtend ging Kees naar beneden voor het ontbijt. Hij vroeg de receptioniste waar het restaurant was. Ze gaf hem een kaart en zei: "Ons restaurant is altijd open, maar het kan even duren voor je het kan vinden!"</p>
+
+                <p>Kees keek naar de kaart en zag dat het een kaart was van de hele wereld! Hij lachte en zei: "Hoe ga ik het restaurant hiermee ooit kunnen vinden?"</p>
+
+                <p>De receptioniste lachte ook en zei: "Nee, het restaurant is daar het hoekje om. Maar we houden ervan om onze gasten een beetje te plagen. Het ontbijt is klaar, geniet ervan!"</p>
+
+                <p>Kees lachte en dacht: "Dit is het grappigste hotel waar ik ooit ben geweest!"</p>
 
             </StyledAbout>
             <VocabularyQuiz words={words} />
