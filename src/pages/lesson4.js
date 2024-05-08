@@ -67,6 +67,8 @@ function Lesson4() {
         { src: bezienswaardigheid, caption: 'De bezienswaardigheid' },
     ];
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -97,6 +99,9 @@ function Lesson4() {
     ];
 
     const blanks = ['bibliotheek', 'straat', 'fietspad', 'plein', 'rivier', 'stadhuis', 'standbeeld', 'kathedraal', 'hier', 'kruispunt'];
+
+
+
     return (
         <div>
             <Navigation />
@@ -106,7 +111,14 @@ function Lesson4() {
                 dutchMessages={["Ja natuurlijk, wat wil je weten?", "Je moet deze straat volgen en dan kom je er.", "Nee, gewoon deze winkelstraat volgen tot op het einde.", "Ja, er zijn een museum en een kerk aan de rechterkant!", "Dat moet wel het groene plein zijn, ik hou van bomen en groen.", "Doei!"]}
             />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" Where is the train station?">Waar is het treinstation?</StyledQuestion>
+            <StyledQuestion
+                onClick={() => setShowExtraInfo(!showExtraInfo)}
+                data-translation=" Where is the train station?"
+            >
+                Waar is het treinstation?
+
+            </StyledQuestion>
+            {showExtraInfo && <div>The train station is located at...</div>}
             <StyledQuestion data-translation=" Do you like walking in the shopping street?">Wandel jij graag in de winkelstraat?</StyledQuestion>
             <StyledQuestion data-translation=" What are Bruges' places of interest?">Wat zijn de bezienswaardigheden van Brugge?</StyledQuestion>
             <StyledQuestion data-translation=" How do I go from the library to the museum?">Hoe ga ik van de bibliotheek naar het museum?</StyledQuestion>
