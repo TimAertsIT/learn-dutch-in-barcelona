@@ -90,22 +90,22 @@ function Lesson6() {
 
     const correctAnswers = ['mijne', 'jouw', 'ons', 'mijn', 'hare', 'haar', 'mijn', 'mijne', 'onze', 'jullie', 'hunne', 'uw', 'mijn', 'mijn', 'ons'];
 
-    // const [email, setEmail] = useState(null);
-    // useEffect(() => {
-    //if (!email) {
-    //const userEmail = prompt("Please enter your email to access this lesson:");
-    //  if (allowedEmails.includes(userEmail)) {
-    // setEmail(userEmail);
-    // } else {
-    //    alert("Access denied. Please enter a valid email.");
-    //   }
-    //   }
-    // }, [email]);
+    const [email, setEmail] = useState(null);
+    useEffect(() => {
+        if (!email) {
+            const userEmail = prompt("Please enter your email to access this lesson:");
+            if (allowedEmails.includes(userEmail)) {
+                setEmail(userEmail);
+            } else {
+                alert("Access denied. Please enter a valid email.");
+            }
+        }
+    }, [email]);
 
 
-    // if (!email) {
-    //  return null;
-    //}
+    if (!email) {
+        return null;
+    }
 
     const sentences = [
         'Morgen is er een _ en zullen we vanalle bezienswaardigheden bezoeken.',

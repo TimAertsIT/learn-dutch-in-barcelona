@@ -29,6 +29,19 @@ export const StyledQuestion = styled.p`
   }
 `;
 
+export const ExtraInformation = styled.div`
+    text-align: center;
+    color: #FF8C3F;
+    margin: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+
+    &:before {
+        content: "• ";
+    }
+`;
+
+
 export const LessonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;

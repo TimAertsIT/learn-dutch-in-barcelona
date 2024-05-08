@@ -1,4 +1,4 @@
-import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem, StyledLink, CenteredContainer } from '../pages/lesson1.styles';
+import { StyledQuestion, LessonContainer, Separator, TitleText, GrammarBox, GrammarParagraph, GrammarTitle, Highlight, GrammarListItem, StyledLink, CenteredContainer, ExtraInformation } from '../pages/lesson1.styles';
 import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
@@ -68,6 +68,12 @@ function Lesson4() {
     ];
     const [email, setEmail] = useState(null);
     const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
 
     useEffect(() => {
         if (!email) {
@@ -111,20 +117,48 @@ function Lesson4() {
                 dutchMessages={["Ja natuurlijk, wat wil je weten?", "Je moet deze straat volgen en dan kom je er.", "Nee, gewoon deze winkelstraat volgen tot op het einde.", "Ja, er zijn een museum en een kerk aan de rechterkant!", "Dat moet wel het groene plein zijn, ik hou van bomen en groen.", "Doei!"]}
             />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion
-                onClick={() => setShowExtraInfo(!showExtraInfo)}
-                data-translation=" Where is the train station?"
-            >
-                Waar is het treinstation?
-
-            </StyledQuestion>
-            {showExtraInfo && <div>The train station is located at...</div>}
-            <StyledQuestion data-translation=" Do you like walking in the shopping street?">Wandel jij graag in de winkelstraat?</StyledQuestion>
-            <StyledQuestion data-translation=" What are Bruges' places of interest?">Wat zijn de bezienswaardigheden van Brugge?</StyledQuestion>
-            <StyledQuestion data-translation=" How do I go from the library to the museum?">Hoe ga ik van de bibliotheek naar het museum?</StyledQuestion>
-            <StyledQuestion data-translation=" What is happening in Brussels today?">Wat is er vandaag te doen in Brussel?</StyledQuestion>
-            <StyledQuestion data-translation=" Can you show me the way to the city hall?">Kan je mij de weg wijzen naar het stadhuis?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your favorite spot in the city?">Wat is jouw favoriete plek in de stad?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" Where is the train station?">Waar is het treinstation?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Het treinstation is op het einde van deze straat.</ExtraInformation>
+                <ExtraInformation>Je moet deze straat volgen en dan zie je het treinstation.</ExtraInformation>
+                <ExtraInformation>Het treinstation is in de groene buurt.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" Do you like walking in the shopping street?">Wandel jij graag in de winkelstraat?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Ik hou van wandelen in de winkelstraat.</ExtraInformation>
+                <ExtraInformation>Ik wandel niet graag in de winkelstraat.</ExtraInformation>
+                <ExtraInformation>Ik wandel liever in een park of in de natuur.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" What are Bruges' places of interest?">Wat zijn de bezienswaardigheden van Brugge?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Brugge heeft heel veel bezienswaardigheden.</ExtraInformation>
+                <ExtraInformation>Een plek om te bezoeken is het centrum van Brugge.</ExtraInformation>
+                <ExtraInformation>Het belfort van Brugge is een bezienswaardigheid.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" How do I go from the library to the museum?">Hoe ga ik van de bibliotheek naar het museum?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Je volgt deze straat en dan kom je er.</ExtraInformation>
+                <ExtraInformation>Je moet de tweede straat rechts afslaan.</ExtraInformation>
+                <ExtraInformation>Je moet omkeren.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" What is happening in Brussels today?">Wat is er vandaag te doen in Brussel?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Er is een groentenmarkt vandaag.</ExtraInformation>
+                <ExtraInformation>Vandaag is er een festival in Brussel.</ExtraInformation>
+                <ExtraInformation>Er is niets te doen in Brussel vandaag.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Can you show me the way to the city hall?">Kan je mij de weg wijzen naar het stadhuis?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Nee, sorry. Ik ben niet van hier.</ExtraInformation>
+                <ExtraInformation>Ja hoor, geen enkel probleem.</ExtraInformation>
+                <ExtraInformation>Ja, ik wandel wel even met je mee tot daar.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" What is your favorite spot in the city?">Wat is jouw favoriete plek in de stad?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Mijn favoriete plek in de stad is het treinstation.</ExtraInformation>
+                <ExtraInformation>Ik heb geen favoriete plek in de stad.</ExtraInformation>
+                <ExtraInformation>Ik heb heel veel favoriete plekken in de stad, onder andere het stadspark, de grote markt en het museum.</ExtraInformation>
+            </div>}
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <VocabularyQuiz words={words} />
