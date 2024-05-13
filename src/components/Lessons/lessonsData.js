@@ -6,6 +6,8 @@ import utrecht from '../../images/utrecht.jpg'
 import station from '../../images/station.jpg'
 import holidays from '../../images/holidays.jpg'
 import restaurant from '../../images/restaurant.jpg'
+import huis from '../../images/huis.jpg'
+
 
 export const lessonsData = {
     "lessons": [
@@ -57,6 +59,13 @@ export const lessonsData = {
             "description": "Get to know ingredients and restaurant menus in Dutch and learn how to ask for food or the bill",
             "image": restaurant,
             "path": "/lesson7-restaurant-food-dutch"
+        },
+        {
+            "id": 8,
+            "title": "Chapter 7: house and garden",
+            "description": "Learn how to describe your house and garden in Dutch, with interactive vocabulary and grammar exercises",
+            "image": huis,
+            "path": "/lesson8-house-dutch"
         }
     ]
 };

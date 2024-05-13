@@ -28,9 +28,10 @@ const VocabularySimple = ({ words }) => {
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Type the Dutch translation here"
             />
+            <Button onClick={nextWord}>Next</Button>
             <Button onClick={checkAnswer}>Check</Button>
             <p>{message}</p>
-            <Button onClick={nextWord}>Next</Button>
+
         </ExerciseContainer>
     );
 };
