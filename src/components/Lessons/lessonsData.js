@@ -62,7 +62,7 @@ export const lessonsData = {
         },
         {
             "id": 8,
-            "title": "Chapter 7: house and garden",
+            "title": "Chapter 8: house and garden",
             "description": "Learn how to describe your house and garden in Dutch, with interactive vocabulary and grammar exercises",
             "image": huis,
             "path": "/lesson8-house-dutch"

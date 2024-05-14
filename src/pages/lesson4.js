@@ -23,6 +23,7 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import Conversation from '../components/Conversation/Conversation';
+import { StyledAbout } from './about.styles';
 
 function Lesson4() {
     const lessonId = 4;
@@ -161,6 +162,13 @@ function Lesson4() {
             </div>}
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
+            <StyledAbout>
+                <h1>De klunzige toerist</h1>
+                <p>Er was eens een man genaamd Jan. Jan was een beetje een kluns. Op een dag besloot hij een wandeling te maken door de straat. Hij liep rechtdoor en kwam bij het plein. Daar zag hij de kerk, de moskee, de kathedraal, en zelfs het stadhuis. Hij was zo onder de indruk dat hij niet merkte dat hij zijn schoenen had verwisseld. Hij had een sandaal aan de ene voet en een laars aan de andere! Hij lachte en zei: “Ik lijk wel een Franse modeontwerper!”</p>
+                <p>Jan liep verder en kwam bij de rivier. Hij wilde een foto maken van het monument aan de andere kant, maar hij liet zijn camera in het water vallen! Hij probeerde de camera te pakken, maar gleed uit en viel in de rivier. Gelukkig was hij een goede zwemmer. Hij zei: “Ik zwem beter dan een Franse eend!”</p>
+                <p>Drijfnat en nog steeds met twee verschillende schoenen, liep Jan naar het hotel. Daar vroeg hij de weg naar de bibliotheek. Maar in plaats van links te afslaan zoals hem was verteld, sloeg hij rechts af en eindigde bij de bushalte. Hij grinnikte en zei: “Ik ben net zo verward als een Fransman die Nederlands probeert te spreken!”</p>
+                <p>Uiteindelijk kwam Jan bij de bibliotheek aan. Hij was moe, nat en een beetje beschaamd, maar hij kon niet anders dan lachen om zijn eigen avonturen.</p>
+            </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
