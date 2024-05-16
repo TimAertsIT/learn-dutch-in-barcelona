@@ -23,6 +23,7 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import Conversation from '../components/Conversation/Conversation';
+import { StyledAbout } from './about.styles';
 
 function Lesson8() {
     const lessonId = 8;
@@ -161,6 +162,13 @@ function Lesson8() {
             </div>}
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
+            <StyledAbout>
+                <h1>De kleine bloem</h1>
+                <p>Er was eens een bloem die in de tuin stond. Op een dag zei de bloem tegen de boom: “Ik ben zo klein, ik kan niet eens over het gras heen kijken!”</p>
+                <p>De boom lachte en zei: “Maar je hebt wel het beste uitzicht op de voordeur. Je kunt altijd zien wie er binnenkomt en vertrekt!”</p>
+                <p>De bloem dacht even na en zei toen: “Dat is waar, ik heb het beste uitzicht op de voordeur. Maar ik kan nog steeds niet zien wat er in de keuken gebeurt!”</p>
+                <p>En de boom antwoordde lachend: “Maak je geen zorgen, je mist niets. Het enige dat ze in de keuken doen, is water geven aan de planten!”</p>
+            </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
@@ -180,77 +188,88 @@ function Lesson8() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="bezoeken"
-                    translation="to visit"
-                    conjugations={["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"]}
+                    verb="wonen"
+                    translation="to live"
+                    conjugations={["woon", "woont", "woont", "wonen", "wonen", "wonen"]}
                 />
                 <Verbs
-                    verb="kunnen"
-                    translation="to be able to"
-                    conjugations={["kan", "kunt", "kan", "kunnen", "kunnen", "kunnen"]}
+                    verb="zitten"
+                    translation="to sit"
+                    conjugations={["zit", "zit", "zit", "zitten", "zitten", "zitten"]}
                 />
                 <Verbs
-                    verb="volgen"
-                    translation="to follow"
-                    conjugations={["volg", "volgt", "volgt", "volgen", "volgen", "volgen"]}
+                    verb="staan"
+                    translation="to stand"
+                    conjugations={["sta", "staat", "staat", "staan", "staan", "staan"]}
                 />
                 <Verbs
-                    verb="afslaan"
-                    translation="to turn"
-                    conjugations={["sla af", "slaat af", "slaat af", "slaan af", "slaan af", "slaan af"]}
+                    verb="hangen"
+                    translation="to hang"
+                    conjugations={["hang", "hangt", "hangt", "hangen", "hangen", "hangen"]}
                 />
                 <Verbs
-                    verb="moeten"
-                    translation="must"
-                    conjugations={["moet", "moet", "moet", "moeten", "moeten", "moeten"]}
+                    verb="maken"
+                    translation="to make"
+                    conjugations={["maak", "maakt", "maakt", "maken", "maken", "maken"]}
                 />
                 <Verbs
-                    verb="drinken"
-                    translation="to drink"
-                    conjugations={["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"]}
+                    verb="herkennen"
+                    translation="to recognise"
+                    conjugations={["herken", "herkent", "herkent", "herkennen", "herkennen", "herkennen"]}
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "bezoeken", conjugations: ["bezoek", "bezoekt", "bezoekt", "bezoeken", "bezoeken", "bezoeken"] },
-                { verb: "kunnen", conjugations: ["kan", "kunt", "kan", "kunnen", "kunnen", "kunnen"] },
-                { verb: "volgen", conjugations: ["volg", "volgt", "volgt", "volgen", "volgen", "volgen"] },
-                { verb: "afslaan", conjugations: ["sla af", "slaat af", "slaat af", "slaan af", "slaan af", "slaan af"] },
-                { verb: "moeten", conjugations: ["moet", "moet", "moet", "moeten", "moeten", "moeten"] },
-                { verb: "drinken", conjugations: ["drink", "drinkt", "drinkt", "drinken", "drinken", "drinken"] }
+                { verb: "wonen", conjugations: ["woon", "woont", "woont", "wonen", "wonen", "wonen"] },
+                { verb: "zitten", conjugations: ["zit", "zit", "zit", "zitten", "zitten", "zitten"] },
+                { verb: "staan", conjugations: ["sta", "staat", "staat", "staan", "staan", "staan"] },
+                { verb: "hangen", conjugations: ["hang", "hangt", "hangt", "hangen", "hangen", "hangen"] },
+                { verb: "maken", conjugations: ["maak", "maakt", "maakt", "maken", "maken", "maken"] },
+                { verb: "herkennen", conjugations: ["herken", "herkent", "herkent", "herkennen", "herkennen", "herkennen"] }
             ]} />
             <Translate sentences={[
-                { english: "I visit the library", translation: "Ik bezoek de bibliotheek" },
-                { english: "You can drink here", translation: "Jij kunt hier drinken" },
-                { english: "They must follow", translation: "Zij moeten volgen" },
-                { english: "He turns to the right", translation: "Hij slaat af naar rechts" },
-                { english: "We visit the city", translation: "Wij bezoeken de stad" },
-                { english: "They can visit the monument", translation: "Zij kunnen het monument bezoeken" },
-                { english: "They can drink water", translation: "Zij kunnen water drinken" },
-                { english: "You must turn", translation: "Jij moet afslaan" },
-                { english: "You must turn left", translation: "Jij moet links afslaan" },
-                { english: "I never drink tea", translation: "Ik drink nooit thee" }
+                { english: "I live in a house", translation: "Ik woon in een huis" },
+                { english: "The flowers stand in the garden", translation: "De bloemen staan in de tuin" },
+                { english: "My house has 4 bedrooms", translation: "Mijn huis heeft 4 slaapkamers" },
+                { english: "The grass is always green", translation: "Het gras is altijd groen" },
+                { english: "We live on the third floor", translation: "Wij wonen op de derde verdieping" },
+                { english: "He sits on the toilet", translation: "Hij zit op het toilet" },
+                { english: "Letters come in the postbox", translation: "Brieven komen in de brievenbus" },
+                { english: "She is nog big, but small", translation: "Zij is niet groot, maar klein" },
+                { english: "It is way too busy here", translation: "Het is veel te druk hier" },
+                { english: "Flowers are not ugly, but beautiful", translation: "Bloemen zijn niet lelijk, maar mooi" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Vraagwoorden 📚</GrammarTitle>
+                <GrammarTitle>📚 Meewerkend voorwerp 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Wie (who), wat (what), waar (where), wanneer (when), waarom (why), hoe (how), welk(e) (which), hoeveel (how many) are some of the most used question words.</GrammarParagraph>
+                    Het meewerkend voorwerp is de persoon aan wie iets gericht, gegeven, .. wordt. Dus is het meewerkend voorwerp de ontvanger. Het is niet perse nodig dat hij zelf ook "meewerkt". Vaak staat het woord "aan" of "voor" vóór het meewerkend voorwerp. Bijvoorbeeld "ik geef een cadeau aan jou", of "dat drankje is voor haar".</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight> </GrammarParagraph>
+                <GrammarParagraph>
+                    De meewerkende voorwerpen zijn: </GrammarParagraph>
+                <GrammarListItem>Mij</GrammarListItem>
+                <GrammarListItem>Jou</GrammarListItem>
+                <GrammarListItem>Hem/haar/u</GrammarListItem>
+                <GrammarListItem>Ons</GrammarListItem>
+                <GrammarListItem>Jullie</GrammarListItem>
+                <GrammarListItem>Hen</GrammarListItem>
+                <br />
+                <GrammarParagraph> <Highlight>Let's do these exercises: <a href="https://www.taal-oefenen.nl/taal-groep-8/zinsontleding/meewerkend-voorwerp/klik-het-meewerkend-voorwerp-aan-2">1</a> and <a href="https://www.cambiumned.nl/zinsdelen/meewerkend-voorwerp/">2</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Modale hulpwerkwoorden (modal helping verbs) 📚</GrammarTitle>
-                <GrammarParagraph>Modal verbs such as "kunnen" and "moeten" come together with another verb. They add a probability, an obligation, a wish, a possibility, etc. to the other verb. The modal verb normally comes right after the subject. Whereas the matching infinite verb comes at the end of the sentence. Let's check some more information <a href="https://uilentaal.wordpress.com/2015/03/04/modale-werkwoorden/">here</a></GrammarParagraph>
+                <GrammarTitle>📚 Trappen van vergelijking 📚</GrammarTitle>
+                <GrammarParagraph>To compare the value of an adjective to another one, we can use "trappen van vergelijking (degrees of comparison)". I consider that house to be beautiful (mooi), more beautiful (mooier) or the most beautiful (mooist).
+
+                    Let's check some information <a href="https://onzetaal.nl/taalloket/trappen-van-vergelijking">here</a></GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Let's do the exercise in the Google Drive </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Let's do these exercises: <a href="https://www.jufmelis.nl/woordenschat/trappen-van-vergelijking/trappen-van-vergelijking-1">1</a> and <a href="https://www.taal-oefenen.nl/instruction/taal/spelling/regelwoorden-1/trappen-van-vergelijking-regelmatige-woorden">2</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/ken-je-leuven-al">
-                    "Do you already know Leuven?" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/een-huis-gent">
+                    "Een speciaal huis in Gent?" Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/mechelen">
-                    "The city of Mechelen." Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/hoe-groot-je-huis">
+                    "How big is your house?" Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
@@ -258,14 +277,8 @@ function Lesson8() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    - Wat is jouw favoriete plaats in de stad? Maak zinnen (vb. Ik hou van het stadspark, want daar is het rustig. Je kan er wandelen, fietsen en ijsjes eten. Het stadspark ligt in het midden van de stad Antwerpen.)</GrammarParagraph>
-                <br />
-                <GrammarParagraph>
+                    Let's make the exercises in the Google Drive</GrammarParagraph>
 
-                    - Wat is er te doen in Gent deze week (in zinnen). <a href="https://www.wattedoen.be/gent">https://www.wattedoen.be/gent </a>
-                    (vb. In Gent is er een markt op donderdag. Er is deze week ook een concert van de muziekgroep Absynthe Minded. Woensdag is er een theatervoorstelling voor kinderen.).
-
-                </GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div>

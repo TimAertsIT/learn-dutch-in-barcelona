@@ -41,7 +41,7 @@ function Lesson4() {
         { dutch: 'De bibliotheek', english: 'The library' },
         { dutch: 'Het cultureel centrum', english: 'The cultural centre' },
         { dutch: 'De bushalte', english: 'The bus stop' },
-        { dutch: 'Rechtdoor', english: 'Straigth ahead' },
+        { dutch: 'Rechtdoor', english: 'Straight ahead' },
         { dutch: 'Afslaan', english: 'Turn' },
         { dutch: 'Rechts', english: 'Right' },
         { dutch: 'Links', english: 'Left' },
