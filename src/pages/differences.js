@@ -13,6 +13,7 @@ import vijgen from "../images/0vijgen.png";
 import zeker from "../images/0zeker.png";
 
 import { StyledAbout } from './about.styles';
+import { LargeStyledImage } from './about.styles';
 
 function Differences() {
     return (
@@ -64,7 +65,7 @@ function Differences() {
                 </p>
             </StyledAbout>
             <Footer />
-        </div>
+        </div >
     );
 }
 

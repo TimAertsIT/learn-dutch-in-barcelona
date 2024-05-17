@@ -52,7 +52,7 @@ export const StyledAbout = styled.div`
     @media (max-width: 768px) {
         img {
             max-width: 100%;
-            max-height: 200px;
+            max-height: 400px;
         }
     }
     @media (width: 600px) and (height: 800px) {
@@ -61,4 +61,3 @@ export const StyledAbout = styled.div`
         }
     }
 `;
-
