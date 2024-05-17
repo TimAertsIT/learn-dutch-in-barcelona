@@ -20,7 +20,7 @@ export const StyledLink = styled.a`
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 20px;
   font-weight: 600; /* Bold text */
 
   &:hover {

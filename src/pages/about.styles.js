@@ -40,6 +40,15 @@ export const StyledAbout = styled.div`
         object-position: 0 17%;
     }
 
+      hr {
+        border: 0;
+        height: 1px;
+        background: #333; /* Dark grey color similar to the text color */
+        width: 60%; /* Cover 60% of the page */
+        margin: 20px auto; /* Center the divider and add some margin underneath */
+    }
+;
+
     @media (max-width: 768px) {
         img {
             max-width: 100%;

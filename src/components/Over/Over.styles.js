@@ -95,6 +95,9 @@ export const StyledList = styled.ul`
 
 export const StyledReadMoreButton = styled.div`
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     button {
         background-color: #1d7a85;

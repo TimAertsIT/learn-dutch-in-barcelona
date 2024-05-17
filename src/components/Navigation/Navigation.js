@@ -8,6 +8,7 @@ const Navigation = () => {
             <StyledLink as={Link} to="/" className="home-link">Homepage</StyledLink>
             <StyledDiv>
                 <StyledLink as={Link} to="/about">About</StyledLink>
+                <StyledLink as={Link} to="/blog">Blog</StyledLink>
             </StyledDiv>
         </NavigationWrapper>
     );
