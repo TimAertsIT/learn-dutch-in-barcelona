@@ -7,7 +7,7 @@ import station from '../../images/station.jpg'
 import holidays from '../../images/holidays.jpg'
 import restaurant from '../../images/restaurant.jpg'
 import huis from '../../images/huis.jpg'
-
+import dieren from '../../images/dieren.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -66,6 +66,13 @@ export const lessonsData = {
             "description": "Learn how to describe your house and garden in Dutch, with interactive vocabulary and grammar exercises",
             "image": huis,
             "path": "/lesson8-house-dutch"
+        },
+        {
+            "id": 9,
+            "title": "Chapter 9: animals and nature",
+            "description": "Discover vocabulary about animals and nature in Dutch and describe them in the present and past tense",
+            "image": dieren,
+            "path": "/lesson9-animals-nature-dutch"
         }
     ]
 };
