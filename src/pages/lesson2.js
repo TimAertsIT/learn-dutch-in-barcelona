@@ -22,6 +22,10 @@ import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
+import Conversation from '../components/Conversation/Conversation';
+import { ExtraInformation } from './lesson1.styles';
+import FillInTheBlankExercise from '../components/Exercises/Vocabulary/FillintheBlankExercise';
+import { StyledAbout } from './about.styles';
 
 function Lesson2() {
     const lessonId = 2;
@@ -163,6 +167,13 @@ function Lesson2() {
     const correctAnswers = ['mooi', 'mooie', 'lelijke', 'kleine', 'leuk', 'dun', 'slimme', 'toffe', 'vuil', 'blij', 'mooi', 'mooie', 'mooi', 'grote', 'kleine'];
 
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -178,22 +189,92 @@ function Lesson2() {
     if (!email) {
         return null;
     }
+    const sentences = [
+        'Nog 2 jaar naar de unversiteit gaan en dan kan ik _.',
+        'Ik vind talen studeren erg moeilijk, behalve _.',
+        'Dingen die in het verleden gebeurden zijn _.',
+        'De _ duurt ongeveer 1 uur.',
+        'Om iets te kopen moet je naar de _.',
+        'Brood koop je bij de _.',
+        'Ik heb een leuke _ op het werk, hij is erg vriendelijk.',
+        'Over landen, rivieren en stden leer je in de les _.',
+        'Als je nog iets wilt drinken moet je de _ vragen.',
+        'In het ziekenhuis kan de _ je verzorgen.'
+    ];
+
+    const blanks = ['geschiedenis', 'bakker', 'baas', 'verpleger', 'afstuderen', 'aardrijkskunde', 'Engels', 'les', 'ober', 'winkel'];
+
     return (
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo! Wat studeer jij?", "Oh, dat lijkt mij erg moeilijk. Niet?", "Ik doe een opleiding aan de hogeschool.", "Ik wil verpleger worden.", "Precies! Maar ik moet nog 3 jaar studeren.", "Dankuwel, jij ook!"]}
+                dutchMessages={["Hey, ik studeer economie aan de universiteit.", "Dat gaat wel. Wat studeer jij?", "En welke opleiding dan?", "Fijn, dan kan je mensen helpen.", "Dan wens ik je alvast heel veel succes.", "Doei!"]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" What do you study?">Wat studeer jij?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you work full-time?">Werk jij fulltime?</StyledQuestion>
-            <StyledQuestion data-translation=" Which school do you go to?">Naar welke school ga jij?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you like to study?">Hou je van studeren?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you have to work hard?">Moet je hard werken?</StyledQuestion>
-            <StyledQuestion data-translation=" When are you allowed to retire?">Wanneer mag je op pensioen gaan?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" What do you study?">Wat studeer jij?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Ik studeer economie aan de universiteit.</ExtraInformation>
+                <ExtraInformation>Ik volg een opleiding dierenzorg.</ExtraInformation>
+                <ExtraInformation>Ik ben al afgestudeerd.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Ik ben tandarts.</ExtraInformation>
+                <ExtraInformation>Ik werk als verpleegkundige.</ExtraInformation>
+                <ExtraInformation>Ik ben werkzoekende.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" Do you work full-time?">Werk jij fulltime?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Nee, ik werk parttime.</ExtraInformation>
+                <ExtraInformation>Ja, ik werk 38 uur per week.</ExtraInformation>
+                <ExtraInformation>Ja, ik werk voltijds.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Which school do you go to?">Naar welke school ga jij?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Ik ga naar de universiteit.</ExtraInformation>
+                <ExtraInformation>Ik ga naar de hogeschool.</ExtraInformation>
+                <ExtraInformation>Ik ga naar de Bosschool in Herentals.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" Do you like to study?">Hou je van studeren?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Nee, eigenlijk houd ik niet van studeren.</ExtraInformation>
+                <ExtraInformation>Ja, ik studeer graag.</ExtraInformation>
+                <ExtraInformation>Ja, ik houd van studeren.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Do you have to work hard?">Moet je hard werken?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ja, ik heb een zware job.</ExtraInformation>
+                <ExtraInformation>Nee, mijn beroep is vrij gemakkelijk.</ExtraInformation>
+                <ExtraInformation>Ja, ik moet hard werken.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" When are you allowed to retire?">Wanneer mag je op pensioen gaan?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Dat weet ik niet.</ExtraInformation>
+                <ExtraInformation>Ik mag op pensioen gaan op mijn 65e.</ExtraInformation>
+                <ExtraInformation>Wanneer ik 65 jaar oud zal zijn.</ExtraInformation>
+            </div>}
+
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
-            <VocabularySimple words={words} />
+            <StyledAbout>
+                <h1>De verwarde bakker</h1>
+
+                <p>Op een dag liep Bakker Bram naar zijn werk. Hij was een beetje slaperig, want hij had tot laat in de nacht brood gebakken. Hij wreef in zijn ogen en stapte het klaslokaal binnen.</p>
+                <p>  “Wat doe ik hier?” dacht Bakker Bram. “Dit is toch geen bakkerij?”</p>
+                <p>Maar toen zag hij allemaal kinderen zitten. Ze keken hem verwachtingsvol aan. “Goedemorgen, meester!” riepen ze in koor.</p>
+                <p> Bakker Bram krabde op zijn hoofd. “Meester? Maar ik ben toch een bakker? ”</p >
+                <p>De kinderen lachten. “Nee, meester,” zei een slim meisje. “Je bent onze nieuwe leerkracht aardrijkskunde!”</p>
+                <p> Bakker Bram schrok. “Aardrijkskunde? Maar ik weet alleen iets van brood en taart!”
+                    De kinderen knikten begripvol. “Geen probleem, meester. We leren je wel alles over landen, rivieren en bergen.”</p>
+                <p>Bakker Bram keek naar het wereldkaartje aan de muur. “Oké,” zei hij. “Dus dit is Nederland, en daar is… eh, de bakkerij?”</p>
+                <p> De kinderen schudden hun hoofd. “Nee, meester. Dat is Australië. Maar je bent op de goede weg!”</p>
+                <p>  En zo begon Bakker Bram zijn nieuwe baan als leerkracht.</p>
+            </StyledAbout>
             <VocabularyQuiz words={words} />
+            <VocabularySimple words={words} />
+            <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <VocabularyTime wordArray={wordArray} />
             <GoedBezig
                 text={{ dutch: 'Handschoen', english: '"Hand shoe"' }}
