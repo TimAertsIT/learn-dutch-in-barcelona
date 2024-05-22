@@ -22,6 +22,10 @@ import { useState, useEffect } from 'react';
 // Import the gif and image
 import goedBezigGif from '../images/goedbezig.mp4';
 import goedBezigImage from '../images/goedbezig.jpg';
+import Conversation from '../components/Conversation/Conversation';
+import { ExtraInformation } from './lesson1.styles';
+import { StyledAbout } from './about.styles';
+import FillInTheBlankExercise from '../components/Exercises/Vocabulary/FillintheBlankExercise';
 
 function Lesson1() {
     const lessonId = 1;
@@ -66,6 +70,13 @@ function Lesson1() {
         { src: deStraat, caption: 'De straat' },
     ];
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -81,22 +92,86 @@ function Lesson1() {
     if (!email) {
         return null;
     }
+
+    const sentences = [
+        'Alles _ met jou?',
+        'Mijn _ is Sonja',
+        'Het is al 19uur. Het is _.',
+        'Ik heb 2 huisdieren. Een _ en een hond.',
+        'Wat doe jij van werk? Wat is jouw _?',
+        'Sport is mijn grootste _.',
+        'Ik werk nog niet, ik ben nog een _.',
+        'In een _ is het vaak erg druk.',
+        'Spanje is een erg mooi _.',
+        'Ik kom uit een heel klein _ in Nederland.'
+    ];
+
+    const blanks = ['hobby', 'avond', 'land', 'goed', 'kat', 'naam', 'beroep', 'student', 'stad', 'dorp'];
     return (
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo! Goedemorgen!", "Met mij gaat het goed. En met jou?", "Ik heet Bart. Wat is jouw naam?", "Aangenaam, Marieke. Waar woon jij?", "Ik woon in de stad Antwerpen.", "Ik ben 38 jaar oud. En jij?"]}
+                dutchMessages={["Hey, hoe gaat het?", "Ook goed, dankjewel. Hoe heet jij?", "Ik ben Marieke. Aangenaam.", "Ik woon in het centrum van Utrecht. En jij?", "En hoe oud ben jij?", "Ik ben nog maar 32 jaar oud."]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" Hello. Good morning!">Hallo. Goedemorgen!</StyledQuestion>
-            <StyledQuestion data-translation=" Who are you?">Wie ben jij?</StyledQuestion>
-            <StyledQuestion data-translation=" How are you doing?">Hoe gaat het met jou?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your name?">Hoe heet jij? Wat is jouw naam?</StyledQuestion>
-            <StyledQuestion data-translation=" Where do you live?">Waar woon je?</StyledQuestion>
-            <StyledQuestion data-translation=" How old are you?">Hoe oud ben jij?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" Hello. Good morning!">Hallo. Goedemorgen!</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Goedemorgen! Goededag.</ExtraInformation>
+                <ExtraInformation>Hallo! Hey!</ExtraInformation>
+                <ExtraInformation>Hoi hoi.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" Who are you?">Wie ben jij?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Ik ben Bart.</ExtraInformation>
+                <ExtraInformation>Ik heet Bart.</ExtraInformation>
+                <ExtraInformation>Mijn naam is Bart.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" How are you doing?">Hoe gaat het met jou?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Met mij gaat het goed.</ExtraInformation>
+                <ExtraInformation>Alles in orde.</ExtraInformation>
+                <ExtraInformation>Het gaat prima!</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" What is your name?">Wat is jouw naam?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Mijn naam is Bart.</ExtraInformation>
+                <ExtraInformation>Ik heet Bart. Hoe heet jij?</ExtraInformation>
+                <ExtraInformation>Ik ben Bart.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" Where do you live?">Waar woon jij?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Ik woon in de stad Antwerpen.</ExtraInformation>
+                <ExtraInformation>Ik woon in het land Spanje.</ExtraInformation>
+                <ExtraInformation>Ik woon in de Hoekstraat.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" How old are you?">Hoe oud ben jij?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ik ben 35 jaar oud.</ExtraInformation>
+                <ExtraInformation>Ik word volgende week 36 jaar oud.</ExtraInformation>
+                <ExtraInformation>Mijn leeftijd is geheim.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" What is your profession?">Wat is jouw beroep?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Ik ben bioloog.</ExtraInformation>
+                <ExtraInformation>Ik werk als magazijnier.</ExtraInformation>
+                <ExtraInformation>Ik ben werk aan het zoeken.</ExtraInformation>
+            </div>}
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
-            <VocabularySimple words={words} />
+            <StyledAbout>
+                <h1>De nieuwe buurman</h1>
+                <p> Op een mooie dag verhuisde Jan naar een nieuw huis in Nederland. Hij wilde graag kennismaken met zijn buren.</p>
+                <p>Hij klopte op de deur van zijn buurvrouw, Mevrouw Jansen. “Hallo,” zei Jan. “Ik ben Jan, je nieuwe buurman.”</p>
+
+                <p>Mevrouw Jansen glimlachte. “Welkom, Jan! Ik ben blij dat je hier bent. Wil je een kopje koffie?”</p>
+                <p>Jan knikte dankbaar. “Graag! Ik hou van koffie.”</p>
+                <p>En zo begon Jan zijn nieuwe leven in Nederland, met een vriendelijke buurvrouw en een lekker kopje koffie.</p>
+            </StyledAbout>
             <VocabularyQuiz words={words} />
+            <VocabularySimple words={words} />
+            <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
                 gif={goedBezigGif}
                 text={{ dutch: 'Luipaard', english: '"Lazy horse"' }}
