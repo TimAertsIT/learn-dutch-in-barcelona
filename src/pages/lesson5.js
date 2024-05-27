@@ -24,6 +24,8 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import { StyledAbout } from './about.styles';
+import Conversation from '../components/Conversation/Conversation';
+import { ExtraInformation } from './lesson1.styles';
 
 function Lesson5() {
     const lessonId = 5;
@@ -90,6 +92,13 @@ function Lesson5() {
     const correctAnswers = ['niet', 'geen', 'geen', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'niet', 'geen', 'niet', 'niet', 'niet', 'geen'];
 
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -124,14 +133,54 @@ function Lesson5() {
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hey Anne! Gaan we naar het station?", "Weet jij op welk spoor hij vertrekt?", "Is dat de trein met bestemming Oostende?", "Ok, dan is het niet de hogesnelheidstrein.", "Ik moet wel nog een kaartje kopen. Kom, we vertrekken.", "Dat is handig!"]}
+                dutchMessages={["Dag Toon. Ja, de trein vertrekt over een half uur.", "Ik denk op spoor drie.", "Ja, met haltes in Gent en Brugge.", "Nee klopt, dit is de stoptrein.", "Ik niet, ik heb een abonnement.", "En duur."]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" How much does a ticket to Groningen cost?">Hoeveel kost een kaartje naar Groningen?</StyledQuestion>
-            <StyledQuestion data-translation=" On which platform does the train arrive?">Op welk spoor komt de trein aan?</StyledQuestion>
-            <StyledQuestion data-translation=" At what time does the plane to Barcelona leave?">Om hoe laat vertrekt het vliegtuig naar Barcelona?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you want to walk or go by car?">Wil je te voet gaan of met de auto?</StyledQuestion>
-            <StyledQuestion data-translation=" What is the maximum speed on the highway?">Wat is de maximumsnelheid op de snelweg?</StyledQuestion>
-            <StyledQuestion data-translation=" What is the destination of your travels?">Wat is de bestemming van jouw reis?</StyledQuestion>
-            <StyledQuestion data-translation=" What time is it?">Hoe laat is het?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" How much does a ticket to Groningen cost?">Hoeveel kost een kaartje naar Groningen?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Een kaartje kost 5 euro voor een enkele reis.</ExtraInformation>
+                <ExtraInformation>Een heen-en-terug ticket kost 10 euro.</ExtraInformation>
+                <ExtraInformation>Als je een abonnement hebt kost het niets.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" On which platform does the train arrive?">Op welk spoort komt de trein aan?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>De trein komt aan op spoor 5.</ExtraInformation>
+                <ExtraInformation>Je bent te optimistisch, de trein komt niet aan.</ExtraInformation>
+                <ExtraInformation>De trein komt aan op spoor 7 of spoor 8.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" At what time does the plane to Barcelona leave?">Om hoe laat vertrekt het vliegtuig naar Barcelona?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Het vliegtuig vertrekt om acht uur.</ExtraInformation>
+                <ExtraInformation>De vlucht is om negen uur.</ExtraInformation>
+                <ExtraInformation>Het vliegtuig stijgt op om één uur.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Do you want to walk or go by car?">Wil je te voet gaan of met de auto?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Laten we de auto nemen.</ExtraInformation>
+                <ExtraInformation>Ik ga liever te voet.</ExtraInformation>
+                <ExtraInformation>Ik wil wandelen.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" What is the maximum speed on the highway?">Wat is de maximumsnelheid op de snelweg?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>In België is de maximumsnelheid 120 km/uur.</ExtraInformation>
+                <ExtraInformation>De snelheidslimiet in Nederland is 130 km/uur.</ExtraInformation>
+                <ExtraInformation>In de buurt van een school mag je niet sneller dan 30 km/uur rijden.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" What is the destination of your travels?">Wat is de bestemming van jouw reis?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ik ga op reis naar Guatemala.</ExtraInformation>
+                <ExtraInformation>Ik ga op vakantie in Spanje.</ExtraInformation>
+                <ExtraInformation>Mijn reisbestemming dit jaar is Nederland.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" What time is it?">Hoe laat is het?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Het is twaalf uur.</ExtraInformation>
+                <ExtraInformation>Het is kwart over twee.</ExtraInformation>
+                <ExtraInformation>Het is halfdrie.</ExtraInformation>
+            </div>}
+
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
