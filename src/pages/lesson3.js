@@ -22,6 +22,9 @@ import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
+import Conversation from '../components/Conversation/Conversation';
+import { StyledAbout } from './about.styles';
+import { ExtraInformation } from './lesson1.styles';
 
 function Lesson3() {
     const lessonId = 3;
@@ -66,6 +69,13 @@ function Lesson3() {
         { src: theater, caption: 'Het theater' },
     ];
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -100,17 +110,66 @@ function Lesson3() {
         <div>
             <Navigation />
             <Introduction lessonId={lessonId} />
+            <Conversation
+                belgianMessages={["Hallo dokter! Ik voel me een beetje ziek.", "Ik heb hoofdpijn en mijn buik doet raar.", "Nee, ik neem geen medicijnen.", "Dankuwel.", "En wat moet ik nu doen?", "Ok dat zal ik doen, alvast bedankt."]}
+                dutchMessages={["Dag patiënt. Wat heb je?", "Oh, dat zou een griep kunnen zijn. Neem je medicijnen?", "Ik zal even een onderzoek doen.", "Ik heb je lichaam onderzocht en het lijkt een griep.", "Ik geef je een voorschrift en dan moet je naar de apotheek.", "Veel beterschap!!"]}
+            />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" Do you like to watch movies?">Kijk jij graag films?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you listen to music?">Luister jij naar muziek?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you act in the theatre?">Speel jij toneel in het theater?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you like walking?">Houd jij van wandelen?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you feel ill?">Voel jij je ziek?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you have pain?">Heb je pijn?</StyledQuestion>
-            <StyledQuestion data-translation=" Where is the hospital?">Waar is het ziekenhuis?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" Do you like to watch movies?">Kijk jij graag films?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Nee, ik hou niet van films. Ik kijk liever naar series op Netflix.</ExtraInformation>
+                <ExtraInformation>Ja, ik kijk graag films, vooral romantische komedies.</ExtraInformation>
+                <ExtraInformation>Ja, en het allerliefst kijk ik films in de bioscoop.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" Do you listen to music?">Luister jij naar muziek?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Nee, ik haat muziek. Muziek is lawaai en ik wil stilte.</ExtraInformation>
+                <ExtraInformation>Ja, maar niet zo vaak. Enkel wanneer ik met de auto rijd.</ExtraInformation>
+                <ExtraInformation>Ja, heel veel. Ik ben een grote fan van de groep Queen.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" Do you act in the theatre?">Speel jij toneel in het theater?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Nee, ik kan niet goed doen alsof.</ExtraInformation>
+                <ExtraInformation>Ja, ik ben echt een goede acteur.</ExtraInformation>
+                <ExtraInformation>Ja, acteren en toneelspelen helpen me bij het uiten van mijn emoties.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Do you like walking?">Houd jij van wandelen?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Nee, ik wandel niet graag. Ik neem voor alles de auto.</ExtraInformation>
+                <ExtraInformation>Ja, ik hou vooral van een beetje kuieren in de stad.</ExtraInformation>
+                <ExtraInformation>Ja, ik maak graag grote wandelingen in de natuur.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" Do you feel ill?">Voel jij je ziek?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Vandaag niet nee. Maar ik heb wel vaak hoofdpijn.</ExtraInformation>
+                <ExtraInformation>Nee, ik ben kerngezond.</ExtraInformation>
+                <ExtraInformation>Ja, ik heb een ontsteking in mijn knie. Die ontsteking doet pijn.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Do you have pain?">Heb je pijn?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ja, ik heb pijn aan mijn hand.</ExtraInformation>
+                <ExtraInformation>Ja, ik heb hoofdpijn.</ExtraInformation>
+                <ExtraInformation>Nee, ik heb nergens pijn.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" Where is the hospital?">Waar is het ziekenhuis?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Er is een universitair ziekenhuis in deze buurt.</ExtraInformation>
+                <ExtraInformation>Het ziekenhuis is in het volgende dorp, in dit dorp is er geen ziekenhuis.</ExtraInformation>
+                <ExtraInformation>Welk ziekenhuis bedoel je?</ExtraInformation>
+            </div>}
+
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <VocabularyQuiz words={words} />
+            <StyledAbout>
+                <h1>De dansende dokter</h1>
+
+                <p>De dokter liep door het ziekenhuis, zijn witte jas wapperend achter hem aan. Hij was een beetje ziek en had last van de pijn in zijn hoofd. Zijn arm deed ook zeer, waarschijnlijk van al dat schrijven van voorschriften voor medicijnen. Hij wreef over zijn buik en mompelde iets over koorts.</p>
+                <p>Op een dag besloot de dokter dat hij wat afleiding nodig had. Hij ging naar het theater om een muzikant te zien optreden. De muzikant speelde prachtige melodieën op zijn gitaar en de dokter vergat even al zijn gezondheidsproblemen.</p>
+                <p>Na het concert ging de dokter naar het museum. Hij keek naar schilderijen en beelden en voelde zich geïnspireerd. Misschien moest hij zijn atelier inrichten en zelf gaan schilderen!
+                    De volgende dag ging de dokter naar de bioscoop. Hij zag een grappige film en lachte zo hard dat zijn buikpijn verdween. Hij voelde zich beter dan ooit.</p>
+                <p> En zo ontdekte de dokter dat naast medicijnen, kunst en cultuur ook goed waren voor zijn gezondheid. Hij begon zelfs te dansen in zijn vrije tijd. De mensen in het dorp noemden hem nu “de dansende dokter”. En hij was gelukkiger dan ooit tevoren!</p>
+            </StyledAbout>
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
