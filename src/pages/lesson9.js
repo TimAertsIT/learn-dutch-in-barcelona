@@ -194,88 +194,119 @@ function Lesson9() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="wonen"
-                    translation="to live"
-                    conjugations={["woon", "woont", "woont", "wonen", "wonen", "wonen"]}
+                    verb="vliegen"
+                    translation="to fly"
+                    conjugations={["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"]}
+                    vd="gevlogen"
                 />
                 <Verbs
-                    verb="zitten"
-                    translation="to sit"
-                    conjugations={["zit", "zit", "zit", "zitten", "zitten", "zitten"]}
+                    verb="zwemmen"
+                    translation="to swim"
+                    conjugations={["zwem", "zwemt", "zwemt", "zwemmen", "zwemmen", "zwemmen"]}
+                    vd="gezwommen"
                 />
                 <Verbs
-                    verb="staan"
-                    translation="to stand"
-                    conjugations={["sta", "staat", "staat", "staan", "staan", "staan"]}
+                    verb="beperken"
+                    translation="to limit"
+                    conjugations={["beperk", "beperkt", "beperkt", "beperken", "beperken", "beperken"]}
+                    vd="beperkt"
                 />
                 <Verbs
-                    verb="hangen"
-                    translation="to hang"
-                    conjugations={["hang", "hangt", "hangt", "hangen", "hangen", "hangen"]}
+                    verb="denken"
+                    translation="to think"
+                    conjugations={["denk", "denkt", "denkt", "denken", "denken", "denken"]}
+                    vd="gedacht"
                 />
                 <Verbs
-                    verb="maken"
-                    translation="to make"
-                    conjugations={["maak", "maakt", "maakt", "maken", "maken", "maken"]}
+                    verb="krijgen"
+                    translation="to get"
+                    conjugations={["krijg", "krijgt", "krijgt", "krijgen", "krijgen", "krijgen"]}
+                    vd="gekregen"
                 />
                 <Verbs
-                    verb="herkennen"
-                    translation="to recognise"
-                    conjugations={["herken", "herkent", "herkent", "herkennen", "herkennen", "herkennen"]}
+                    verb="overleven"
+                    translation="to survive"
+                    conjugations={["overleef", "overleeft", "overleeft", "overleven", "overleven", "overleven"]}
+                    vd="overleefd"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "wonen", conjugations: ["woon", "woont", "woont", "wonen", "wonen", "wonen"] },
-                { verb: "zitten", conjugations: ["zit", "zit", "zit", "zitten", "zitten", "zitten"] },
-                { verb: "staan", conjugations: ["sta", "staat", "staat", "staan", "staan", "staan"] },
-                { verb: "hangen", conjugations: ["hang", "hangt", "hangt", "hangen", "hangen", "hangen"] },
-                { verb: "maken", conjugations: ["maak", "maakt", "maakt", "maken", "maken", "maken"] },
-                { verb: "herkennen", conjugations: ["herken", "herkent", "herkent", "herkennen", "herkennen", "herkennen"] }
+                { verb: "vliegen", conjugations: ["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"] },
+                { verb: "zwemmen", conjugations: ["zwem", "zwemt", "zwemt", "zwemmen", "zwemmen", "zwemmen"] },
+                { verb: "beperken", conjugations: ["beperk", "beperkt", "beperkt", "beperken", "beperken", "beperken"] },
+                { verb: "denken", conjugations: ["denk", "denkt", "denkt", "denken", "denken", "denken"] },
+                { verb: "krijgen", conjugations: ["krijg", "krijgt", "krijgt", "krijgen", "krijgen", "krijgen"] },
+                { verb: "overleven", conjugations: ["overleef", "overleeft", "overleeft", "overleven", "overleven", "overleven"] }
             ]} />
             <Translate sentences={[
-                { english: "I live in a house", translation: "Ik woon in een huis" },
-                { english: "The flowers stand in the garden", translation: "De bloemen staan in de tuin" },
-                { english: "My house has 4 bedrooms", translation: "Mijn huis heeft 4 slaapkamers" },
-                { english: "The grass is always green", translation: "Het gras is altijd groen" },
-                { english: "We live on the third floor", translation: "Wij wonen op de derde verdieping" },
-                { english: "He sits on the toilet", translation: "Hij zit op het toilet" },
-                { english: "Letters come in the postbox", translation: "Brieven komen in de brievenbus" },
-                { english: "She is nog big, but small", translation: "Zij is niet groot, maar klein" },
-                { english: "It is way too busy here", translation: "Het is veel te druk hier" },
-                { english: "Flowers are not ugly, but beautiful", translation: "Bloemen zijn niet lelijk, maar mooi" }
+                { english: "Birds fly", translation: "Vogels vliegen" },
+                { english: "The pilot flies the airplane", translation: "De piloot vliegt met het vliegtuig" },
+                { english: "I get a pet", translation: "Ik krijg een huisdier" },
+                { english: "Animals survive the winter", translation: "Dieren overleven de winter" },
+                { english: "Can animals think?", translation: "Kunnen dieren denken?" },
+                { english: "Can fish swim?", translation: "Kunnen vissen zwemmen?" },
+                { english: "Mammals can not swim", translation: "Zoogdieren kunnen niet zwemmen" },
+                { english: "We must limit our impact", translation: "Wij moeten onze impact beperken" },
+                { english: "Bees communicatie with eachother", translation: "Bijen communiceren met elkaar" },
+                { english: "Would I like to live on a farm?", translation: "Zou ik graag op een boerderij wonen?" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Meewerkend voorwerp 📚</GrammarTitle>
+                <GrammarTitle>📚 Het lijdend voorwerp 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Het meewerkend voorwerp is de persoon aan wie iets gericht, gegeven, .. wordt. Dus is het meewerkend voorwerp de ontvanger. Het is niet perse nodig dat hij zelf ook "meewerkt". Vaak staat het woord "aan" of "voor" vóór het meewerkend voorwerp. Bijvoorbeeld "ik geef een cadeau aan jou", of "dat drankje is voor haar".</GrammarParagraph>
+                    Het lijdend voorwerp (the suffering object) is het voorwerp dat deelneemt aan de actie, zonder zelf iets te doen. Om het lijdend voorwerp te herkennen ga je eerst op zoek naar het onderwerp. Daarna zoek je het gezegde (alle werkwoorden). Als je bij die twee de vraag wie of wat plaatst, kom je tot het lijdend voorwerp.</GrammarParagraph>
                 <br />
                 <GrammarParagraph>
-                    De meewerkende voorwerpen zijn: </GrammarParagraph>
-                <GrammarListItem>Mij</GrammarListItem>
-                <GrammarListItem>Jou</GrammarListItem>
-                <GrammarListItem>Hem/haar/u</GrammarListItem>
-                <GrammarListItem>Ons</GrammarListItem>
-                <GrammarListItem>Jullie</GrammarListItem>
-                <GrammarListItem>Hen</GrammarListItem>
+                    Laten we even het lijdend voorwerp in deze zinnen zoeken: </GrammarParagraph>
+                <GrammarListItem>Ik koop een fiets.</GrammarListItem>
+                <GrammarListItem>Hij stopt mij.</GrammarListItem>
+                <GrammarListItem>Wij steunen haar.</GrammarListItem>
+                <GrammarListItem>Hij draagt een zwaar dossier.</GrammarListItem>
+                <GrammarListItem>Hij speelt gitaar.</GrammarListItem>
+                <GrammarListItem>Ik stop.</GrammarListItem>
                 <br />
-                <GrammarParagraph> <Highlight>Let's do these exercises: <a href="https://www.taal-oefenen.nl/taal-groep-8/zinsontleding/meewerkend-voorwerp/klik-het-meewerkend-voorwerp-aan-2">1</a> and <a href="https://www.cambiumned.nl/zinsdelen/meewerkend-voorwerp/">2</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Let's do these exercises: <a href="https://www.cambiumned.nl/zinsdelen/lijdend-voorwerp/">on recognising the "lijdend voorwerp"</a>  </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Trappen van vergelijking 📚</GrammarTitle>
-                <GrammarParagraph>To compare the value of an adjective to another one, we can use "trappen van vergelijking (degrees of comparison)". I consider that house to be beautiful (mooi), more beautiful (mooier) or the most beautiful (mooist).
-
-                    Let's check some information <a href="https://onzetaal.nl/taalloket/trappen-van-vergelijking">here</a></GrammarParagraph>
+                <GrammarTitle>📚 Voltooid tegenwoordige tijd 📚</GrammarTitle>
+                <GrammarParagraph>De voltooid tegenwoordige tijd beschrijft acties die gestart zijn in het verleden en ondertussen voltooid zijn, maar nog steeds relevantie hebben. Gewoonlijk gaat het over acties uit een recent verleden. In tegenstelling tot andere verleden tijdsvormen, is de actie nu nog steeds relevant. Vb. 5 jaar geleden kocht ik een appel die rot was en toen ontstond er een discussie, .... VS Ik ben deze ochtend naar de winkel geweest en heb een appel gekocht.
+                </GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Let's do these exercises: <a href="https://www.jufmelis.nl/woordenschat/trappen-van-vergelijking/trappen-van-vergelijking-1">1</a> and <a href="https://www.taal-oefenen.nl/instruction/taal/spelling/regelwoorden-1/trappen-van-vergelijking-regelmatige-woorden">2</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph>
+                    Om de voltooid tegenwoordige tijd te vormen vervoegen we "hebben" of "zijn" en dan voegen we er een voltooid deelwoord aan toe. Voor het voltooid deelwoord van zwakke werkwoorden voegen we "ge", "be" of "ver" toe vóór de stam. Daarna volgt de stam. Achter de stam voegen we "d" of "t" toe, afhankelijk van 't kofschip of 't fokschaap. (Komt de laatste letter van de stam voor in 't kofschip, dan voegen we een "t" toe, zoniet een "d").
+                    <br />
+                    <br />
+                    Dus: ik poets het huis --- ik heb het huis ge-poets-t. (de "s" uit poets komt voor in 't kofschip, dus eindigt het op een "t").
+                </GrammarParagraph>
+                <br />
+                <GrammarParagraph>
+                    Hoe weten we nu of het met "hebben" of "zijn" is?
+                </GrammarParagraph>
+                <br />
+                <GrammarParagraph>
+                    Zinnen die een lijdend voorwerp hebben worden met "hebben" vervoegd, de rest met "zijn". (Als algemene regel, mits uitzonderingen. Daarom staat in de meeste woordenboeken bij elk werkwoord of het met hebben of zijn wordt gecombineerd.)</GrammarParagraph>
+
+                <br />
+
+                <GrammarParagraph>
+                    Laten we van deze zinnen de voltooid tegenwoordige tijd maken: </GrammarParagraph>
+                <GrammarListItem>Ik koop een fiets.</GrammarListItem>
+                <GrammarListItem>Hij stopt mij.</GrammarListItem>
+                <GrammarListItem>Wij steunen haar.</GrammarListItem>
+                <GrammarListItem>Hij draagt een zwaar dossier.</GrammarListItem>
+                <GrammarListItem>Hij speelt gitaar.</GrammarListItem>
+                <GrammarListItem>Ik stop.</GrammarListItem>
+                <br />
+
+                <GrammarParagraph> <Highlight>Laten we <a href="https://www.jufmelis.nl/werkwoordspelling/regelmatige-werkwoorden-voltooid-deelwoord/zwakke-werkwoorden--vd-1">deze oefeningen maken</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/een-huis-gent">
-                    "Een speciaal huis in Gent?" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/onze-natuur">
+                    "Onze natuur": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/hoe-groot-je-huis">
-                    "How big is your house?" Check the article in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/speciaal-bezoek">
+                    "Speciaal bezoek": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -283,11 +314,11 @@ function Lesson9() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Let's make the exercises in the Google Drive</GrammarParagraph>
+                    Maak oefening 1, 2 en 3 <a href="https://leeronlinenederlands.nl/vul-het-voltooid-deelwoord-in-regelmatig-oefening-1/">hier</a>. </GrammarParagraph>
 
             </GrammarBox>
             <Footer />
-        </div>
+        </div >
     );
 }
 
