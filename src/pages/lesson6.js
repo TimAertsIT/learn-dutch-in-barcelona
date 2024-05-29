@@ -25,6 +25,7 @@ import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import { StyledAbout } from './about.styles';
 import Conversation from '../components/Conversation/Conversation';
+import { ExtraInformation } from './lesson1.styles';
 
 function Lesson6() {
     const lessonId = 6;
@@ -91,6 +92,13 @@ function Lesson6() {
     const correctAnswers = ['mijne', 'jouw', 'ons', 'mijn', 'hare', 'haar', 'mijn', 'mijne', 'onze', 'jullie', 'hunne', 'uw', 'mijn', 'mijn', 'ons'];
 
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -130,13 +138,49 @@ function Lesson6() {
                 dutchMessages={["Hallo! Van harte welkom!", "Ja, wij hebben nog enkele kamers vrij. Een kamer voor hoeveel personen?", "Dat kan, wanneer willen jullie komen?", "Dat kan zeker, met ontbijt of zonder ontbijt?", "Ja, al onze kamers hebben zeezicht.", "Je kan mij een mail sturen en dan is het in orde.", "Graag gedaan, tot binnenkort!"]}
             />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion data-translation=" What is your favorite travel destination">Wat is jouw favoriete reisbestemming?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you prefer to go to a hotel or to a camping?">Verkies je een hotel of een camping?</StyledQuestion>
-            <StyledQuestion data-translation=" When will you travel?">Wanneer ga je op reis?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you travel in the holiday seasons?">Ga je op reis in de vakantieperiodes?</StyledQuestion>
-            <StyledQuestion data-translation=" What do you consider when booking a hotel?">Waar let je op bij het reserveren van een hotel?</StyledQuestion>
-            <StyledQuestion data-translation=" How do you choose your travel destination?">Hoe kies je jouw reisbestemming?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you prefer holidays at home or abroad?">Verkies je een vakantie in het binnenland of in het buitenland?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" What is your favorite travel destination?">Wat is jouw favoriete reisbestemming?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Ik ga het liefst op reis naar plaatsen die ik nog niet ken.</ExtraInformation>
+                <ExtraInformation>Mijn favoriete reisbestemming is Portugal.</ExtraInformation>
+                <ExtraInformation>Ik heb geen favoriete reisbestemming, ik wil de hele wereld zien.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" Do you prefer to go to a hotel or to a camping?">Verkies je een hotel of een camping?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Ik vind zowel een hotel als een camping erg leuk.</ExtraInformation>
+                <ExtraInformation>Ik verblijf het liefst in een hotel, ik heb luxe nodig.</ExtraInformation>
+                <ExtraInformation>Geen van de twee, ik verkies een bed & breakfast.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" When will you travel?">Wanneer ga je op reis?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Dit jaar ga ik op reis in de zomervakantie.</ExtraInformation>
+                <ExtraInformation>Ik ga 4 keer per jaar op reis.</ExtraInformation>
+                <ExtraInformation>Ik ga binnenkort op reis, ik heb verlof genomen op het werk.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Do you travel in the holiday seasons?">Ga je op reis in de vakantieperiodes?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Ja, want dan hebben mijn kinderen ook vakantie.</ExtraInformation>
+                <ExtraInformation>Dat hangt er vanaf. Soms wel, soms niet.</ExtraInformation>
+                <ExtraInformation>Nee, liever in andere periodes, dan is het goedkoper.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" What do you consider when booking a hotel?">Waar let je op bij het reserveren van een hotel?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Ik vind het erg belangrijk dat er een zwembad is.</ExtraInformation>
+                <ExtraInformation>Ik wil een grote kamer en het ontbijt is ook erg belangrijk.</ExtraInformation>
+                <ExtraInformation>Ik let op de ligging van het hotel, ik wil dat het overal dicht bij is.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" How do you choose your travel destination?">Hoe kies je jouw reisbestemming?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ik zoek altijd naar een combinatie van stad, cultuur en strand.</ExtraInformation>
+                <ExtraInformation>Ik kies telkens voor plekken waar ik nog niet geweest ben.</ExtraInformation>
+                <ExtraInformation>Ik let vooral op het weer, ik hou niet van koude bestemmingen.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" Do you prefer holidays at home or abroad?">Verkies je een vakantie in het binnenland of in het buitenland?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Beiden kunnen erg leuk zijn, ik heb geen voorkeur.</ExtraInformation>
+                <ExtraInformation>Ik ga het liefst op vakantie in het buitenland, ik hou van andere culturen.</ExtraInformation>
+                <ExtraInformation>Ik heb vliegangst en rij niet graag met de auto, dus in het binnenland.</ExtraInformation>
+            </div>}
+
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
