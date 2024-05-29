@@ -25,6 +25,7 @@ import Footer from '../components/Footer/Footer';
 import Introduction from '../components/Introduction/Introduction';
 import VocabularyTime from '../components/Exercises/Vocabulary/VocabularyTime';
 import { StyledAbout } from './about.styles';
+import { ExtraInformation } from './lesson1.styles';
 
 function Lesson7() {
     const lessonId = 7;
@@ -91,6 +92,13 @@ function Lesson7() {
     const correctAnswers = ['boeken', 'de straten', 'huizen', 'kamers', 'tafels', 'frieten', 'fietsen', 'lepels', 'vorken', 'stoelen', 'dranken', 'bitterballen', 'rekeningen', 'vissen', 'wijnen'];
 
     const [email, setEmail] = useState(null);
+    const [showExtraInfo, setShowExtraInfo] = useState(false);
+    const [showExtraInfo2, setShowExtraInfo2] = useState(false);
+    const [showExtraInfo3, setShowExtraInfo3] = useState(false);
+    const [showExtraInfo4, setShowExtraInfo4] = useState(false);
+    const [showExtraInfo5, setShowExtraInfo5] = useState(false);
+    const [showExtraInfo6, setShowExtraInfo6] = useState(false);
+    const [showExtraInfo7, setShowExtraInfo7] = useState(false);
     useEffect(() => {
         if (!email) {
             const userEmail = prompt("Please enter your email to access this lesson:");
@@ -130,14 +138,49 @@ function Lesson7() {
                 dutchMessages={["Ja doen we! Ik heb wel trek in Chinees.", "Nou, dan doen we dat.", "Laten we in het restaurant eten, ik zal een tafel reserveren.", "Die delen we door 2."]}
             />
             <ImageCollage images={images.slice(0, 3)} />
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" What do you like to eat?">Wat eet jij graag?</StyledQuestion>
+            {showExtraInfo && <div>
+                <ExtraInformation>Ik eet graag dagelijkse kost, geen speciale dingen.</ExtraInformation>
+                <ExtraInformation>Ik ben een fan van de Italiaanse keuken.</ExtraInformation>
+                <ExtraInformation>Ik eet graag pizza, frieten, burgers en ijs.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" What is your favorite food?">Wat is jouw lievelingseten?</StyledQuestion>
+            {showExtraInfo2 && <div>
+                <ExtraInformation>Mijn lievelingseten zijn mosselen met frieten.</ExtraInformation>
+                <ExtraInformation>Het liefst van al eet ik een kroket uit de muur.</ExtraInformation>
+                <ExtraInformation>Het gerecht dat ik het liefste eet is Chinese wok met curry.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" Do you want to order?">Wil je bestellen?</StyledQuestion>
+            {showExtraInfo3 && <div>
+                <ExtraInformation>Ja graag, voor mij een cola en een burger met frietjes aub.</ExtraInformation>
+                <ExtraInformation>Mag ik nog even verder op de kaart kijken aub?</ExtraInformation>
+                <ExtraInformation>Nee, ik wil niets bestellen, ik heb geen honger.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Do you often go to a restaurant?">Ga je vaak op restaurant?</StyledQuestion>
+            {showExtraInfo4 && <div>
+                <ExtraInformation>Nee, zelden. Maar ik ga wel vaak frietjes of een dürüm uithalen.</ExtraInformation>
+                <ExtraInformation>Ja, dat is een echte hobby van mij.</ExtraInformation>
+                <ExtraInformation>Ja, toch enkele keren per week.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" What is your favorite type of food?">Wat is je favoriete keuken?</StyledQuestion>
+            {showExtraInfo5 && <div>
+                <ExtraInformation>Ik ben verzot op Italiaans eten.</ExtraInformation>
+                <ExtraInformation>De Mexicaanse keuken is mijn absolute favoriet.</ExtraInformation>
+                <ExtraInformation>Italiaans, Frans of Thais, het maakt mij niet uit.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Can I have the bill please?">Mag ik de rekening alstublieft?</StyledQuestion>
+            {showExtraInfo6 && <div>
+                <ExtraInformation>Ja zeker, wil je met de kaart betalen of contant/met cash?</ExtraInformation>
+                <ExtraInformation>Ja, alstublieft. Dat is 20eur alstublieft.</ExtraInformation>
+                <ExtraInformation>Ja hoor, maar de digestief is van het huis.</ExtraInformation>
+            </div>}
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" Did it taste good?">Heeft het gesmaakt?</StyledQuestion>
+            {showExtraInfo7 && <div>
+                <ExtraInformation>Ja, alles was naar wens.</ExtraInformation>
+                <ExtraInformation>Jazeker, het was heel lekker.</ExtraInformation>
+                <ExtraInformation>Niet echt, er zat een haar in mijn soep.</ExtraInformation>
+            </div>}
 
-            <StyledQuestion data-translation=" What do you like to eat">Wat eet jij graag?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your favorite food?">Wat is jouw lievelingseten?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you want to order?">Wil je bestellen?</StyledQuestion>
-            <StyledQuestion data-translation=" Do you often go to a restaurant?">Ga je vaak op restaurant?</StyledQuestion>
-            <StyledQuestion data-translation=" What is your favorite type of food?">Wat is je favoriete keuken?</StyledQuestion>
-            <StyledQuestion data-translation=" Can I have the bill please?">Mag ik de rekening alstublieft?</StyledQuestion>
-            <StyledQuestion data-translation=" Did it taste good?">Heeft het gesmaakt?</StyledQuestion>
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
