@@ -8,6 +8,7 @@ import holidays from '../../images/holidays.jpg'
 import restaurant from '../../images/restaurant.jpg'
 import huis from '../../images/huis.jpg'
 import dieren from '../../images/dieren.jpg'
+import ijshockey from '../../images/ijshockey.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -73,6 +74,13 @@ export const lessonsData = {
             "description": "Discover vocabulary about animals and nature in Dutch and describe them in the present and past tense",
             "image": dieren,
             "path": "/lesson9-animals-nature-dutch"
+        },
+        {
+            "id": 10,
+            "title": "Chapter 10: sports and games",
+            "description": "In chapter 10 we will learn about vocabulary on sports and games and grammar on how to build sentences",
+            "image": ijshockey,
+            "path": "/lesson10-sports-games-dutch"
         }
     ]
 };
