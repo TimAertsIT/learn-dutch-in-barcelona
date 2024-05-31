@@ -3,12 +3,12 @@ import Vocabulary from '../components/Vocabulary/Vocabulary';
 import VocabularySimple from '../components/Exercises/Vocabulary/VocabularySimple';
 import VocabularyQuiz from '../components/Exercises/Vocabulary/VocabularyQuiz';
 import ImageCollage from '../components/ImageCollage/ImageCollage';
-import boerderij from "../images/9boerderij.jpg";
-import koe from "../images/9koe.jpg.webp";
-import konijn from "../images/9konijn.jpeg";
-import natuurgebied from "../images/9natuurgebied.jpg";
-import rivier from "../images/9rivier.jpg";
-import waterval from "../images/9waterval.jpg";
+import gezelschapsspel from "../images/10gezelsschapsspel.png.webp";
+import podium from "../images/10podium.jpeg";
+import sporthal from "../images/10sporthal.jpg";
+import tennisveld from "../images/10tennisveld.jpg";
+import publiek from "../images/10publiek.jpeg";
+import schaatsen from "../images/10schaatsen.png";
 import GoedBezig from '../components/GoedBezig/GoedBezig';
 import Verbs from '../components/Verbs/Verbs';
 import VerbExercise from '../components/Exercises/Grammar/VerbExercise';
@@ -16,7 +16,7 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import feestvarken from '../images/feestvarken.webp';
+import schaatsbelg from '../images/schaatsbelg.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -60,12 +60,12 @@ function Lesson10() {
         { dutch: 'Het net', english: 'The net' }
     ];
     const images = [
-        { src: boerderij, caption: 'De boerderij' },
-        { src: koe, caption: 'De koe' },
-        { src: konijn, caption: 'Het konijn' },
-        { src: natuurgebied, caption: 'Het natuurgebied' },
-        { src: rivier, caption: 'De rivier' },
-        { src: waterval, caption: 'De waterval' },
+        { src: schaatsen, caption: 'Schaatsen' },
+        { src: publiek, caption: 'Het publiek' },
+        { src: tennisveld, caption: 'Het tennisveld' },
+        { src: podium, caption: 'Het podium' },
+        { src: gezelschapsspel, caption: 'Het gezelschapsspel' },
+        { src: sporthal, caption: 'De sporthal' },
     ];
     const [email, setEmail] = useState(null);
     const [showExtraInfo, setShowExtraInfo] = useState(false);
@@ -93,19 +93,19 @@ function Lesson10() {
     }
 
     const sentences = [
-        'Soms staan koeien in een stal, maar meestal op een _.',
-        'Ik hou erg van het kijken naar een _ aan de kust.',
-        '_ zijn geen insecten, want ze hebben meer poten.',
-        'Apen, olifanten en honden zijn allemaal _.',
-        'Ik wou dat ik kon vliegen, net zoals _',
-        'Ik voel me goed vandaag, als een _ in het water.',
-        'We moeten ons afval beperken en aan het _ denken.',
-        'Vele bomen maken een _.',
-        'Sommige _ krijgen de status van nationaal park.',
-        'Dat diersoorten overleven is belangrijk voor de _.'
+        'De spelers lopen het _ op.',
+        'Het _ roept en applaudiseert.',
+        'De _ fluit de wedstrijd op gang.',
+        'Een speler maakt een _, het is een penalty.',
+        'De _ zegt dat zijn ploeg meer moet bewegen.',
+        'De spelers beginnen met de _ richting het doel van de tegenstander.',
+        'Maar ze mogen niet vergeten te _, anders verliezen ze.',
+        'Wanneer de ploeg wint zijn hun _ erg blij.',
+        'In het tennis moet de bal altijd over het _.',
+        'Goed kunnen _ is erg belangrijk wanneer je aan atletiek doet.'
     ];
 
-    const blanks = ['vogels', 'vis', 'natuurgebieden', 'zonsondergang', 'weide', 'milieu', 'biodiversiteit', 'spinnen', 'bos', 'zoogdieren'];
+    const blanks = ['verdedigen', 'aanval', 'veld', 'supporters', 'fout', 'publiek', 'trainer', 'net', 'scheidsrechter', 'springen'];
 
 
 
@@ -114,51 +114,51 @@ function Lesson10() {
             <Navigation />
             <Introduction lessonId={lessonId} />
             <Conversation
-                belgianMessages={["Hallo Marieke! Een vraagje: heb jij huisdieren?", "In een weide? Doe je ook aan paardrijden?", "Leuk zeg, ik heb een beetje angst voor paarden.", "Ja, ik heb honden. Ik vind het heerlijk om met hen naar een nationaal park te gaan.", "Ja dat klopt, anders rennen ze achter de konijnen aan.", "Ja, laten we de bergen intrekken! We spreken nog!"]}
-                dutchMessages={["Hey Bart, ja, ik heb 2 paarden.", "Ja, ik doe aan paardrijden, ik hou ervan om in de duinen te galopperen.", "Maar jij hebt 3 honden, toch?", "Ja, leuk, maar dan moet je ze aan de leiband houden, zodat ze de wilde dieren niet verstoren.", "Misschien kunnen we samen eens een dagje gaan wandelen in de natuur?", "Prima, tot binnenkort!"]}
+                belgianMessages={["Hallo Marieke! Is de tenniswedstrijd vandaag?", "Ok prima, op welk veld spelen we?", "Ja, zeker. Ik ben een beetje zenuwachtig. Komt er veel publiek?", "En hebben we een bepaalde tactiek?", "Ja, laten we wat eerder afspreken dan.", "Ach, deelnemen is belangrijker dan winnen."]}
+                dutchMessages={["Hey Bart, ja, je moet er om 3uur zijn.", "De achterste baan. Ga je het vinden?", "Nee joh, enkel mijn kindjes en mijn zus.", "Mijn enige tactiek is plezier maken, maar we kunnen het er nog over hebben.", "Ja doen we, zodat we niet verliezen.", "Dat klopt, tot straks!"]}
             />
             <ImageCollage images={images.slice(0, 3)} />
-            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" Do you have pets?">Heb jij huisdieren?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo(!showExtraInfo)} data-translation=" Do you play sports?">Doe jij aan sport?</StyledQuestion>
             {showExtraInfo && <div>
-                <ExtraInformation>Ja, ik heb 3 katten en een hond.</ExtraInformation>
-                <ExtraInformation>Nee, ik haat dieren.</ExtraInformation>
-                <ExtraInformation>Nee, maar ik zou wel graag huisdieren hebben.</ExtraInformation>
+                <ExtraInformation>Ja, ik speel voetbal.</ExtraInformation>
+                <ExtraInformation>Nee, maar ik beweeg wel veel.</ExtraInformation>
+                <ExtraInformation>Nee, ik hou echt niet van sport.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" What is the highest mountain of the Benelux?">Wat is de hoogste berg van de Benelux?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo2(!showExtraInfo2)} data-translation=" What is your favorite sport?">Wat is jouw favoriete sport?</StyledQuestion>
             {showExtraInfo2 && <div>
-                <ExtraInformation>Er zijn geen bergen in de Benelux, enkel heuvels.</ExtraInformation>
-                <ExtraInformation>Volgens mij is dat een heuvel in de Ardennen.</ExtraInformation>
-                <ExtraInformation>Dat is de Signal de Botrange, met slechts 694 meter.</ExtraInformation>
+                <ExtraInformation>Ik kijk heel graag naar voetbal, die sfeer vind ik leuk.</ExtraInformation>
+                <ExtraInformation>Ik vind schaatsen erg leuk in de winter en zwemmen in de zomer.</ExtraInformation>
+                <ExtraInformation>Mijn favoriete sport is boksen.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" Would you like to live on a farm?">Zou jij graag op een boerderij wonen?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo3(!showExtraInfo3)} data-translation=" Do you like board games?">Hou je van gezelschapsspellen?</StyledQuestion>
             {showExtraInfo3 && <div>
-                <ExtraInformation>Ja, dat lijkt me erg gezellig.</ExtraInformation>
-                <ExtraInformation>Zeker, een rustig leven tussen de dieren lijkt me wel wat.</ExtraInformation>
-                <ExtraInformation>Nee, ik zou de geur van mest niet kunnen harden.</ExtraInformation>
+                <ExtraInformation>Ja, met fijn gezelschap is dat super tof.</ExtraInformation>
+                <ExtraInformation>Niet echt, maar ik speel wel heel graag kaart.</ExtraInformation>
+                <ExtraInformation>Ja, ik hou van allerhande spellen.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Which natural area in the Benelux would you like to visit?">Welk natuurgebied in de Benelux zou je graag eens bezoeken?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo4(!showExtraInfo4)} data-translation=" Do you sometimes watch a game in a stadium or on the tv?">Kijk je soms naar een wedstrijd in het stadion of op de tv?</StyledQuestion>
             {showExtraInfo4 && <div>
-                <ExtraInformation>De Hoge Veluwe natuurlijk! Dat lijkt me prachtig.</ExtraInformation>
-                <ExtraInformation>Ik zou graag eens logeren in het Nationaal Park De Hoge Kempen.</ExtraInformation>
-                <ExtraInformation>Allemaal! Ik krijg nooit genoeg van mooie natuur.</ExtraInformation>
+                <ExtraInformation>Tijdens de Olympische Spelen kijk ik wel veel atletiek.</ExtraInformation>
+                <ExtraInformation>Ja, ik ga graag naar voetbalwedstrijden.</ExtraInformation>
+                <ExtraInformation>Nee, ik vind dat allemaal veel te saai.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" Do you fear climate change?">Vrees jij de klimaatsverandering?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo5(!showExtraInfo5)} data-translation=" Do you have a sports idol?">Heb je een sportidool?</StyledQuestion>
             {showExtraInfo5 && <div>
-                <ExtraInformation>Nee, helemaal niet. Dat is één groot complot.</ExtraInformation>
-                <ExtraInformation>Ja, vooral voor generaties die na ons komen.</ExtraInformation>
-                <ExtraInformation>Ja, ik probeer mijn steentje bij te dragen aan het verhinderen ervan.</ExtraInformation>
+                <ExtraInformation>Ja, ik ben erg fan van Lionel Messi.</ExtraInformation>
+                <ExtraInformation>Niet echt, ik supporter voor iedereen van mijn land.</ExtraInformation>
+                <ExtraInformation>Ja, de Belgische hockeyvrouwen vind ik geweldig.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Have you been camping often? Where was it really beautiful?">Ben je al vaak gaan kamperen? Waar was het erg mooi?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo6(!showExtraInfo6)} data-translation=" Which sports would you like to try once?">Welke sport zou je ooit eens willen proberen?</StyledQuestion>
             {showExtraInfo6 && <div>
-                <ExtraInformation>Ja al heel vaak. In Slovenië was er prachtige natuur.</ExtraInformation>
-                <ExtraInformation>Nee, nog nooit. Ik heb comfort nodig en verkies dus een hotel.</ExtraInformation>
-                <ExtraInformation>Ja, ik heb al mooie plaatsen ontdekt in bijna elk land.</ExtraInformation>
+                <ExtraInformation>Ik zou eens willen muurklimmen, maar ik heb hoogtevrees.</ExtraInformation>
+                <ExtraInformation>Ik wil padel eens uitproberen.</ExtraInformation>
+                <ExtraInformation>Geen enkele, ik haat sport, laat mij maar rustig thuis zitten.</ExtraInformation>
             </div>}
-            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" Do you know some Belgian or Dutch rivers?">Ken je enkele Belgische of Nederlandse rivieren?</StyledQuestion>
+            <StyledQuestion onClick={() => setShowExtraInfo7(!showExtraInfo7)} data-translation=" What are the most popular sports in your country?">Wat zijn de populairste sporten in jouw land?</StyledQuestion>
             {showExtraInfo7 && <div>
-                <ExtraInformation>Zeker. De Maas, de Waal en de Rijn.</ExtraInformation>
-                <ExtraInformation>Ik ken enkel de Lesse, omdat ik er al ben gaan kajakken.</ExtraInformation>
-                <ExtraInformation>Ja, ik ken de Schelde, want ik werk in de haven.</ExtraInformation>
+                <ExtraInformation>Dat moeten zeker voetbal en wielrennen zijn.</ExtraInformation>
+                <ExtraInformation>In mijn land kijkt iedereen naar baseball.</ExtraInformation>
+                <ExtraInformation>Onze nationale sport is turnen, daar zijn we heel goed in.</ExtraInformation>
             </div>}
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
@@ -183,14 +183,14 @@ function Lesson10() {
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'Het feestvarken', english: '"The party pig"' }}
-                image={feestvarken}
+                text={{ dutch: 'De schaatsbelg', english: '"The skating belgian"' }}
+                image={schaatsbelg}
             />
             <CenteredContainer>
-                <StyledLink href="https://www.ad.nl/bizar/commotie-over-geblurde-koeienkop-op-google-streetview~acfc8014/">
+                <StyledLink href="https://www.vi.nl/nieuws/fans-van-real-madrid-vliegen-in-barcelona-vliegtuig-naar-engeland">
                     Lees het artikel en probeer het verhaal opnieuw te vertellen in 5 zinnen.
                 </StyledLink>
-                <StyledLink href="https://www.ad.nl/nieuws/door-bijen-gestoken-en-achtergelaten-pitbull-blijft-knuffelen~a8cceb6c/">
+                <StyledLink href="https://www.hln.be/het-leukste-van-het-web/kijk-meest-bizarre-wintersport-ter-wereld-gaat-over-de-tongen-op-tiktok~aa6162dd/">
                     Lees het artikel en probeer het verhaal opnieuw te vertellen in 5 zinnen.
                 </StyledLink>
             </CenteredContainer>
@@ -235,24 +235,24 @@ function Lesson10() {
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "vliegen", conjugations: ["vlieg", "vliegt", "vliegt", "vliegen", "vliegen", "vliegen"] },
-                { verb: "zwemmen", conjugations: ["zwem", "zwemt", "zwemt", "zwemmen", "zwemmen", "zwemmen"] },
-                { verb: "beperken", conjugations: ["beperk", "beperkt", "beperkt", "beperken", "beperken", "beperken"] },
-                { verb: "denken", conjugations: ["denk", "denkt", "denkt", "denken", "denken", "denken"] },
-                { verb: "krijgen", conjugations: ["krijg", "krijgt", "krijgt", "krijgen", "krijgen", "krijgen"] },
-                { verb: "overleven", conjugations: ["overleef", "overleeft", "overleeft", "overleven", "overleven", "overleven"] }
+                { verb: "winnen", conjugations: ["win", "wint", "wint", "winnen", "winnen", "winnen"] },
+                { verb: "verliezen", conjugations: ["verlies", "verliest", "verliest", "verliezen", "verliezen", "verliezen"] },
+                { verb: "bewegen", conjugations: ["beweeg", "beweegt", "beweegt", "bewegen", "bewegen", "bewegen"] },
+                { verb: "aanvallen", conjugations: ["val aan", "valt aan", "valt aan", "vallen aan", "vallen aan", "vallen aan"] },
+                { verb: "verdedigen", conjugations: ["verdedig", "verdedigt", "verdedigt", "verdedigen", "verdedigen", "verdedigen"] },
+                { verb: "springen", conjugations: ["spring", "springt", "springt", "springen", "springen", "springen"] }
             ]} />
             <Translate sentences={[
-                { english: "Birds fly", translation: "Vogels vliegen" },
-                { english: "The pilot flies the airplane", translation: "De piloot vliegt met het vliegtuig" },
-                { english: "I get a pet", translation: "Ik krijg een huisdier" },
-                { english: "Animals survive the winter", translation: "Dieren overleven de winter" },
-                { english: "Can animals think?", translation: "Kunnen dieren denken?" },
-                { english: "Can fish swim?", translation: "Kunnen vissen zwemmen?" },
-                { english: "Mammals can not swim", translation: "Zoogdieren kunnen niet zwemmen" },
-                { english: "We must limit our impact", translation: "Wij moeten onze impact beperken" },
-                { english: "Bees communicatie with eachother", translation: "Bijen communiceren met elkaar" },
-                { english: "Would I like to live on a farm?", translation: "Zou ik graag op een boerderij wonen?" }
+                { english: "He plays tennis", translation: "Hij speelt tennis" },
+                { english: "The players move a lot", translation: "De spelers bewegen veel" },
+                { english: "I defended the ball", translation: "Ik heb de bal verdedigd" },
+                { english: "He has jumped", translation: "Hij heeft gesprongen" },
+                { english: "We attacked", translation: "Wij hebben aangevallen" },
+                { english: "We won the game", translation: "Wij hebben de wedstrijd gewonnen" },
+                { english: "I like climbing", translation: "Ik hou van klimmen" },
+                { english: "Dutch people have a long tradition of ice skating", translation: "Nederlanders hebben een lange traditie van schaatsen" },
+                { english: "Football is war", translation: "Voetbal is oorlog" },
+                { english: "Dutch people are born on a bike", translation: "Nederlanders zijn geboren op een fiets" }
             ]} />
             <GrammarBox>
                 <GrammarTitle>📚 Bijzinnen 📚</GrammarTitle>
@@ -286,7 +286,7 @@ function Lesson10() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Maak oefening 1, 2 en 3 <a href="https://leeronlinenederlands.nl/vul-het-voltooid-deelwoord-in-regelmatig-oefening-1/">hier</a>. </GrammarParagraph>
+                    Schrijf 10 zinnen over je favoriete sport of sportclub. Gebruik hierbij hoofd- en bijzinnen en gebruik inversie waar nodig. </GrammarParagraph>
 
             </GrammarBox>
             <Footer />
