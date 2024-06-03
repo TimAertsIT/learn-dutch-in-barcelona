@@ -9,6 +9,7 @@ import restaurant from '../../images/restaurant.jpg'
 import huis from '../../images/huis.jpg'
 import dieren from '../../images/dieren.jpg'
 import ijshockey from '../../images/ijshockey.jpg'
+import hetweer from '../../images/hetweer.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -81,6 +82,13 @@ export const lessonsData = {
             "description": "In chapter 10 we will learn about vocabulary on sports and games and grammar on how to build sentences",
             "image": ijshockey,
             "path": "/lesson10-sports-games-dutch"
+        },
+        {
+            "id": 11,
+            "title": "Chapter 11: weather and climate",
+            "description": "Describe the weather in Dutch, read or watch weather reports and learn vocabulary on climate",
+            "image": hetweer,
+            "path": "/lesson11-weather-climate-dutch"
         }
     ]
 };
