@@ -247,30 +247,31 @@ function Lesson11() {
                 { english: "The rain makes me wet", translation: "De regen maakt me nat" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Bijzinnen 📚</GrammarTitle>
+                <GrammarTitle>📚 Voltooid deelwoord sterke werkwoorden 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Het verschil tussen een bijzin en een hoofdzin is dat een hoofdzin op zichzelf kan staan, maar een bijzin kan dat nooit. In een hoofdzin staan de persoonvorm en het onderwerp bij elkaar, terwijl dat in een bijzin niet zo hoeft te zijn.</GrammarParagraph>
+                    Bij de sterke werkwoorden maken we het voltooid deelwoord meestal door er een "ge" voor te plaatsen, waarna het volledige werkwoord volgt. Echter, regelmatig verandert ook de klinker. En er zijn nog enkele uitzonderingen. Spijtig genoeg moet je deze vanbuiten leren en zijn er geen vaste regels.</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we even verder bekijken wat dat juist betekent: <a href="https://www.examenoverzicht.nl/nederlands/hoofdzinnen-en-bijzinnen">hier</a>  </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we even verder bekijken wat dat juist betekent: <a href="https://www.slimleren.nl/onderwerpen/nederlands/12.540/sterke-werkwoorden-voltooid-deelwoord#:~:text=Bij%20sterke%20werkwoorden%20schrijf%20je,plaats%20van%20het%20hele%20werkwoord">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken met: <a href="http://www.nederlandswebsite.nl/voltooid%20deelwoord%203.htm">sterke werkwoorden</a> en <a href="http://www.nederlandswebsite.nl/voltooid%20deelwoord%204.htm">zwakke werkwoorden</a></Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Zinsbouw 📚</GrammarTitle>
-                <GrammarParagraph>Met de informatie over zinsbouw in het Nederlands kan je een boek vullen! Er zijn zovele mogelijkheden, zovele uitzonderingen, .. Maar de basis, die kan je gemakkelijk leren.
+                <GrammarTitle>📚 Aanwijzend voornaamwoord 📚</GrammarTitle>
+                <GrammarParagraph>Het aanwijzend voornaamwoord is een woord dat iets aanwijst. Dit kan dichtbij of veraf zijn. Afhankelijk of het een "de" of "het" woord is, gebruiken we een ander aanwijzend voornaamwoord.
                 </GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we het even visueel bekijken <a href="https://zichtbaarnederlands.nl/nl/zinsbouw/zinsbouw">hier</a>
+                <GrammarParagraph> <Highlight>Laten we het even verder bekijken <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuaanwijzendvoornaamwoord/">hier</a> en <a href="https://wijzeroverdebasisschool.nl/uitleg/aanwijzend-voornaamwoord">hier</a>
                 </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://wordwall.net/nl/resource/17062217/maak-de-zin-af-hoofdzin-hoofdzin-met-inversie-bijzin">1</a>, <a href="https://wordwall.net/nl/resource/10366947/hoofdzin-met-zonder-inversie-bijzin">2</a> en <a href="https://wordwall.net/nl/resource/17553847/c4-h3-maak-de-zin-af-hoofdzin-hoofdzin-met-inversie-bijzin">3</a>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening1/">1</a>, <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening2/">2</a> en <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening3/">3</a>
                 </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/een-nieuwe-sport">
-                    "Een nieuwe sport": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/wie-jacotte">
+                    "Wie is Jacotte?": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/beweeg-je-fit">
-                    "Beweeg je fit": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/een-nieuw-bos">
+                    "Een nieuw bos": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -278,8 +279,8 @@ function Lesson11() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Schrijf 10 zinnen over je favoriete sport of sportclub. Gebruik hierbij hoofd- en bijzinnen en gebruik inversie waar nodig. </GrammarParagraph>
-
+                    Bekijk alle werkwoorden uit lessen 1 tot 10 (ongeveer 50 werkwoorden) en maak zinnen in de voltooid tegenwoordige tijd, met het correcte voltooid deelwoord.
+                    Vb. les 1: "Ik heb gewerkt", "Hij is geweest", "Zij heeft gehad" </GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
