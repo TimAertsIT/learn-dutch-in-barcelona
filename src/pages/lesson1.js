@@ -228,8 +228,8 @@ function Lesson1() {
             <Separator></Separator>
             <TitleText>Luisteren / Listening</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/cacao-wordt-duurder#">
-                    "Cacao is becoming more expensive." Check the video in the link and let's answer the related questions.
+                <StyledLink href="https://www.nedbox.be/teaser/de-langste-conversatietafel">
+                    "De langste conversatietafel." Check the video in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>
 
