@@ -10,6 +10,7 @@ import huis from '../../images/huis.jpg'
 import dieren from '../../images/dieren.jpg'
 import ijshockey from '../../images/ijshockey.jpg'
 import hetweer from '../../images/hetweer.jpg'
+import belgie from '../../images/belgie.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -89,6 +90,13 @@ export const lessonsData = {
             "description": "Describe the weather in Dutch, read or watch weather reports and learn vocabulary on climate",
             "image": hetweer,
             "path": "/lesson11-weather-climate-dutch"
-        }
+        },
+        {
+            "id": 12,
+            "title": "Chapter 12: the country Belgium",
+            "description": "Learn about the history, geography, economy, culture and traditions of the country Belgium",
+            "image": belgie,
+            "path": "/lesson12-country-belgium-dutch"
+        },
     ]
 };
