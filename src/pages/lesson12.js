@@ -192,88 +192,92 @@ function Lesson12() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="regenen"
-                    translation="to rain"
-                    conjugations={["regen", "regent", "regent", "regenen", "regenen", "regenen"]}
-                    vd="geregend"
+                    verb="weten"
+                    translation="to know"
+                    conjugations={["weet", "weet", "weet", "weten", "weten", "weten"]}
+                    vd="geweten"
                 />
                 <Verbs
-                    verb="donderen"
-                    translation="to thunder"
-                    conjugations={["donder", "dondert", "dondert", "donderen", "donderen", "donderen"]}
-                    vd="gedonderd"
+                    verb="proeven"
+                    translation="to taste"
+                    conjugations={["proef", "proeft", "proeft", "proeven", "proeven", "proeven"]}
+                    vd="geproefd"
                 />
                 <Verbs
-                    verb="schijnen"
-                    translation="to shine"
-                    conjugations={["schijn", "schijnt", "schijnt", "schijnen", "schijnen", "schijnen"]}
-                    vd="geschenen"
+                    verb="vertellen"
+                    translation="to tell"
+                    conjugations={["vertel", "vertelt", "vertelt", "vertellen", "vertellen", "vertellen"]}
+                    vd="verteld"
                 />
                 <Verbs
-                    verb="hagelen"
-                    translation="to hail"
-                    conjugations={["hagel", "hagelt", "hagelt", "hagelen", "hagelen", "hagelen"]}
-                    vd="gehageld"
+                    verb="vinden"
+                    translation="to find"
+                    conjugations={["vind", "vindt", "vindt", "vinden", "vinden", "vinden"]}
+                    vd="gevonden"
                 />
                 <Verbs
-                    verb="bliksemen"
-                    translation="lightning"
-                    conjugations={["bliksem", "bliksemt", "bliksemt", "bliksemen", "bliksemen", "bliksemen"]}
-                    vd="gebliksemd"
+                    verb="bouwen"
+                    translation="to build"
+                    conjugations={["bouw", "bouwt", "bouwt", "bouwen", "bouwen", "bouwen"]}
+                    vd="gebouwd"
                 />
                 <Verbs
-                    verb="sneeuwen"
-                    translation="to snow"
-                    conjugations={["sneeuw", "sneeuwt", "sneeuwt", "sneeuwen", "sneeuwen", "sneeuwen"]}
-                    vd="gesneeuwd"
+                    verb="vormen"
+                    translation="to form"
+                    conjugations={["vorm", "vormt", "vormt", "vormen", "vormen", "vormen"]}
+                    vd="gevormd"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "regenen", conjugations: ["regen", "regent", "regent", "regenen", "regenen", "regenen"] },
-                { verb: "donderen", conjugations: ["donder", "dondert", "dondert", "donderen", "donderen", "donderen"] },
-                { verb: "schijnen", conjugations: ["schijn", "schijnt", "schijnt", "schijnen", "schijnen", "schijnen"] },
-                { verb: "hagelen", conjugations: ["hagel", "hagelt", "hagelt", "hagelen", "hagelen", "hagelen"] },
-                { verb: "bliksemen", conjugations: ["bliksem", "bliksemt", "bliksemt", "bliksemen", "bliksemen", "bliksemen"] },
-                { verb: "sneeuwen", conjugations: ["sneeuw", "sneeuwt", "sneeuwt", "sneeuwen", "sneeuwen", "sneeuwen"] }
+                { verb: "weten", conjugations: ["weet", "weet", "weet", "weten", "weten", "weten"] },
+                { verb: "proeven", conjugations: ["proef", "proeft", "proeft", "proeven", "proeven", "proeven"] },
+                { verb: "vertellen", conjugations: ["vertel", "vertelt", "vertelt", "vertellen", "vertellen", "vertellen"] },
+                { verb: "vinden", conjugations: ["vind", "vindt", "vindt", "vinden", "vinden", "vinden"] },
+                { verb: "bouwen", conjugations: ["bouw", "bouwt", "bouwt", "bouwen", "bouwen", "bouwen"] },
+                { verb: "vormen", conjugations: ["vorm", "vormt", "vormt", "vormen", "vormen", "vormen"] }
             ]} />
             <Translate sentences={[
-                { english: "It snows", translation: "Het sneeuwt" },
-                { english: "It snowed", translation: "Het heeft gesneeuwd" },
-                { english: "This morning it snowed", translation: "Deze ochtend heeft het gesneeuwd" },
-                { english: "It snowed this morning", translation: "Het heeft gesneeuwd deze ochtend" },
-                { english: "It rains", translation: "Het regent" },
-                { english: "It rained", translation: "Het heeft geregend" },
-                { english: "This evening it rained", translation: "Deze avond heeft het geregend" },
-                { english: "It rained this evening", translation: "Het heeft geregend deze avond" },
-                { english: "The sun shines", translation: "De zon schijnt" },
-                { english: "The rain makes me wet", translation: "De regen maakt me nat" }
+                { english: "The politicians form a government", translation: "De politici vormen een regering" },
+                { english: "I have built a house", translation: "Ik heb een huis gebouwd" },
+                { english: "Where have you been already?", translation: "Waar ben je al geweest?" },
+                { english: "What can you tell about the Belgian economy?", translation: "Wat kan je vertellen over de Belgische economie?" },
+                { english: "What do you know about Belgian politics?", translation: "Wat weet je over de Belgische politiek?" },
+                { english: "I have tasted it", translation: "Ik heb het geproefd" },
+                { english: "I have formed my opinion", translation: "Ik heb mijn mening gevormd" },
+                { english: "She has told him a story", translation: "Zij heeft hem een verhaal verteld" },
+                { english: "I have known that", translation: "Ik heb dat geweten" },
+                { english: "They have built a country", translation: "Zij hebben een land bebouwd" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Voltooid deelwoord sterke werkwoorden 📚</GrammarTitle>
+                <GrammarTitle>📚 De onvoltooid verleden tijd 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Bij de sterke werkwoorden maken we het voltooid deelwoord meestal door er een "ge" voor te plaatsen, waarna het volledige werkwoord volgt. Echter, regelmatig verandert ook de klinker. En er zijn nog enkele uitzonderingen. Spijtig genoeg moet je deze vanbuiten leren en zijn er geen vaste regels.</GrammarParagraph>
+                    Net zoals bij de voltooid verleden tijd zijn er verschillen tussen zwakke en sterke werkwoorden en lopen deze erg gelijk. Voor de zwakke werkwoorden zoeken we de stam, waarna we, afhankelijk van 't kofschip, een "te/ten" of "de/den" toevoegen.</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we even verder bekijken wat dat juist betekent: <a href="https://www.slimleren.nl/onderwerpen/nederlands/12.540/sterke-werkwoorden-voltooid-deelwoord#:~:text=Bij%20sterke%20werkwoorden%20schrijf%20je,plaats%20van%20het%20hele%20werkwoord">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken met: <a href="http://www.nederlandswebsite.nl/voltooid%20deelwoord%203.htm">sterke werkwoorden</a> en <a href="http://www.nederlandswebsite.nl/voltooid%20deelwoord%204.htm">zwakke werkwoorden</a></Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we even verder bekijken wat dat juist betekent: <a href="https://www.braint.nl/taalgids/werkwoordspelling/verleden-tijd.html#:~:text=Je%20kunt%20de%20persoonsvorm%20in,dubbel%20t%20of%20dubbel%20d">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken met: <a href="http://www.talenwijzer.com/nederlandse-werkwoorden-ovt.html">sterke en zwakke werkwoorden</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Aanwijzend voornaamwoord 📚</GrammarTitle>
-                <GrammarParagraph>Het aanwijzend voornaamwoord is een woord dat iets aanwijst. Dit kan dichtbij of veraf zijn. Afhankelijk of het een "de" of "het" woord is, gebruiken we een ander aanwijzend voornaamwoord.
-                </GrammarParagraph>
+                <GrammarTitle>📚 Plaatsbepalingen 📚</GrammarTitle>
+                <GrammarListItem>Op = on</GrammarListItem>
+                <GrammarListItem>Onder = underneath</GrammarListItem>
+                <GrammarListItem>Naast/langs = next to</GrammarListItem>
+                <GrammarListItem>Tegenover = opposite</GrammarListItem>
+                <GrammarListItem>Boven = above</GrammarListItem>
+                <GrammarListItem>Tussen = between</GrammarListItem>
+                <GrammarListItem>Voor = in front of</GrammarListItem>
+                <GrammarListItem>Achter = behind</GrammarListItem>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we het even verder bekijken <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuaanwijzendvoornaamwoord/">hier</a> en <a href="https://wijzeroverdebasisschool.nl/uitleg/aanwijzend-voornaamwoord">hier</a>
-                </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening1/">1</a>, <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening2/">2</a> en <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-aanwijzendvoornaamwoord-oefening3/">3</a>
+                <GrammarParagraph> <Highlight>Laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a1-woordenleren-voorzetsels-oefening4/">1</a> en <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-voorzetsels-oefening2/">2</a>
                 </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/wie-jacotte">
-                    "Wie is Jacotte?": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/nederland-versus-belgie-wonen">
+                    "Nederland versus België": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/een-nieuw-bos">
-                    "Een nieuw bos": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/belgie-een-speciaal-land">
+                    "België, een speciaal land": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -281,8 +285,7 @@ function Lesson12() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Bekijk alle werkwoorden uit lessen 1 tot 10 (ongeveer 50 werkwoorden) en maak zinnen in de voltooid tegenwoordige tijd, met het correcte voltooid deelwoord.
-                    Vb. les 1: "Ik heb gewerkt", "Hij is geweest", "Zij heeft gehad" </GrammarParagraph>
+                    Wat heb je vorige week allemaal gedaan? Schrijf een tekst van ongeveer 15 zinnen en gebruik de juiste werkwoordsvorm in de verleden tijd.</GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
