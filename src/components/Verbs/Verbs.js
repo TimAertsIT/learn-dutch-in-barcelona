@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, Title, Row, Pronoun, Conjugation } from './Verbs.styles';
 
-const Verbs = ({ verb, translation, conjugations, vd, vtt }) => (
+const Verbs = ({ verb, translation, conjugations, vd, ovt }) => (
     <Card>
         <Title>{verb} ({translation})</Title>
 
@@ -13,6 +13,7 @@ const Verbs = ({ verb, translation, conjugations, vd, vtt }) => (
             </Row>
         ))}
         {vd && <Title>VD: {vd}</Title>}
+        {ovt && <Title>OVT: {ovt}</Title>}
     </Card>
 );
 

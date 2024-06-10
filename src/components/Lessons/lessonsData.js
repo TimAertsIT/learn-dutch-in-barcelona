@@ -11,6 +11,7 @@ import dieren from '../../images/dieren.jpg'
 import ijshockey from '../../images/ijshockey.jpg'
 import hetweer from '../../images/hetweer.jpg'
 import belgie from '../../images/belgie.jpg'
+import netherlands from '../../images/netherlands.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -98,5 +99,12 @@ export const lessonsData = {
             "image": belgie,
             "path": "/lesson12-country-belgium-dutch"
         },
+        {
+            "id": 13,
+            "title": "Chapter 13: the Netherlands",
+            "description": "Learn about the history, geography, economy, culture, gastronomy and traditions of the Netherlands",
+            "image": netherlands,
+            "path": "/lesson13-country-netherlands-dutch"
+        }
     ]
 };
