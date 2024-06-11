@@ -197,7 +197,7 @@ function Lesson2() {
         'Om iets te kopen moet je naar de _.',
         'Brood koop je bij de _.',
         'Ik heb een leuke _ op het werk, hij is erg vriendelijk.',
-        'Over landen, rivieren en stden leer je in de les _.',
+        'Over landen, rivieren en steden leer je in de les _.',
         'Als je nog iets wilt drinken moet je de _ vragen.',
         'In het ziekenhuis kan de _ je verzorgen.'
     ];
@@ -261,8 +261,8 @@ function Lesson2() {
             <StyledAbout>
                 <h1>De verwarde bakker</h1>
 
-                <p>Op een dag liep Bakker Bram naar zijn werk. Hij was een beetje slaperig, want hij had tot laat in de nacht brood gebakken. Hij wreef in zijn ogen en stapte het klaslokaal binnen.</p>
-                <p>  “Wat doe ik hier?” dacht Bakker Bram. “Dit is toch geen bakkerij?”</p>
+                <p>Op een dag liep bakker Bram naar zijn werk. Hij was een beetje slaperig, want hij had tot laat in de nacht brood gebakken. Hij wreef in zijn ogen en stapte het klaslokaal binnen.</p>
+                <p>  “Wat doe ik hier?” dacht bakker Bram. “Dit is toch geen bakkerij?”</p>
                 <p>Maar toen zag hij allemaal kinderen zitten. Ze keken hem verwachtingsvol aan. “Goedemorgen, meester!” riepen ze in koor.</p>
                 <p> Bakker Bram krabde op zijn hoofd. “Meester? Maar ik ben toch een bakker? ”</p >
                 <p>De kinderen lachten. “Nee, meester,” zei een slim meisje. “Je bent onze nieuwe leerkracht aardrijkskunde!”</p>
@@ -270,7 +270,7 @@ function Lesson2() {
                     De kinderen knikten begripvol. “Geen probleem, meester. We leren je wel alles over landen, rivieren en bergen.”</p>
                 <p>Bakker Bram keek naar het wereldkaartje aan de muur. “Oké,” zei hij. “Dus dit is Nederland, en daar is… eh, de bakkerij?”</p>
                 <p> De kinderen schudden hun hoofd. “Nee, meester. Dat is Australië. Maar je bent op de goede weg!”</p>
-                <p>  En zo begon Bakker Bram zijn nieuwe baan als leerkracht.</p>
+                <p>  En zo begon bakker Bram zijn nieuwe baan als leerkracht.</p>
             </StyledAbout>
             <VocabularyQuiz words={words} />
             <VocabularySimple words={words} />
@@ -381,9 +381,6 @@ function Lesson2() {
             <Separator></Separator>
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
-                <GrammarParagraph>
-                    - Fill in the 15 sentences in the Google Drive with the correct adjective.
-                </GrammarParagraph>
                 <GrammarParagraph>
                     - Find a song in Dutch that you like and explain us in the next lesson what it is about and why you like it.
                 </GrammarParagraph>

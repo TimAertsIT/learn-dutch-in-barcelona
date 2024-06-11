@@ -219,7 +219,7 @@ function Lesson1() {
                 <br />
                 <GrammarListItem>Diminutives are always with "het" - het huisje, het tuintje, het stadje, ...; </GrammarListItem>
                 <GrammarListItem>Sports use always "het" - het voetbal, het basket, het ijshockey, ...; </GrammarListItem>
-                <GrammarListItem>Words with 2 syllables that start with be-, ge-, ver- and ont-; - het belang, het geweer, het verstand, ...; </GrammarListItem>
+                <GrammarListItem>Words with 2 syllables that start with be-, ge-, ver- and ont- are normally "het"; - het belang, het geweer, het verstand, ...; </GrammarListItem>
                 <GrammarListItem>In plural all words use "de".</GrammarListItem>
                 <br />
                 <GrammarParagraph>

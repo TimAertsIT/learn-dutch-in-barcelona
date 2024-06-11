@@ -34,7 +34,7 @@ function Lesson5() {
         { dutch: 'De bus', english: 'The bus' },
         { dutch: 'De auto', english: 'The car' },
         { dutch: 'Te voet', english: 'By foot' },
-        { dutch: 'De fiets', english: 'De fiets' },
+        { dutch: 'De fiets', english: 'The bicycle' },
         { dutch: 'De elektrische step', english: 'The e-step' },
         { dutch: 'De boot', english: 'The boat' },
         { dutch: 'Het schip', english: 'The ship' },
