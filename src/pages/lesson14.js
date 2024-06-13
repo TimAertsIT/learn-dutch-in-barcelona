@@ -193,91 +193,91 @@ function Lesson14() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="beginnen"
-                    translation="to begin"
-                    conjugations={["begin", "begint", "begint", "beginnen", "beginnen", "beginnen"]}
-                    vd="begonnen"
-                    ovt="begon"
+                    verb="haten"
+                    translation="to haat"
+                    conjugations={["haat", "haat", "haat", "haten", "haten", "haten"]}
+                    vd="gehaat"
+                    ovt="haatte"
                 />
                 <Verbs
-                    verb="vragen"
-                    translation="to ask"
-                    conjugations={["vraag", "vraagt", "vraagt", "vragen", "vragen", "vragen"]}
-                    vd="gevraagd"
-                    ovt="vroeg"
+                    verb="huilen"
+                    translation="to cry"
+                    conjugations={["huil", "huilt", "huilt", "huilen", "huilen", "huilen"]}
+                    vd="gehuild"
+                    ovt="huilde"
                 />
                 <Verbs
-                    verb="zetten"
-                    translation="to put"
-                    conjugations={["zet", "zet", "zet", "zetten", "zetten", "zetten"]}
-                    vd="gezet"
-                    ovt="zette"
+                    verb="vertrouwen"
+                    translation="to trust"
+                    conjugations={["vertrouw", "vertrouwt", "vertrouwt", "vertrouwen", "vertrouwen", "vertrouwen"]}
+                    vd="vertrouwd"
+                    ovt="vertrouwde"
                 />
                 <Verbs
-                    verb="antwoorden"
-                    translation="to answer"
-                    conjugations={["antwoord", "antwoordt", "antwoordt", "antwoorden", "antwoorden", "antwoorden"]}
-                    vd="geantwoord"
-                    ovt="antwoordde"
+                    verb="twijfelen"
+                    translation="to doubt"
+                    conjugations={["twijfel", "twijfelt", "twijfelt", "twijfelen", "twijfelen", "twijfelen"]}
+                    vd="getwijfeld"
+                    ovt="twijfelde"
                 />
                 <Verbs
-                    verb="hopen"
-                    translation="to hope"
-                    conjugations={["hoop", "hoopt", "hoopt", "hopen", "hopen", "hopen"]}
-                    vd="gehoopt"
-                    ovt="hoopte"
+                    verb="vergeten"
+                    translation="to forget"
+                    conjugations={["vergeet", "vergeet", "vergeet", "vergeten", "vergeten", "vergeten"]}
+                    vd="vergeten"
+                    ovt="vergat"
                 />
                 <Verbs
-                    verb="horen"
-                    translation="to hear"
-                    conjugations={["hoor", "hoort", "hoort", "horen", "horen", "horen"]}
-                    vd="gehoord"
-                    ovt="hoorde"
+                    verb="verwachten"
+                    translation="to expect"
+                    conjugations={["verwacht", "verwacht", "verwacht", "verwachten", "verwachten", "verwachten"]}
+                    vd="verwacht"
+                    ovt="verwachtte"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "beginnen", conjugations: ["begin", "begint", "begint", "beginnen", "beginnen", "beginnen"] },
-                { verb: "vragen", conjugations: ["vraag", "vraagt", "vraagt", "vragen", "vragen", "vragen"] },
-                { verb: "zetten", conjugations: ["zet", "zet", "zet", "zetten", "zetten", "zetten"] },
-                { verb: "antwoorden", conjugations: ["antwoord", "antwoordt", "antwoordt", "antwoorden", "antwoorden", "antwoorden"] },
-                { verb: "hopen", conjugations: ["hoop", "hoopt", "hoopt", "hopen", "hopen", "hopen"] },
-                { verb: "horen", conjugations: ["hoor", "hoort", "hoort", "horen", "horen", "horen"] }
+                { verb: "haten", conjugations: ["haat", "haat", "haat", "haten", "haten", "haten"] },
+                { verb: "huilen", conjugations: ["huil", "huilt", "huilt", "huilen", "huilen", "huilen"] },
+                { verb: "vertrouwen", conjugations: ["vertrouw", "vertrouwt", "vertrouwt", "vertrouwen", "vertrouwen", "vertrouwen"] },
+                { verb: "twijfelen", conjugations: ["twijfel", "twijfelt", "twijfelt", "twijfelen", "twijfelen", "twijfelen"] },
+                { verb: "vergeten", conjugations: ["vergeet", "vergeet", "vergeet", "vergeten", "vergeten", "vergeten"] },
+                { verb: "verwachten", conjugations: ["verwacht", "verwacht", "verwacht", "verwachten", "verwachten", "verwachten"] }
             ]} />
             <Translate sentences={[
-                { english: "When I was a kid, I always answered", translation: "Toen ik een kind was, antwoordde ik altijd" },
-                { english: "I have answered", translation: "Ik heb geantwoord" },
-                { english: "We began", translation: "Wij begonnen" },
-                { english: "They asked us something", translation: "Zij vroegen ons iets" },
-                { english: "I have put the custard on the table", translation: "Ik heb de vla op de tafel gezet" },
-                { english: "I hoped for a cozy king's day", translation: "Ik hoopte op een gezellige koningsdag" },
-                { english: "We answered you already", translation: "Wij hebben jou al geantwoord" },
-                { english: "She asked him herring", translation: "Zij vroeg hem haring" },
-                { english: "He put the king next to the queen", translation: "Hij zet de koning naast de koningin" },
-                { english: "I heard you talking", translation: "Ik hoorde jou praten" }
+                { english: "I hated her", translation: "Ik haatte haar" },
+                { english: "We have hated her", translation: "Wij hebben haar gehaat" },
+                { english: "He expected more", translation: "Hij verwachtte meer" },
+                { english: "I forgot the game", translation: "Ik vergat de wedstrijd" },
+                { english: "He always cries", translation: "Hij huilt altijd" },
+                { english: "We forgot our grandmother in the train station", translation: "Wij vergaten onze grootmoeder in het treinstation" },
+                { english: "I have trusted him too much", translation: "Ik heb hem te veel vertrouwd" },
+                { english: "Forgiven and forgotten", translation: "Vergeven en vergeten" },
+                { english: "He doubted, but then he did it", translation: "Hij twijfelde, maar dan deed hij het" },
+                { english: "My cat cried and my dog expected food", translation: "Mijn kat huilde en mijn hond verwachtte eten" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Het meervoud 📚</GrammarTitle>
+                <GrammarTitle>📚 Voegwoorden 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Meestal gebruiken we <a href="https://nt2taalmenu.nl/nt2-a1-grammatica-menumeervoud/">-en of -s</a> om het meervoud te maken. Maar er zijn ook nog enkele uitzonderingen.</GrammarParagraph>
+                    Voegwoorden zijn woorden die 2 zinnen met elkaar verbinden. De zin die je via voegwoorden maakt heet een samengestelde zin.</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menumeervoud/">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menumeervoud/">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://www.braint.nl/taalgids/woordsoorten/voegwoorden.html">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-voegwoorden-oefening1/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Werkwoorden van positie 📚</GrammarTitle>
-                <GrammarParagraph>We kunnen objecten van één plaats naar een andere doen verhuizen. Zo <Highlight>leg</Highlight> ik mijn sleutel op de tafel. En <Highlight>liggen</Highlight> mijn sleutels dan op tafel.</GrammarParagraph>
+                <GrammarTitle>📚 Voorzetsels 📚</GrammarTitle>
+                <GrammarParagraph>Een voorzetsel legt een verband tussen de woordgroep waar het deel van uitmaakt (zoals aan de muur) en een ander element in de zin, zoals een werkwoord (bijvoorbeeld hangt: 'Het schilderij hangt aan de muur'). Voorzetsels zijn bijna altijd onderdeel van een woordgroep waarin het hoofdwoord een zelfstandig naamwoord is.</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we dit even verder bekijken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuwwvpos/">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuwwvpos/">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we dit even verder bekijken: <a href="https://onzetaal.nl/taalloket/voorzetsel">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuvoorzetsels/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/zoutelande">
-                    "Zoutelande": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/vlamingen-familie-en-vrienden">
+                    "Vlamingen, familie en vrienden": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/iedereen-zingt-het-nederlands">
-                    "Iedereen zingt in het Nederlands": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/teaser/de-planckaerts">
+                    "De Planckaerts": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -285,7 +285,7 @@ function Lesson14() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Schrijf de woorden uit de woordenschatlijst van dit hoofdstuk in het meervoud.</GrammarParagraph>
+                    Maak <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetmaar/">deze oefeningen</a>.</GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
