@@ -12,6 +12,7 @@ import ijshockey from '../../images/ijshockey.jpg'
 import hetweer from '../../images/hetweer.jpg'
 import belgie from '../../images/belgie.jpg'
 import netherlands from '../../images/netherlands.jpg'
+import family from '../../images/family.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -105,6 +106,13 @@ export const lessonsData = {
             "description": "Learn about the history, geography, economy, culture, gastronomy and traditions of the Netherlands",
             "image": netherlands,
             "path": "/lesson13-country-netherlands-dutch"
-        }
+        },
+        {
+            "id": 14,
+            "title": "Chapter 14: family and friends",
+            "description": "Learn to describe your family structure and to explain the character traits of family and friends",
+            "image": family,
+            "path": "/lesson14-family-friends-dutch"
+        },
     ]
 };

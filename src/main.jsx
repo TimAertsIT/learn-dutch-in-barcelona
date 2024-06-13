@@ -17,6 +17,7 @@ import Lesson10 from './pages/lesson10';
 import Lesson11 from './pages/lesson11';
 import Lesson12 from './pages/lesson12';
 import Lesson13 from './pages/lesson13';
+import Lesson14 from './pages/lesson14';
 
 function Main() {
 
@@ -39,6 +40,7 @@ function Main() {
                 <Route path="/lesson11-weather-climate-dutch" element={<Lesson11 />} />
                 <Route path="/lesson12-country-belgium-dutch" element={<Lesson12 />} />
                 <Route path="/lesson13-country-netherlands-dutch" element={<Lesson13 />} />
+                <Route path="/lesson14-family-friends-dutch" element={<Lesson14 />} />
                 <Route path="/differences-dutch-flemish-belgium" element={<Differences />} />
             </Routes>
         </BrowserRouter>
