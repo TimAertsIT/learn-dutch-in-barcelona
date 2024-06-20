@@ -18,6 +18,7 @@ import Lesson11 from './pages/lesson11';
 import Lesson12 from './pages/lesson12';
 import Lesson13 from './pages/lesson13';
 import Lesson14 from './pages/lesson14';
+import Lesson15 from './pages/lesson15';
 
 function Main() {
 
@@ -41,6 +42,7 @@ function Main() {
                 <Route path="/lesson12-country-belgium-dutch" element={<Lesson12 />} />
                 <Route path="/lesson13-country-netherlands-dutch" element={<Lesson13 />} />
                 <Route path="/lesson14-family-friends-dutch" element={<Lesson14 />} />
+                <Route path="/lesson14-clothes-fashion-dutch" element={<Lesson15 />} />
                 <Route path="/differences-dutch-flemish-belgium" element={<Differences />} />
             </Routes>
         </BrowserRouter>

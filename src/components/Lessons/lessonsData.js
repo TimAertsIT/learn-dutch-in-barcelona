@@ -13,6 +13,7 @@ import hetweer from '../../images/hetweer.jpg'
 import belgie from '../../images/belgie.jpg'
 import netherlands from '../../images/netherlands.jpg'
 import family from '../../images/family.jpg'
+import fashion from '../../images/fashion.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -114,5 +115,12 @@ export const lessonsData = {
             "image": family,
             "path": "/lesson14-family-friends-dutch"
         },
+        {
+            "id": 15,
+            "title": "Chapter 15: clothes and fashion",
+            "description": "Buy clothes in Dutch, ask for different sizes and discover vocabulary related to fashion",
+            "image": fashion,
+            "path": "/lesson14-clothes-fashion-dutch"
+        }
     ]
 };
