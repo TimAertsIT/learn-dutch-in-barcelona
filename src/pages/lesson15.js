@@ -257,12 +257,17 @@ function Lesson15() {
                 { english: "Which sizes do they have?", translation: "Welke maten hebben zij?" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Voegwoorden 📚</GrammarTitle>
+                <GrammarTitle>📚 Verwijswoorden 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Voegwoorden zijn woorden die 2 zinnen met elkaar verbinden. De zin die je via voegwoorden maakt heet een samengestelde zin.</GrammarParagraph>
+                    Verwijswoorden zijn (vaak kleine) woorden die terugwijzen naar andere woorden in de zin of in de tekst.
+                    Er zijn verwijswoorden voor een plaats  (er, daar),
+                    voor een persoon (hem, haar, ze),
+                    voor een ding (het, dit, dat),
+                    of voor een tijd (toen, dan).
+                    Je gebruikt ze om de zinnen korter te maken. </GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://www.braint.nl/taalgids/woordsoorten/voegwoorden.html">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-voegwoorden-oefening1/">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://nt2taalmenu.nl/wat-zijn-verwijswoorden/">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuverwijswoorden/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
                 <GrammarTitle>📚 Zinsbouw 📚</GrammarTitle>
@@ -272,7 +277,6 @@ function Lesson15() {
                 <GrammarParagraph> <Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetals/">2</a> </Highlight></GrammarParagraph>
                 <GrammarParagraph><Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetomte/">3</a> </Highlight></GrammarParagraph>
 
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuvoorzetsels/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
