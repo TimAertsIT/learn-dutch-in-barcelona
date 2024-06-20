@@ -93,19 +93,19 @@ function Lesson15() {
     }
 
     const sentences = [
-        'De vrouw van mijn zus is mijn _.',
-        'De dochter van mijn zus is mijn _.',
-        'Hij windt zich niet snel op, hij is erg _.',
-        'Mijn buurman is erg _, hij zegt altijd goededag.',
-        'Ook al heb ik alles gewonnen, ik wil _ blijven.',
-        'Je moet niet zo aan jezelf twijfelen, je mag meer _ zijn.',
-        'Wij gaan straks naar een spa om te _.',
-        'Veel oudere mensen zijn vaak _, ga daarom zeker eens op bezoek.',
-        'Een _ noemen ze in België een nonkel.',
-        'Het _ is kleiner dan de familie.'
+        'Om te sporten heb je _ nodig.',
+        'Ik ga zwemmen. Waar is mijn _?',
+        'In de zomer veranderen er velen van een lange naar een korte _.',
+        'Ik heb het _, maar ik heb een andere maat nodig.',
+        'We moeten vertrekken, ga je eens snel _.',
+        'Die dikke jas kan je in de zomer best _.',
+        'Jouw _ moeten qua stijl wel passen bij jouw schoenen.',
+        'Ik _ een jurk van een bekende modeontwerper.',
+        'Ofwel ben ik te groot, ofwel is de broek te _.',
+        'Hele chique kleren zijn gewoonweg niet mijn _.'
     ];
 
-    const blanks = ['eenzaam', 'geduldig', 'nicht', 'vriendelijk', 'schoonzus', 'bescheiden', 'zelfverzekerd', 'gezin', 'oom', 'ontspannen'];
+    const blanks = ['gepast', 'aankleden', 'uitdoen', 'sportkleding', 'sokken', 'zwembroek', 'draag', 'stijl', 'kort', 'broek'];
 
 
 
@@ -194,67 +194,67 @@ function Lesson15() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="haten"
-                    translation="to haat"
-                    conjugations={["haat", "haat", "haat", "haten", "haten", "haten"]}
-                    vd="gehaat"
-                    ovt="haatte"
+                    verb="passen"
+                    translation="to fit"
+                    conjugations={["pas", "past", "past", "passen", "passen", "passen"]}
+                    vd="gepast"
+                    ovt="paste"
                 />
                 <Verbs
-                    verb="huilen"
-                    translation="to cry"
-                    conjugations={["huil", "huilt", "huilt", "huilen", "huilen", "huilen"]}
-                    vd="gehuild"
-                    ovt="huilde"
+                    verb="dragen"
+                    translation="to wear"
+                    conjugations={["draag", "draagt", "draagt", "dragen", "dragen", "dragen"]}
+                    vd="gedragen"
+                    ovt="droeg"
                 />
                 <Verbs
-                    verb="vertrouwen"
-                    translation="to trust"
-                    conjugations={["vertrouw", "vertrouwt", "vertrouwt", "vertrouwen", "vertrouwen", "vertrouwen"]}
-                    vd="vertrouwd"
-                    ovt="vertrouwde"
+                    verb="aantrekken"
+                    translation="to pull on"
+                    conjugations={["trek aan", "trekt aan", "trekt aan", "trekken aan", "trekken aan", "trekken aan"]}
+                    vd="aangetrokken"
+                    ovt="trok aan"
                 />
                 <Verbs
-                    verb="twijfelen"
-                    translation="to doubt"
-                    conjugations={["twijfel", "twijfelt", "twijfelt", "twijfelen", "twijfelen", "twijfelen"]}
-                    vd="getwijfeld"
-                    ovt="twijfelde"
+                    verb="uitdoen"
+                    translation="to take off"
+                    conjugations={["doe uit", "doet uit", "doet uit", "doen uit", "doen uit", "doen uit"]}
+                    vd="uitgedaan"
+                    ovt="deed uit"
                 />
                 <Verbs
-                    verb="vergeten"
-                    translation="to forget"
-                    conjugations={["vergeet", "vergeet", "vergeet", "vergeten", "vergeten", "vergeten"]}
-                    vd="vergeten"
-                    ovt="vergat"
+                    verb="aankleden"
+                    translation="to get dressed"
+                    conjugations={["kleed aan", "kleedt aan", "kleedt aan", "kleden aan", "kleden aan", "kleden aan"]}
+                    vd="aangekleed"
+                    ovt="kleedde aan"
                 />
                 <Verbs
-                    verb="verwachten"
-                    translation="to expect"
-                    conjugations={["verwacht", "verwacht", "verwacht", "verwachten", "verwachten", "verwachten"]}
-                    vd="verwacht"
-                    ovt="verwachtte"
+                    verb="meten"
+                    translation="to measure"
+                    conjugations={["meet", "meet", "meet", "meten", "meten", "meten"]}
+                    vd="gemeten"
+                    ovt="meette"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "haten", conjugations: ["haat", "haat", "haat", "haten", "haten", "haten"] },
-                { verb: "huilen", conjugations: ["huil", "huilt", "huilt", "huilen", "huilen", "huilen"] },
-                { verb: "vertrouwen", conjugations: ["vertrouw", "vertrouwt", "vertrouwt", "vertrouwen", "vertrouwen", "vertrouwen"] },
-                { verb: "twijfelen", conjugations: ["twijfel", "twijfelt", "twijfelt", "twijfelen", "twijfelen", "twijfelen"] },
-                { verb: "vergeten", conjugations: ["vergeet", "vergeet", "vergeet", "vergeten", "vergeten", "vergeten"] },
-                { verb: "verwachten", conjugations: ["verwacht", "verwacht", "verwacht", "verwachten", "verwachten", "verwachten"] }
+                { verb: "passen", conjugations: ["pas", "past", "past", "passen", "passen", "passen"] },
+                { verb: "dragen", conjugations: ["draag", "draagt", "draagt", "dragen", "dragen", "dragen"] },
+                { verb: "aantrekken", conjugations: ["trek aan", "trekt aan", "trekt aan", "trekken aan", "trekken aan", "trekken aan"] },
+                { verb: "uitdoen", conjugations: ["doe uit", "doet uit", "doet uit", "doen uit", "doen uit", "doen uit"] },
+                { verb: "aankleden", conjugations: ["kleed aan", "kleedt aan", "kleedt aan", "kleden aan", "kleden aan", "kleden aan"] },
+                { verb: "meten", conjugations: ["meet", "meet", "meet", "meten", "meten", "meten"] }
             ]} />
             <Translate sentences={[
-                { english: "I hated her", translation: "Ik haatte haar" },
-                { english: "We have hated her", translation: "Wij hebben haar gehaat" },
-                { english: "He expected more", translation: "Hij verwachtte meer" },
-                { english: "I forgot the game", translation: "Ik vergat de wedstrijd" },
-                { english: "He always cries", translation: "Hij huilt altijd" },
-                { english: "We forgot our grandmother in the train station", translation: "Wij vergaten onze grootmoeder in het treinstation" },
-                { english: "I have trusted him too much", translation: "Ik heb hem te veel vertrouwd" },
-                { english: "Forgiven and forgotten", translation: "Vergeven en vergeten" },
-                { english: "He doubted, but then he did it", translation: "Hij twijfelde, maar dan deed hij het" },
-                { english: "My cat cried and my dog expected food", translation: "Mijn kat huilde en mijn hond verwachtte eten" }
+                { english: "I took off my clothes", translation: "Ik deed mijn kleding uit" },
+                { english: "I measure the pants", translation: "Ik meet de broek" },
+                { english: "He measured the dress", translation: "Hij meette de jurk" },
+                { english: "You have measured the swimming trunks", translation: "Jij hebt de zwembroek gemeten" },
+                { english: "I pull on my socks", translation: "Ik trek mijn sokken aan" },
+                { english: "I take off my coat", translation: "Ik doe mijn jas uit" },
+                { english: "I wore fashion of a brand", translation: "Ik droeg mode van een merk" },
+                { english: "I fitted the trousers, but I need another size", translation: "Ik paste de borek, maar ik heb een andere maat nodig" },
+                { english: "We have measured the fitting room", translation: "Wij hebben de paskamer gemeten" },
+                { english: "Which sizes do they have?", translation: "Welke maten hebben zij?" }
             ]} />
             <GrammarBox>
                 <GrammarTitle>📚 Voegwoorden 📚</GrammarTitle>
@@ -265,10 +265,13 @@ function Lesson15() {
                 <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-voegwoorden-oefening1/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <GrammarBox>
-                <GrammarTitle>📚 Voorzetsels 📚</GrammarTitle>
-                <GrammarParagraph>Een voorzetsel legt een verband tussen de woordgroep waar het deel van uitmaakt (zoals aan de muur) en een ander element in de zin, zoals een werkwoord (bijvoorbeeld hangt: 'Het schilderij hangt aan de muur'). Voorzetsels zijn bijna altijd onderdeel van een woordgroep waarin het hoofdwoord een zelfstandig naamwoord is.</GrammarParagraph>
+                <GrammarTitle>📚 Zinsbouw 📚</GrammarTitle>
+                <GrammarParagraph>Laten we nog enkele oefeningen maken met "omdat", "als" en "om... te...".</GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we dit even verder bekijken: <a href="https://onzetaal.nl/taalloket/voorzetsel">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Oefening: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetomdat/">1</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetals/">2</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph><Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetomte/">3</a> </Highlight></GrammarParagraph>
+
                 <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuvoorzetsels/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
@@ -286,7 +289,7 @@ function Lesson15() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Maak <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetmaar/">deze oefeningen</a>.</GrammarParagraph>
+                    Maak <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetwant/">deze oefeningen</a>.</GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
