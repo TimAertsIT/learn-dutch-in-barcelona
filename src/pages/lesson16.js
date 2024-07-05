@@ -16,7 +16,7 @@ import FillInTheBlankExercise from '../components/Exercises/Vocabulary/Fillinthe
 import Translate from '../components/Exercises/Grammar/Translate';
 import allowedEmails from '../pages/allowedEmails';
 import { useState, useEffect } from 'react';
-import klerenman from '../images/klerenman.jpg';
+import supermarkt from '../images/supermarkt.jpg';
 import React from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -93,19 +93,19 @@ function Lesson16() {
     }
 
     const sentences = [
-        'Om te sporten heb je _ nodig.',
-        'Ik ga zwemmen. Waar is mijn _?',
-        'In de zomer veranderen er velen van een lange naar een korte _.',
-        'Ik heb het _, maar ik heb een andere maat nodig.',
-        'We moeten vertrekken, ga je eens snel _.',
-        'Die dikke jas kan je in de zomer best _.',
-        'Jouw _ moeten qua stijl wel passen bij jouw schoenen.',
-        'Ik _ een jurk van een bekende modeontwerper.',
-        'Ofwel ben ik te groot, ofwel is de broek te _.',
-        'Hele chique kleren zijn gewoonweg niet mijn _.'
+        'Voor melk moet je bij de _afdeling zijn.',
+        'Pasta en rijst vind je bij het gangpad van de _ voeding.',
+        'Ik ga geen cola kopen, ik heb al genoeg _ gedronken.',
+        'Ik heb tomaten nodig, we moeten nog langs de _afdeling.',
+        'Het _ ligt vaak bij de kassa, zodat kinderen het nog snel nemen.',
+        'Heb je een muntstuk van 1 euro, voor de _?',
+        'Kan jij de spullen _ aan de kassa?',
+        'Heb je een _ nodig, of ga je het zo dragen?',
+        'Ik _ nog noten, ik kan ze nergens vinden.',
+        'Heb jij _ voor een korting op de prijs?'
     ];
 
-    const blanks = ['gepast', 'aankleden', 'uitdoen', 'sportkleding', 'sokken', 'zwembroek', 'draag', 'stijl', 'kort', 'broek'];
+    const blanks = ['winkelwagen', 'groente', 'snoep', 'zuivel', 'coupons', 'droge', 'inladen', 'frisdrank', 'tasje', 'zoek'];
 
 
 
@@ -163,15 +163,15 @@ function Lesson16() {
             <ImageCollage images={images.slice(3)} />
             <Vocabulary words={words} />
             <StyledAbout>
-                <h1>Mode in België en Nederland</h1>
-                <p>In Nederland bestaat er een “Modepolitie” televisieprogramma waarin stylisten mensen op straat aanspreken op hun kledingkeuzes en hen voorzien van stijladvies. Gelukkig zijn er geen boetes!
+                <h1>Supermarkten in België en Nederland</h1>
+                <p>De grootste supermarktketen in België is Delhaize, met 830 winkels. Andere ketens zijn onder meer Colruyt, Carrefour, en Aldi.
                 </p>
                 <p>
-                    In België en Nederland zijn kledingruilfeestjes populair. Mensen brengen hun ongewenste kleding mee en ruilen die met anderen. Het is een duurzame manier om je garderobe te vernieuwen.</p>
+                    In België is het gebruikelijk om frietjes te kopen in de supermarkt. Ja, je leest het goed: frietjes! Ze hebben zelfs speciale rekken voor diepvriesfrietjes.</p>
                 <p>
-                    Fietsen is een integraal onderdeel van het dagelijks leven in beide landen. Daarom zijn er speciale fietsvriendelijke kledingmerken die stijlvolle én praktische outfits aanbieden voor fietsers.</p>
+                    Albert Heijn (AH) is één van de grootste en meest populaire supermarkten in Nederland. Ze hebben een breed scala aan producten en zijn bekend om hun bonuskaartprogramma.</p>
                 <p>
-                    Tijdens Koningsdag in Nederland (27 april) kleurt het hele land oranje. Mensen dragen oranje kleding, accessoires en zelfs oranje pruiken om hun koninklijke trots te tonen.</p>
+                    De Nederlandse supermarkten hebben vaak een kaasafdeling die je versteld doet staan. Van jonge kaas tot oude kaas, ze hebben het allemaal!</p>
 
 
             </StyledAbout>
@@ -179,14 +179,14 @@ function Lesson16() {
             <VocabularySimple words={words} />
             <FillInTheBlankExercise sentences={sentences} blanks={blanks} />
             <GoedBezig
-                text={{ dutch: 'De kleren maken de man', english: '"The clothes make the man"' }}
-                image={klerenman}
+                text={{ dutch: 'Er is nog veel werk aan de winkel', english: '"There is still a lot of work on the shop"' }}
+                image={supermarkt}
             />
             <CenteredContainer>
-                <StyledLink href="https://www.hln.be/mode-en-beauty/niet-nerdy-maar-trendy-zo-draag-je-sokken-in-sandalen-2-000-jaar-geleden-liepen-de-romeinen-ook-zo-rond~ad5f3e9d/">
+                <StyledLink href="https://www.hln.be/film/internet-in-de-ban-van-supermarktscene-home-alone-uit-1990-raad-eens-hoeveel-die-kar-van-kevin-vandaag-kost~a7c6735b/">
                     Lees het artikel en geef een korte samenvatting.
                 </StyledLink>
-                <StyledLink href="https://www.libelle.nl/actueel/deze-bizarre-nieuwe-trend-voor-huisdieren-is-een-hit-op-internet~b4eb12bf/?referrer=https://www.google.com/">
+                <StyledLink href="https://www.degroenemeisjes.nl/verpakkingsvrije-winkels/">
                     Lees dit artikel en geef een korte samenvatting.
                 </StyledLink>
             </CenteredContainer>
@@ -194,98 +194,84 @@ function Lesson16() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="passen"
-                    translation="to fit"
-                    conjugations={["pas", "past", "past", "passen", "passen", "passen"]}
-                    vd="gepast"
-                    ovt="paste"
+                    verb="rekenen"
+                    translation="to count"
+                    conjugations={["reken", "rekent", "rekent", "rekenen", "rekenen", "rekenen"]}
+                    vd="gerekend"
+                    ovt="rekende"
                 />
                 <Verbs
-                    verb="dragen"
-                    translation="to wear"
-                    conjugations={["draag", "draagt", "draagt", "dragen", "dragen", "dragen"]}
-                    vd="gedragen"
-                    ovt="droeg"
+                    verb="leggen"
+                    translation="to lay"
+                    conjugations={["leg", "legt", "legt", "leggen", "leggen", "leggen"]}
+                    vd="gelegd"
+                    ovt="legde"
                 />
                 <Verbs
-                    verb="aantrekken"
-                    translation="to pull on"
-                    conjugations={["trek aan", "trekt aan", "trekt aan", "trekken aan", "trekken aan", "trekken aan"]}
-                    vd="aangetrokken"
-                    ovt="trok aan"
+                    verb="zoeken"
+                    translation="to search"
+                    conjugations={["zoek", "zoekt", "zoekt", "zoeken", "zoeken", "zoeken"]}
+                    vd="gezocht"
+                    ovt="zocht"
                 />
                 <Verbs
-                    verb="uitdoen"
-                    translation="to take off"
-                    conjugations={["doe uit", "doet uit", "doet uit", "doen uit", "doen uit", "doen uit"]}
-                    vd="uitgedaan"
-                    ovt="deed uit"
+                    verb="winkelen"
+                    translation="to shop"
+                    conjugations={["winkel", "winkelt", "winkelt", "winkelen", "winkelen", "winkelen"]}
+                    vd="gewinkeld"
+                    ovt="winkelde"
                 />
                 <Verbs
-                    verb="aankleden"
-                    translation="to get dressed"
-                    conjugations={["kleed aan", "kleedt aan", "kleedt aan", "kleden aan", "kleden aan", "kleden aan"]}
-                    vd="aangekleed"
-                    ovt="kleedde aan"
+                    verb="kopen"
+                    translation="to buy"
+                    conjugations={["koop", "koopt", "koopt", "kopen", "kopen", "kopen"]}
+                    vd="gekocht"
+                    ovt="kocht"
                 />
                 <Verbs
-                    verb="meten"
-                    translation="to measure"
-                    conjugations={["meet", "meet", "meet", "meten", "meten", "meten"]}
-                    vd="gemeten"
-                    ovt="meette"
+                    verb="praten"
+                    translation="to talk"
+                    conjugations={["praat", "praat", "praat", "praten", "praten", "praten"]}
+                    vd="gepraat"
+                    ovt="praatte"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "passen", conjugations: ["pas", "past", "past", "passen", "passen", "passen"] },
-                { verb: "dragen", conjugations: ["draag", "draagt", "draagt", "dragen", "dragen", "dragen"] },
-                { verb: "aantrekken", conjugations: ["trek aan", "trekt aan", "trekt aan", "trekken aan", "trekken aan", "trekken aan"] },
-                { verb: "uitdoen", conjugations: ["doe uit", "doet uit", "doet uit", "doen uit", "doen uit", "doen uit"] },
-                { verb: "aankleden", conjugations: ["kleed aan", "kleedt aan", "kleedt aan", "kleden aan", "kleden aan", "kleden aan"] },
-                { verb: "meten", conjugations: ["meet", "meet", "meet", "meten", "meten", "meten"] }
+                { verb: "rekenen", conjugations: ["reken", "rekent", "rekent", "rekenen", "rekenen", "rekenen"] },
+                { verb: "leggen", conjugations: ["leg", "legt", "legt", "leggen", "leggen", "leggen"] },
+                { verb: "zoeken", conjugations: ["zoek", "zoekt", "zoekt", "zoeken", "zoeken", "zoeken"] },
+                { verb: "winkelen", conjugations: ["winkel", "winkelt", "winkelt", "winkelen", "winkelen", "winkelen"] },
+                { verb: "kopen", conjugations: ["koop", "koopt", "koopt", "kopen", "kopen", "kopen"] },
+                { verb: "praten", conjugations: ["praat", "praat", "praat", "praten", "praten", "praten"] }
             ]} />
             <Translate sentences={[
-                { english: "I took off my clothes", translation: "Ik deed mijn kleding uit" },
-                { english: "I measure the pants", translation: "Ik meet de broek" },
-                { english: "He measured the dress", translation: "Hij meette de jurk" },
-                { english: "You have measured the swimming trunks", translation: "Jij hebt de zwembroek gemeten" },
-                { english: "I pull on my socks", translation: "Ik trek mijn sokken aan" },
-                { english: "I take off my coat", translation: "Ik doe mijn jas uit" },
-                { english: "I wore fashion of a brand", translation: "Ik droeg mode van een merk" },
-                { english: "I fitted the trousers, but I need another size", translation: "Ik paste de borek, maar ik heb een andere maat nodig" },
-                { english: "We have measured the fitting room", translation: "Wij hebben de paskamer gemeten" },
-                { english: "Which sizes do they have?", translation: "Welke maten hebben zij?" }
+                { english: "We have bought a car", translation: "Wij hebben een auto gekocht" },
+                { english: "I searched milk", translation: "Ik zocht melk" },
+                { english: "I have laid it back", translation: "Ik heb het terug gelegd" },
+                { english: "I searched you", translation: "Ik zocht jou" },
+                { english: "I talked with him", translation: "Ik praatte met hem" },
+                { english: "We talked with you", translation: "Wij praatten met jou" },
+                { english: "We bought candy", translation: "Wij kochten snoep" },
+                { english: "We searched dairy products", translation: "Wij zochten zuivelproducten" },
+                { english: "I count on you", translation: "Ik reken op jou" },
+                { english: "The chicken has laid an egg", translation: "De kip heeft een ei gelegd" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Verwijswoorden 📚</GrammarTitle>
+                <GrammarTitle>📚 Verkleinwoorden 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Verwijswoorden zijn (vaak kleine) woorden die terugwijzen naar andere woorden in de zin of in de tekst.
-                    Er zijn verwijswoorden voor een plaats  (er, daar),
-                    voor een persoon (hem, haar, ze),
-                    voor een ding (het, dit, dat),
-                    of voor een tijd (toen, dan).
-                    Je gebruikt ze om de zinnen korter te maken. </GrammarParagraph>
+                    Bij verkleinwoorden gebruiken we steeds het lidwoord "het". De verkleinwoorden zelf kunnen echter verschillende vormen hebben, zoals "je", "tje" of zelfs "etje". </GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://nt2taalmenu.nl/wat-zijn-verwijswoorden/">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuverwijswoorden/">hier</a> </Highlight></GrammarParagraph>
-            </GrammarBox>
-            <GrammarBox>
-                <GrammarTitle>📚 Zinsbouw 📚</GrammarTitle>
-                <GrammarParagraph>Laten we nog enkele oefeningen maken met "omdat", "als" en "om... te...".</GrammarParagraph>
-                <br />
-                <GrammarParagraph> <Highlight>Oefening: <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetomdat/">1</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetals/">2</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph><Highlight><a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetomte/">3</a> </Highlight></GrammarParagraph>
-
+                <GrammarParagraph> <Highlight>Laten we deze eens verder bekijken: <a href="https://www.jufmelis.nl/spelling/verkleinwoorden-basisregels">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://www.jufmelis.nl/extra/nt2-verkleinwoorden/nt2-verkleinwoorden-1">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/tweedehands-trouwen">
-                    "Tweedehands trouwen": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/exercise/49ab9143-42d1-4994-98bf-76b120eff7ac">
+                    "Tijd aan de kassa": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/regels-over-kleding">
-                    "Regels over kleding": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/exercise/46ee80f1-8d74-4e9f-9445-ec3fd1c0fb71">
+                    "Werken in een supermarkt": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -293,7 +279,7 @@ function Lesson16() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Maak <a href="https://nt2taalmenu.nl/nt2-a2-grammatica-menuzinnenmetwant/">deze oefeningen</a>.</GrammarParagraph>
+                    Maak <a href="https://www.taal-oefenen.nl/instruction/taal/spelling/regelwoorden-1/verkleinwoorden-met-je-tje-pje-of-etje">deze oefeningen</a>.</GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
