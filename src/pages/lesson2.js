@@ -370,10 +370,10 @@ function Lesson2() {
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/teaser/koffie-maken">
+                <StyledLink href="https://www.nedbox.be/exercise/8473d1de-a623-40ac-9e9f-9980ac8a4672">
                     "Making coffee." Check the article in the link and let's answer the related questions.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/teaser/de-stille-kapper">
+                <StyledLink href="https://www.nedbox.be/exercise/d31149fb-2008-458d-8564-0cce8501d00f">
                     "The quiet hairdresser." Check the article in the link and let's answer the related questions.
                 </StyledLink>
             </CenteredContainer>

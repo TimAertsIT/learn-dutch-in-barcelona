@@ -14,6 +14,7 @@ import belgie from '../../images/belgie.jpg'
 import netherlands from '../../images/netherlands.jpg'
 import family from '../../images/family.jpg'
 import fashion from '../../images/fashion.jpg'
+import supermarkt from '../../images/supermarkt.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -120,7 +121,14 @@ export const lessonsData = {
             "title": "Chapter 15: clothes and fashion",
             "description": "Buy clothes in Dutch, ask for different sizes and discover vocabulary related to fashion",
             "image": fashion,
-            "path": "/lesson14-clothes-fashion-dutch"
+            "path": "/lesson15-clothes-fashion-dutch"
+        },
+        {
+            "id": 16,
+            "title": "Chapter 16: the supermarket",
+            "description": "Get to know vocabulary and phrases related to (buying) products one can find in the supermarket",
+            "image": supermarkt,
+            "path": "/lesson16-supermarket-dutch"
         }
     ]
 };
