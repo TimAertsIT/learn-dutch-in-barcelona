@@ -15,6 +15,7 @@ import netherlands from '../../images/netherlands.jpg'
 import family from '../../images/family.jpg'
 import fashion from '../../images/fashion.jpg'
 import supermarkt from '../../images/supermarkt.jpg'
+import wetenschap from '../../images/wetenschap.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -129,6 +130,13 @@ export const lessonsData = {
             "description": "Get to know vocabulary and phrases related to (buying) products one can find in the supermarket",
             "image": supermarkt,
             "path": "/lesson16-supermarket-dutch"
+        },
+        {
+            "id": 17,
+            "title": "Chapter 17: science and technology",
+            "description": "Learn vocabulary related to science and technology and teach and discuss several related topics",
+            "image": wetenschap,
+            "path": "/lesson17-science-technology-dutch"
         }
     ]
 };
