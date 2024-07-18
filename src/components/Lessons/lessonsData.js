@@ -16,6 +16,7 @@ import family from '../../images/family.jpg'
 import fashion from '../../images/fashion.jpg'
 import supermarkt from '../../images/supermarkt.jpg'
 import wetenschap from '../../images/wetenschap.jpg'
+import politics from '../../images/politics.jpg'
 
 export const lessonsData = {
     "lessons": [
@@ -137,6 +138,13 @@ export const lessonsData = {
             "description": "Learn vocabulary related to science and technology and teach and discuss several related topics",
             "image": wetenschap,
             "path": "/lesson17-science-technology-dutch"
+        },
+        {
+            "id": 18,
+            "title": "Chapter 18: law and politics",
+            "description": "Get to know Dutch terminology related to politics, elections and procedures, including exercises",
+            "image": politics,
+            "path": "/lesson18-politics-dutch"
         }
     ]
 };
