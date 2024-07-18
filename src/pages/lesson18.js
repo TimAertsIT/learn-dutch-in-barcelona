@@ -192,86 +192,100 @@ function Lesson18() {
             <TitleText>Grammatica / Grammar</TitleText>
             <LessonContainer>
                 <Verbs
-                    verb="innoveren"
-                    translation="to innovate"
-                    conjugations={["innoveer", "innoveert", "innoveert", "innoveren", "innoveren", "innoveren"]}
-                    vd="geïnnoveerd"
-                    ovt="innoveerde"
+                    verb="stemmen"
+                    translation="to vote"
+                    conjugations={["stem", "stemt", "stemt", "stemmen", "stemmen", "stemmen"]}
+                    vd="gestemd"
+                    ovt="stemde"
                 />
                 <Verbs
-                    verb="programmeren"
-                    translation="to program"
-                    conjugations={["programmeer", "programmeert", "programmeert", "programmeren", "programmeren", "programmeren"]}
-                    vd="geprogrammeerd"
-                    ovt="programmeerde"
+                    verb="goedkeuren"
+                    translation="to approve"
+                    conjugations={["keur goed", "keurt goed", "keurt goed", "keuren goed", "keuren goed", "keuren goed"]}
+                    vd="goedgekeurd"
+                    ovt="keurde goed"
                 />
                 <Verbs
-                    verb="bewijzen"
-                    translation="to prove"
-                    conjugations={["bewijs", "bewijst", "bewijst", "bewijzen", "bewijzen", "bewijzen"]}
-                    vd="bewezen"
-                    ovt="bewees"
+                    verb="afkeuren"
+                    translation="to disapprove"
+                    conjugations={["keur af", "keurt af", "keurt af", "keuren af", "keuren af", "keuren af"]}
+                    vd="afgekeurd"
+                    ovt="keurde af"
                 />
                 <Verbs
-                    verb="ontkennen"
-                    translation="to deny"
-                    conjugations={["ontken", "ontkent", "ontkent", "ontkennen", "ontkennen", "ontkennen"]}
-                    vd="ontkend"
-                    ovt="ontkende"
+                    verb="beslissen"
+                    translation="to decide"
+                    conjugations={["beslis", "beslist", "beslist", "beslissen", "beslissen", "beslissen"]}
+                    vd="beslist"
+                    ovt="besliste"
                 />
                 <Verbs
-                    verb="onderzoeken"
-                    translation="to investigate"
-                    conjugations={["onderzoek", "onderzoekt", "onderzoekt", "onderzoeken", "onderzoeken", "onderzoeken"]}
-                    vd="onderzocht"
-                    ovt="onderzocht"
+                    verb="tellen"
+                    translation="to count"
+                    conjugations={["tel", "telt", "telt", "tellen", "tellen", "tellen"]}
+                    vd="geteld"
+                    ovt="telde"
                 />
                 <Verbs
-                    verb="samenwerken"
-                    translation="to collaborate"
-                    conjugations={["werk samen", "werkt samen", "werkt samen", "werken samen", "werken samen", "werken samen"]}
-                    vd="samengewerkt"
-                    ovt="werkte samen"
+                    verb="maken"
+                    translation="to make"
+                    conjugations={["maak", "maakt", "maakt", "maken", "maken", "maken"]}
+                    vd="gemaakt"
+                    ovt="maakte"
                 />
             </LessonContainer>
             <VerbExercise verbs={[
-                { verb: "programmeren", conjugations: ["programmeer", "programmeert", "programmeert", "programmeren", "programmeren", "programmeren"] },
-                { verb: "bewijzen", conjugations: ["bewijs", "bewijst", "bewijst", "bewijzen", "bewijzen", "bewijzen"] },
-                { verb: "ontkennen", conjugations: ["ontken", "ontkent", "ontkent", "ontkennen", "ontkennen", "ontkennen"] },
-                { verb: "innoveren", conjugations: ["innoveer", "innoveert", "innoveert", "innoveren", "innoveren", "innoveren"] },
-                { verb: "onderzoeken", conjugations: ["onderzoek", "onderzoekt", "onderzoekt", "onderzoeken", "onderzoeken", "onderzoeken"] },
-                { verb: "samenwerken", conjugations: ["werk samen", "werkt samen", "werkt samen", "werken samen", "werken samen", "werken samen"] }
+                { verb: "stemmen", conjugations: ["stem", "stemt", "stemt", "stemmen", "stemmen", "stemmen"] },
+                { verb: "goedkeuren", conjugations: ["keur goed", "keurt goed", "keurt goed", "keuren goed", "keuren goed", "keuren goed"] },
+                { verb: "afkeuren", conjugations: ["keur af", "keurt af", "keurt af", "keuren af", "keuren af", "keuren af"] },
+                { verb: "beslissen", conjugations: ["beslis", "beslist", "beslist", "beslissen", "beslissen", "beslissen"] },
+                { verb: "tellen", conjugations: ["tel", "telt", "telt", "tellen", "tellen", "tellen"] },
+                { verb: "maken", conjugations: ["maak", "maakt", "maakt", "maken", "maken", "maken"] }
             ]} />
             <Translate sentences={[
-                { english: "That is proven", translation: "Dat is bewezen" },
-                { english: "I have programmed an application", translation: "Ik heb een applicatie geprogrammeerd" },
-                { english: "I denied the facts", translation: "Ik heb de feiten ontkend" },
-                { english: "I investigate the behaviour of monkeys", translation: "Ik onderzoek het gedrag van apen" },
-                { english: "We have collaborated", translation: "Wij hebben samengewerkt" },
-                { english: "We collaborated", translation: "Wij werkten samen" },
-                { english: "You innovated", translation: "Jij innoveerde" },
-                { english: "I worked together with a scientist", translation: "I worked together with a scientist" },
-                { english: "Do you deny that?", translation: "Ontken jij dat?" },
-                { english: "Can you program that?", translation: "Kun jij dat programmeren?" }
+                { english: "I have voted", translation: "Ik heb gestemd" },
+                { english: "The politicians voted the law", translation: "De politici stemden de wet" },
+                { english: "The proposal is disapproved", translation: "Het voorstel is afgekeurd" },
+                { english: "I decided to make a government", translation: "Ik besliste een regering te maken" },
+                { english: "The votes have been counted", translation: "De stemmen zijn geteld" },
+                { english: "You have made history", translation: "Jij hebt geschiedenis gemaakt" },
+                { english: "You counted wrong", translation: "Jij telde verkeerd" },
+                { english: "Do you approve that?", translation: "Keur jij dat goed?" },
+                { english: "Does he disapprove that?", translation: "Keurt hij dat af?" },
+                { english: "We voted for the minister", translation: "Wij stemden voor de minister" }
             ]} />
             <GrammarBox>
-                <GrammarTitle>📚 Het woordje "er" 📚</GrammarTitle>
+                <GrammarTitle>📚 Het woordje "te" 📚</GrammarTitle>
                 <GrammarParagraph>
-                    Één van de moeilijkste woordjes in de Nederlandse taal is het woord "er". Mensen met het Nederlands als moedertaal gebruiken het zonder er bij na te denken.</GrammarParagraph>
+                    <p>We gebruiken veel werkwoorden samen met te, maar sommige werkwoorden hebben geen te.
+                        <br />
+                        <br />
+                    </p>Bijvoorbeeld:
+                    <p>Ik probeer elke dag te sporten.</p>
+                    Ik wil elke dag sporten.
+                    <br />   <br />
+                    <p>Na de werkwoorden willen, mogen, moeten, kunnen, zullen, gaan, komen, blijven, laten, zien en horen krijgen we geen te. Je kijkt dan alleen naar het eerste werkwoord in de zin.</p>
+                    <br />
+                    Kom je morgen eten?
+                    <p>Hij gaat vandaag werken.</p>
+                    <br />
+                    Bij andere werkwoorden gebruiken we te:
+                    <p>Hij hoeft morgen niet te werken.</p>
+                    Ze belooft op tijd te komen.
+                    <br />   <br />
+                    <p>Werkwoorden met te die we vaak gebruiken, zijn: beginnen, durven, hoeven, proberen, besluiten, zitten en staan.ft op tijd te komen.</p> </GrammarParagraph>
                 <br />
-                <GrammarParagraph> <Highlight>Laten we even bekijken in welke gevallen je het woordje "er" kan gebruiken: <a href="https://www.niow.nl/blog/taalcursus/nt2-ers-en-het-lastige-woordje-er#:~:text=Gebruik%20van%20er&text=Dit%20kan%20zijn%20als%20verwijswoord,verzwakte%20vorm%20van%20dit%20woord.&text=Wanneer%20'er'%20als%20plaatsaanduiding%20wordt,over%20welke%20plaats%20het%20gaat.">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight> <a href="https://zichtbaarnederlands.nl/nl/adverbium/er">hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight> <a href="https://www.jufmelis.nl/extra/er">en hier</a> </Highlight></GrammarParagraph>
-                <GrammarParagraph> <Highlight>En laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/wp-content/uploads/b2-grammatica/Er_en_daar_met_prepositie2.pdf">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Wat meer info vinden we: <a href="hhttps://zichtbaarnederlands.nl/nl/zinsbouw/te">hier</a> </Highlight></GrammarParagraph>
+                <GrammarParagraph> <Highlight>Laten we enkele oefeningen maken: <a href="https://nt2taalmenu.nl/nt2-b1-grammatica-menu-om-te/">hier</a> </Highlight></GrammarParagraph>
             </GrammarBox>
             <Separator></Separator>
             <TitleText>Lezen / reading</TitleText>
             <CenteredContainer>
-                <StyledLink href="https://www.nedbox.be/exercise/8bf45651-8386-4b36-9d6a-84398e94391b">
-                    "Wat is ChatGPT": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/exercise/eacef73e-cc03-409d-b256-1a1cf22cf6b2">
+                    "Verkiezingen 2024": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
-                <StyledLink href="https://www.nedbox.be/exercise/1f5e1026-94c0-47fc-8e40-5f94756ab859">
-                    "Een auto op mierenzuur": bekijk het artikel via de link en beantwoord de vragen.
+                <StyledLink href="https://www.nedbox.be/exercise/044b0413-8905-4bf9-b978-80b1440eb4e9">
+                    "Jongeren gaan stemmen": bekijk het artikel via de link en beantwoord de vragen.
                 </StyledLink>
             </CenteredContainer>
 
@@ -279,7 +293,7 @@ function Lesson18() {
             <TitleText>Huiswerk / Homework</TitleText>
             <GrammarBox>
                 <GrammarParagraph>
-                    Maak <a href="https://nt2taalmenu.nl/nt2-b1-grammatica-menu-er/">deze oefeningen</a>.</GrammarParagraph>
+                    Maak <a href="https://www.jufnt2.nl/werkwoordspelling/te-en-het-infinitief/te-en-het-hele-werkwoord-1">deze oefeningen</a>.</GrammarParagraph>
             </GrammarBox>
             <Footer />
         </div >
